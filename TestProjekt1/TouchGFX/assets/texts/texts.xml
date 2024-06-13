@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="texts.xsd" Version="4.23.0">
+  <Languages>
+    <Language Id="GB" />
+  </Languages>
+  <Texts>
+    <TextGroup Id="Group1">
+      <Text Id="__SingleUse_R4FA" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">Select Screen</Translation>
+      </Text>
+      <Text Id="__SingleUse_FFQV" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">RS232</Translation>
+      </Text>
+      <Text Id="__SingleUse_RCO2" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">RS485</Translation>
+      </Text>
+      <Text Id="__SingleUse_M4G8" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">CAN</Translation>
+      </Text>
+      <Text Id="__SingleUse_ROK2" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">I2C</Translation>
+      </Text>
+      <Text Id="__SingleUse_DV4G" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">SPI</Translation>
+      </Text>
+      <Text Id="__SingleUse_H4RU" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">GPIO</Translation>
+      </Text>
+      <Text Id="__SingleUse_HG7R" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">USB CDC</Translation>
+      </Text>
+      <Text Id="__SingleUse_C5BF" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">USB HID</Translation>
+      </Text>
+      <Text Id="__SingleUse_QRJO" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">INFO</Translation>
+      </Text>
+      <Text Id="__SingleUse_VQ0D" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">OK</Translation>
+      </Text>
+      <Text Id="__SingleUse_HO6Q" Alignment="Left" TypographyId="Medium">
+        <Translation Language="GB">NOT IMPLEMENTED YET</Translation>
+      </Text>
+      <Text Id="__SingleUse_Y1Q9" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">RS232 Screen</Translation>
+      </Text>
+      <Text Id="__SingleUse_1WDM" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Back</Translation>
+      </Text>
+      <Text Id="__SingleUse_O1VJ" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_QNF8" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">100</Translation>
+      </Text>
+      <Text Id="__SingleUse_ENGN" Alignment="Right" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;%</Translation>
+      </Text>
+      <Text Id="__SingleUse_Y3SJ" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">50</Translation>
+      </Text>
+      <Text Id="__SingleUse_F2FQ" Alignment="Left" TypographyId="Medium">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_CFTP" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">RS485 Screen</Translation>
+      </Text>
+      <Text Id="__SingleUse_UVE6" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Back</Translation>
+      </Text>
+      <Text Id="__SingleUse_O12W" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">8</Translation>
+      </Text>
+      <Text Id="__SingleUse_D434" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">100</Translation>
+      </Text>
+      <Text Id="__SingleUse_TW6I" Alignment="Right" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;%</Translation>
+      </Text>
+      <Text Id="__SingleUse_ARUP" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">80</Translation>
+      </Text>
+      <Text Id="__SingleUse_I7JU" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Back</Translation>
+      </Text>
+      <Text Id="__SingleUse_Z3DR" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Back</Translation>
+      </Text>
+      <Text Id="__SingleUse_513R" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Back</Translation>
+      </Text>
+      <Text Id="__SingleUse_NOPS" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Back</Translation>
+      </Text>
+      <Text Id="__SingleUse_B1M8" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Back</Translation>
+      </Text>
+      <Text Id="__SingleUse_80B7" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Back</Translation>
+      </Text>
+      <Text Id="__SingleUse_RCK0" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Back</Translation>
+      </Text>
+      <Text Id="__SingleUse_F65W" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">CDC Screen</Translation>
+      </Text>
+      <Text Id="__SingleUse_UR6E" Alignment="Left" TypographyId="Medium">
+        <Translation Language="GB">Slider Position:</Translation>
+      </Text>
+      <Text Id="__SingleUse_XSJ9" Alignment="Right" TypographyId="Medium">
+        <Translation Language="GB">&lt;value&gt;%</Translation>
+      </Text>
+      <Text Id="__SingleUse_U8LF" Alignment="Left" TypographyId="Medium">
+        <Translation Language="GB">20</Translation>
+      </Text>
+      <Text Id="__SingleUse_SAS2" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">I2C Screen</Translation>
+      </Text>
+      <Text Id="__SingleUse_KEVK" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Read Once</Translation>
+      </Text>
+      <Text Id="__SingleUse_W46J" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Manual Read</Translation>
+      </Text>
+      <Text Id="__SingleUse_42DY" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Continuous Read</Translation>
+      </Text>
+      <Text Id="__SingleUse_XC7U" Alignment="Right" TypographyId="VeryBig">
+        <Translation Language="GB"> &lt;value&gt; Deg. C</Translation>
+      </Text>
+      <Text Id="__SingleUse_5YXF" Alignment="Center" TypographyId="Bigger">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_RJNV" Alignment="Left" TypographyId="Bigger">
+        <Translation Language="GB">3</Translation>
+      </Text>
+      <Text Id="__SingleUse_G5P8" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Back</Translation>
+      </Text>
+      <Text Id="__SingleUse_1WI6" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Disable Automatic Read!</Translation>
+      </Text>
+      <Text Id="__SingleUse_LXSS" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">GPIO 0          GPIO 1                    GPIO 4                GPIO 5    </Translation>
+      </Text>
+      <Text Id="__SingleUse_0K4H" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">GPIO Screen  </Translation>
+      </Text>
+      <Text Id="__SingleUse_E6A2" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Test GPIO 4</Translation>
+      </Text>
+      <Text Id="__SingleUse_H2IS" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Back</Translation>
+      </Text>
+      <Text Id="__SingleUse_MKQJ" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">GPIO 1 was pulled LOW</Translation>
+      </Text>
+      <Text Id="__SingleUse_YIP1" Alignment="Left" TypographyId="Medium">
+        <Translation Language="GB">Project:</Translation>
+      </Text>
+      <Text Id="__SingleUse_3C89" Alignment="Left" TypographyId="Medium">
+        <Translation Language="GB">800 x 480 EvaKit</Translation>
+      </Text>
+      <Text Id="__SingleUse_ODGV" Alignment="Left" TypographyId="Medium">
+        <Translation Language="GB">AT version:</Translation>
+      </Text>
+      <Text Id="__SingleUse_ELE2" Alignment="Left" TypographyId="Medium">
+        <Translation Language="GB">4.X.X</Translation>
+      </Text>
+      <Text Id="__SingleUse_FY9E" Alignment="Left" TypographyId="Medium">
+        <Translation Language="GB">Date:</Translation>
+      </Text>
+      <Text Id="__SingleUse_HZDI" Alignment="Left" TypographyId="Medium">
+        <Translation Language="GB">Compile date</Translation>
+      </Text>
+      <Text Id="__SingleUse_I4PH" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Start</Translation>
+      </Text>
+      <Text Id="__SingleUse_1KBC" Alignment="Left" TypographyId="Medium">
+        <Translation Language="GB">Version:</Translation>
+      </Text>
+      <Text Id="__SingleUse_Y90Y" Alignment="Left" TypographyId="Medium">
+        <Translation Language="GB">V1.6.0</Translation>
+      </Text>
+      <Text Id="__SingleUse_805X" Alignment="Left" TypographyId="Medium">
+        <Translation Language="GB">==============================</Translation>
+      </Text>
+      <Text Id="__SingleUse_NIQS" Alignment="Left" TypographyId="Medium">
+        <Translation Language="GB">Designer:</Translation>
+      </Text>
+      <Text Id="__SingleUse_1NQ7" Alignment="Left" TypographyId="Medium">
+        <Translation Language="GB">Version:</Translation>
+      </Text>
+      <Text Id="__SingleUse_490X" Alignment="Left" TypographyId="Medium">
+        <Translation Language="GB">V4.16 up</Translation>
+      </Text>
+      <Text Id="__SingleUse_QGL7" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">CAN Screen</Translation>
+      </Text>
+      <Text Id="__SingleUse_7HOG" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_UGN8" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">100</Translation>
+      </Text>
+      <Text Id="__SingleUse_8I9W" Alignment="Right" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;%</Translation>
+      </Text>
+      <Text Id="__SingleUse_AQHC" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">50</Translation>
+      </Text>
+      <Text Id="__SingleUse_UXGD" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Local</Translation>
+      </Text>
+      <Text Id="__SingleUse_9JP9" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Remote</Translation>
+      </Text>
+      <Text Id="__SingleUse_DJXK" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+    </TextGroup>
+  </Texts>
+  <Typographies>
+    <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7e" />
+    <Typography Id="Medium" Font="verdana.ttf" Size="25" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7e" />
+    <Typography Id="VeryBig" Font="verdanab.ttf" Size="60" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9" />
+    <Typography Id="Bigger" Font="verdana.ttf" Size="60" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-5" />
+    <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+  </Typographies>
+</TextDatabase>
