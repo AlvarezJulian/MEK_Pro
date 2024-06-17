@@ -50,3 +50,9 @@ release
 *.su
 *.idb
 *.pdb
+
+# GUI Design
+TouchGFX/build/
+TouchGFX/generated/
+EWARM/settings/
+EWARM/STM32F746/
