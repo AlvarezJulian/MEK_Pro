@@ -37,8 +37,8 @@ release
 *.dylib
 
 # Executables
-*.exe
-*.out
+#*.exe
+#*.out
 *.app
 *.i*86
 *.x86_64
@@ -52,7 +52,7 @@ release
 *.pdb
 
 # GUI Design
-TouchGFX/build/
+#TouchGFX/build/
 TouchGFX/generated/
 EWARM/settings/
 EWARM/STM32F746/
