@@ -1,0 +1,10 @@
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
+C:/Users/Julian/git/MEK_Pro/MEK_PRO_2025/TouchGFX/gui/src/vehicle_screen/VehicleView.cpp:11:6:virtual void VehicleView::tearDownScreen()	0	static
+C:/Users/Julian/git/MEK_Pro/MEK_PRO_2025/TouchGFX/gui/src/vehicle_screen/VehicleView.cpp:16:6:virtual void VehicleView::btn_AceptControl_clicked()	0	static
+../../TouchGFX/gui/include/gui/vehicle_screen/VehicleView.hpp:16:10:VehicleView::~VehicleView()	8	static
+../../TouchGFX/gui/include/gui/vehicle_screen/VehicleView.hpp:16:10:virtual VehicleView::~VehicleView()	8	static
+C:/Users/Julian/git/MEK_Pro/MEK_PRO_2025/TouchGFX/gui/src/vehicle_screen/VehicleView.cpp:3:1:VehicleView::VehicleView()	8	static
+C:/Users/Julian/git/MEK_Pro/MEK_PRO_2025/TouchGFX/gui/src/vehicle_screen/VehicleView.cpp:7:6:virtual void VehicleView::setupScreen()	0	static
+C:/Users/Julian/git/MEK_Pro/MEK_PRO_2025/TouchGFX/gui/src/vehicle_screen/VehicleView.cpp:25:6:virtual void VehicleView::Slot_change_Language(uint8_t*)	16	static

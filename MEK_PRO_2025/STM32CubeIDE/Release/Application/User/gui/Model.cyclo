@@ -1,0 +1,7 @@
+C:/Users/Julian/git/MEK_Pro/MEK_PRO_2025/TouchGFX/gui/src/model/Model.cpp:4:1:Model::Model()	1
+C:/Users/Julian/git/MEK_Pro/MEK_PRO_2025/TouchGFX/gui/src/model/Model.cpp:8:6:void Model::tick()	11
+C:/Users/Julian/git/MEK_Pro/MEK_PRO_2025/TouchGFX/gui/src/model/Model.cpp:87:6:void Model::HW_LED_green_ON()	1
+C:/Users/Julian/git/MEK_Pro/MEK_PRO_2025/TouchGFX/gui/src/model/Model.cpp:90:6:void Model::HW_LED_orange_ON()	1
+C:/Users/Julian/git/MEK_Pro/MEK_PRO_2025/TouchGFX/gui/src/model/Model.cpp:93:6:void Model::HW_LED_red_ON()	1
+C:/Users/Julian/git/MEK_Pro/MEK_PRO_2025/TouchGFX/gui/src/model/Model.cpp:96:6:void Model::HW_LED_OFF()	1
+C:/Users/Julian/git/MEK_Pro/MEK_PRO_2025/TouchGFX/gui/src/model/Model.cpp:103:6:void Model::Interface_Can_send(int)	5

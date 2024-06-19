@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="texts.xsd" Version="4.23.0">
+  <Languages>
+    <Language Id="DE" />
+    <Language Id="EN" />
+  </Languages>
+  <Texts>
+    <TextGroup Id="Status">
+      <Text Id="Status_aus" Alignment="Left" TypographyId="MEK_2">
+        <Translation Language="DE" Alignment="Left">Ausgeloggt</Translation>
+        <Translation Language="EN" Alignment="Left">Log Out</Translation>
+      </Text>
+      <Text Id="Status_ein" Alignment="Left" TypographyId="MEK_2">
+        <Translation Language="DE" Alignment="Left">Eingeloggt</Translation>
+        <Translation Language="EN" Alignment="Left">Log In</Translation>
+      </Text>
+    </TextGroup>
+    <TextGroup Id="Fragen">
+      <Text Id="S07_Batterie" Alignment="Center" TypographyId="Default">
+        <Translation Language="DE" Alignment="Center">Batterie, Batteriekabel &#10;und Stecker &#10;in Ordnung?&#10;</Translation>
+        <Translation Language="EN">Battery, battery cable&#10;and plug ok?</Translation>
+      </Text>
+      <Text Id="F02_Lenkung" Alignment="Center" TypographyId="Large">
+        <Translation Language="DE" Alignment="Center">Lenkfunktion in Ordnung?</Translation>
+        <Translation Language="EN">Steering function ok?</Translation>
+      </Text>
+      <Text Id="F01_Beleuchtung" Alignment="Center" TypographyId="Large">
+        <Translation Language="DE" Alignment="Center">Beleuchtung, Blinker, &#10;Hupe und Rückfahrwarner &#10;in Ordnung?</Translation>
+        <Translation Language="EN">Lighting, blinkers, &#10;horn and reversing &#10;warning ok?&#10;</Translation>
+      </Text>
+    </TextGroup>
+    <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_4DD2" Alignment="Center" TypographyId="MEK_2">
+        <Translation Language="DE">Please log in</Translation>
+        <Translation Language="EN">Please log in</Translation>
+      </Text>
+      <Text Id="__SingleUse_8VM5" Alignment="Center" TypographyId="Default">
+        <Translation Language="DE">schlecht</Translation>
+        <Translation Language="EN">bad</Translation>
+      </Text>
+      <Text Id="__SingleUse_ZVD9" Alignment="Center" TypographyId="Default">
+        <Translation Language="DE">ok</Translation>
+        <Translation Language="EN">ok</Translation>
+      </Text>
+      <Text Id="__SingleUse_8G32" Alignment="Center" TypographyId="Default">
+        <Translation Language="DE">gut</Translation>
+        <Translation Language="EN">good</Translation>
+      </Text>
+      <Text Id="__SingleUse_5N52" Alignment="Left" TypographyId="Large">
+        <Translation Language="DE">New Text</Translation>
+        <Translation Language="EN"></Translation>
+      </Text>
+      <Text Id="__SingleUse_IT40" Alignment="Left" TypographyId="Large">
+        <Translation Language="DE">New Text</Translation>
+        <Translation Language="EN"></Translation>
+      </Text>
+      <Text Id="__SingleUse_PPAU" Alignment="Left" TypographyId="MEK_2">
+        <Translation Language="DE">ID:</Translation>
+        <Translation Language="EN">ID:</Translation>
+      </Text>
+      <Text Id="__SingleUse_399X" Alignment="Left" TypographyId="MEK_2">
+        <Translation Language="DE">Status:</Translation>
+        <Translation Language="EN">Status:</Translation>
+      </Text>
+      <Text Id="__SingleUse_AB2Q" Alignment="Left" TypographyId="Large">
+        <Translation Language="DE">Benutzer </Translation>
+        <Translation Language="EN">User </Translation>
+      </Text>
+      <Text Id="__SingleUse_NP9D" Alignment="Center" TypographyId="Default">
+        <Translation Language="DE">Abbrechen(wegdenken)</Translation>
+        <Translation Language="EN"></Translation>
+      </Text>
+      <Text Id="__SingleUse_81PO" Alignment="Left" TypographyId="MEK_2">
+        <Translation Language="DE">!!</Translation>
+        <Translation Language="EN"></Translation>
+      </Text>
+      <Text Id="__SingleUse_GT5J" Alignment="Left" TypographyId="MEK_2">
+        <Translation Language="DE">ELS:</Translation>
+        <Translation Language="EN">ELS:</Translation>
+      </Text>
+      <Text Id="__SingleUse_ND65" Alignment="Left" TypographyId="Medium">
+        <Translation Language="DE">00</Translation>
+        <Translation Language="EN"></Translation>
+      </Text>
+      <Text Id="__SingleUse_AU2B" Alignment="Left" TypographyId="MEK_2">
+        <Translation Language="DE">0h</Translation>
+        <Translation Language="EN"></Translation>
+      </Text>
+      <Text Id="__SingleUse_C6CN" Alignment="Left" TypographyId="MEK_2">
+        <Translation Language="DE">EBZ:</Translation>
+        <Translation Language="EN">EBZ:</Translation>
+      </Text>
+      <Text Id="__SingleUse_XF2H" Alignment="Center" TypographyId="Medium">
+        <Translation Language="DE">Werkstattmodus</Translation>
+        <Translation Language="EN"></Translation>
+      </Text>
+      <Text Id="__SingleUse_8YE7" Alignment="Center" TypographyId="Default">
+        <Translation Language="DE">Zurück zum Startmenü</Translation>
+        <Translation Language="EN">Back to Mainmenu</Translation>
+      </Text>
+      <Text Id="__SingleUse_6VQB" Alignment="Center" TypographyId="Medium">
+        <Translation Language="DE">CRASH ! &#10;Betrieb &#10;eingeschränkt</Translation>
+        <Translation Language="EN"></Translation>
+      </Text>
+      <Text Id="__SingleUse_GYFR" Alignment="Center" TypographyId="Default">
+        <Translation Language="DE">OK</Translation>
+        <Translation Language="EN">OK</Translation>
+      </Text>
+      <Text Id="__SingleUse_KP4Q" Alignment="Center" TypographyId="Medium">
+        <Translation Language="DE">Startmenü</Translation>
+        <Translation Language="EN">Mainmenu</Translation>
+      </Text>
+      <Text Id="__SingleUse_FN4I" Alignment="Left" TypographyId="Default">
+        <Translation Language="DE">5</Translation>
+        <Translation Language="EN"></Translation>
+      </Text>
+      <Text Id="__SingleUse_Z3DE" Alignment="Left" TypographyId="Default">
+        <Translation Language="DE">1</Translation>
+        <Translation Language="EN"></Translation>
+      </Text>
+      <Text Id="__SingleUse_JBEU" Alignment="Center" TypographyId="Medium">
+        <Translation Language="DE">Abfahrskontrolle</Translation>
+        <Translation Language="EN">departure control</Translation>
+      </Text>
+      <Text Id="__SingleUse_DSJX" Alignment="Center" TypographyId="Default">
+        <Translation Language="DE">Bitte führen Sie die &#10;Abfahrtskrontrolle durch.</Translation>
+        <Translation Language="EN">Please run the &#10;Departure control.</Translation>
+      </Text>
+      <Text Id="__SingleUse_TMQ7" Alignment="Center" TypographyId="MEK_2">
+        <Translation Language="DE"> Bitte einloggen</Translation>
+        <Translation Language="EN"> Bitte einloggen</Translation>
+      </Text>
+      <Text Id="__SingleUse_A2NM" Alignment="Left" TypographyId="MEK_1">
+        <Translation Language="DE">MEK Pro 2025</Translation>
+        <Translation Language="EN"></Translation>
+      </Text>
+    </TextGroup>
+    <TextGroup Id="Wildcards">
+      <Text Id="__SingleUse_RQ8E" Alignment="Center" TypographyId="MEK_2">
+        <Translation Language="DE">&lt;value&gt;</Translation>
+        <Translation Language="EN">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_0X1T" Alignment="Center" TypographyId="Default">
+        <Translation Language="DE">Hallo &lt;value&gt; !</Translation>
+        <Translation Language="EN">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_HMWN" Alignment="Center" TypographyId="MEK_2">
+        <Translation Language="DE">&lt;value&gt;</Translation>
+        <Translation Language="EN">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_4Q6T" Alignment="Center" TypographyId="MEK_2">
+        <Translation Language="DE">&lt;value&gt;&lt;value&gt;</Translation>
+        <Translation Language="EN">&lt;value&gt;&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_N3WC" Alignment="Center" TypographyId="Default">
+        <Translation Language="DE">&lt;value&gt; von &lt;value&gt;</Translation>
+        <Translation Language="EN">&lt;value&gt; of &lt;value&gt;</Translation>
+      </Text>
+    </TextGroup>
+  </Texts>
+  <Typographies>
+    <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7e" />
+    <Typography Id="Medium" Font="verdana.ttf" Size="25" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7e" />
+    <Typography Id="VeryBig" Font="verdanab.ttf" Size="60" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9" />
+    <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Bigger" Font="verdana.ttf" Size="60" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-5" />
+    <Typography Id="MEK_1" Font="Anton-Regular.ttf" Size="45" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7e" />
+    <Typography Id="MEK_2" Font="OpenSans-Italic.ttf" Size="45" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7e" />
+  </Typographies>
+</TextDatabase>

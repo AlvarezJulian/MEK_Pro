@@ -1,0 +1,12 @@
+C:/Users/Julian/git/MEK_Pro/MEK_PRO_2025/Drivers/Vendor/Driver/edt_bsp_backlight.c:168:14:TEMP_SENSOR_GetValue	5
+C:/Users/Julian/git/MEK_Pro/MEK_PRO_2025/Drivers/Vendor/Driver/edt_bsp_backlight.c:58:6:EDT_BL_Set_Handle	1
+C:/Users/Julian/git/MEK_Pro/MEK_PRO_2025/Drivers/Vendor/Driver/edt_bsp_backlight.c:190:6:EDT_LCD_BL_ON	1
+C:/Users/Julian/git/MEK_Pro/MEK_PRO_2025/Drivers/Vendor/Driver/edt_bsp_backlight.c:201:6:EDT_LCD_BL_OFF	1
+C:/Users/Julian/git/MEK_Pro/MEK_PRO_2025/Drivers/Vendor/Driver/edt_bsp_backlight.c:214:6:EDT_TEMPSENSOR_Init	3
+C:/Users/Julian/git/MEK_Pro/MEK_PRO_2025/Drivers/Vendor/Driver/edt_bsp_backlight.c:259:7:EDT_LCD_BL_PWM_Init	1
+C:/Users/Julian/git/MEK_Pro/MEK_PRO_2025/Drivers/Vendor/Driver/edt_bsp_backlight.c:292:6:EDT_LCD_BL_SetPwm	4
+C:/Users/Julian/git/MEK_Pro/MEK_PRO_2025/Drivers/Vendor/Driver/edt_bsp_backlight.c:317:9:EDT_LCD_BL_GetPwm	1
+C:/Users/Julian/git/MEK_Pro/MEK_PRO_2025/Drivers/Vendor/Driver/edt_bsp_backlight.c:328:6:StartPwmTask	9
+C:/Users/Julian/git/MEK_Pro/MEK_PRO_2025/Drivers/Vendor/Driver/edt_bsp_backlight.c:349:6:EDT_SuspendPwmTask	1
+C:/Users/Julian/git/MEK_Pro/MEK_PRO_2025/Drivers/Vendor/Driver/edt_bsp_backlight.c:362:6:EDT_ResumePwmTask	1
+C:/Users/Julian/git/MEK_Pro/MEK_PRO_2025/Drivers/Vendor/Driver/edt_bsp_backlight.c:375:6:Get_EDT_BacklightStatus	1

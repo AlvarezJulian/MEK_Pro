@@ -1,0 +1,2 @@
+C:/Users/Julian/git/MEK_Pro/MEK_PRO_2025/TouchGFX/generated/images/src/BitmapDatabase.cpp:149:37:const touchgfx::Bitmap::BitmapData* BitmapDatabase::getInstance()	0	static
+C:/Users/Julian/git/MEK_Pro/MEK_PRO_2025/TouchGFX/generated/images/src/BitmapDatabase.cpp:154:10:uint16_t BitmapDatabase::getInstanceSize()	0	static

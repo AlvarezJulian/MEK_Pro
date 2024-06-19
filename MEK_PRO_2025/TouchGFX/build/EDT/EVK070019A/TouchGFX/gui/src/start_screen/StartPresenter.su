@@ -1,0 +1,11 @@
+ModelListener.hpp:21:15:virtual void ModelListener::Wellcome_ChangeWindow_Received(uint8_t)	0	static
+ModelListener.hpp:22:15:virtual void ModelListener::Wellcome_Change_Language_Received(uint8_t)	0	static
+StartPresenter.hpp:34:10:StartPresenter::~StartPresenter()	0	static
+StartPresenter.cpp:13:6:virtual void StartPresenter::deactivate()	0	static
+StartPresenter.cpp:24:6:virtual void StartPresenter::Start_User_ID_Received(uint8_t*)	0	static
+StartPresenter.cpp:28:6:virtual void StartPresenter::Start_Status_LOGIN_Received()	0	static
+StartPresenter.cpp:31:6:virtual void StartPresenter::Start_Status_LOGOUT_Received()	0	static
+StartPresenter.cpp:34:6:virtual void StartPresenter::Start_Change_Language_Received(uint8_t)	0	static
+StartPresenter.hpp:34:10:virtual StartPresenter::~StartPresenter()	8	static
+StartPresenter.hpp:34:10:virtual void* StartPresenter::_ZThn4_N14StartPresenterD1Ev()	0	static
+StartPresenter.cpp:4:1:StartPresenter::StartPresenter(StartView&)	8	static

@@ -1,0 +1,9 @@
+Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	0	static
+Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	0	static
+Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
+CrashViewBase.hpp:25:18:virtual void CrashViewBase::action1()	0	static
+CrashView.cpp:13:6:virtual void CrashView::tearDownScreen()	0	static
+CrashView.hpp:11:13:CrashView::~CrashView()	8	static
+CrashView.hpp:11:13:virtual CrashView::~CrashView()	8	static
+CrashView.cpp:3:1:CrashView::CrashView()	8	static
+CrashView.cpp:8:6:virtual void CrashView::setupScreen()	0	static

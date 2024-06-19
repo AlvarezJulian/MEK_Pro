@@ -1,0 +1,8 @@
+C:/Users/Julian/git/MEK_Pro/MEK_PRO_2025/Core/Src/main.c:163:6:SystemClock_Config	88	static,ignoring_inline_asm
+C:/Users/Julian/git/MEK_Pro/MEK_PRO_2025/Core/Src/main.c:73:5:main	24	static,ignoring_inline_asm
+C:/Users/Julian/git/MEK_Pro/MEK_PRO_2025/Core/Src/main.c:221:6:Led_Off	8	static
+C:/Users/Julian/git/MEK_Pro/MEK_PRO_2025/Core/Src/main.c:228:6:Led_green_On	8	static
+C:/Users/Julian/git/MEK_Pro/MEK_PRO_2025/Core/Src/main.c:232:6:Led_orange_On	8	static
+C:/Users/Julian/git/MEK_Pro/MEK_PRO_2025/Core/Src/main.c:236:6:Led_red_On	8	static
+C:/Users/Julian/git/MEK_Pro/MEK_PRO_2025/Core/Src/main.c:309:6:HAL_TIM_PeriodElapsedCallback	0	static
+C:/Users/Julian/git/MEK_Pro/MEK_PRO_2025/Core/Src/main.c:326:6:Error_Handler	0	static,ignoring_inline_asm
