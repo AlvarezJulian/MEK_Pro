@@ -1,0 +1,4 @@
+Model.cpp:25:1:Model::Model()	0	static
+Model.cpp:30:6:void Model::tick()	16	static
+Model.cpp:81:6:void Model::setBacklight(uint8_t)	0	static
+Model.cpp:95:6:void Model::getCurrentSensorState()	0	static

@@ -1,0 +1,7 @@
+SCC30_HAL.c:140:9:SCC30_initI2C	48	static
+SCC30_HAL.c:192:9:SCC30_sendI2C	16	static
+SCC30_HAL.c:207:9:SCC30_readI2C	16	static
+SCC30_HAL.c:222:9:SCC30_sendCommandAndReadI2C	24	static
+SCC30_HAL.c:239:6:SCC30_delayMs	0	static
+SCC30_HAL.c:250:9:SCC30_initCRC8	8	static
+SCC30_HAL.c:270:9:SCC30_calcCRC8	16	static

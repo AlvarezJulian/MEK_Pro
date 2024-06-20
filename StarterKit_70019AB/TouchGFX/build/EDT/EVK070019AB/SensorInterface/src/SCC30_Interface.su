@@ -1,0 +1,16 @@
+SCC30_Interface.c:115:16:SCC30_sendCommand	16	static
+SCC30_Interface.c:180:9:SCC30_getRawData	32	static
+SCC30_Interface.c:281:9:SCC30_getHumidAndTempC	16	static
+SCC30_Interface.c:295:9:SCC30_getHumidAndTempF	16	static
+SCC30_Interface.c:309:9:SCC30_getTemperatureC	8	static
+SCC30_Interface.c:325:9:SCC30_getTemperatureF	8	static
+SCC30_Interface.c:341:10:SCC30_getHumidity	8	static
+SCC30_Interface.c:357:9:SCC30_stopPeriodicMeasurement	8	static
+SCC30_Interface.c:377:9:SCC30_resumePeriodicMeasurement	8	static
+SCC30_Interface.c:397:9:SCC30_setMode	24	static
+SCC30_Interface.c:454:9:SCC30_reset	8	static
+SCC30_Interface.c:480:9:SCC30_enableHeater	8	static
+SCC30_Interface.c:495:9:SCC30_disableHeater	8	static
+SCC30_Interface.c:510:10:SCC30_getStatus	16	static
+SCC30_Interface.c:130:9:SCC30_init	16	static
+SCC30_Interface.c:540:9:SCC30_clearStatus	0	static

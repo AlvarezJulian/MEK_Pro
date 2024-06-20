@@ -1,0 +1,9 @@
+edt_bsp_sdram.c:123:13:EDT_SDRAM_Initialization_sequence.constprop	32	static
+edt_bsp_sdram.c:98:9:EDT_SDRAM_DeInit	8	static
+edt_bsp_sdram.c:50:9:EDT_SDRAM_Init	16	static
+edt_bsp_sdram.c:177:6:EDT_SDRAM_Initial_sequence	0	static
+edt_bsp_sdram.c:193:9:EDT_SDRAM_ReadData	8	static
+edt_bsp_sdram.c:212:9:EDT_SDRAM_ReadData_DMA	8	static
+edt_bsp_sdram.c:231:9:EDT_SDRAM_WriteData	8	static
+edt_bsp_sdram.c:250:9:EDT_SDRAM_WriteData_DMA	8	static
+edt_bsp_sdram.c:267:9:EDT_SDRAM_Sendcmd	8	static

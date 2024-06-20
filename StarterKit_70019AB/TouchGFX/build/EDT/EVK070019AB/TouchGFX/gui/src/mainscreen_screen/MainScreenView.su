@@ -1,0 +1,16 @@
+Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	0	static
+Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	0	static
+Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
+TypedText.hpp:65:13:touchgfx::TypedText::~TypedText()	0	static
+MainScreenView.cpp:24:6:virtual void MainScreenView::tearDownScreen()	0	static
+TypedText.hpp:65:13:virtual touchgfx::TypedText::~TypedText()	8	static
+MainScreenView.hpp:11:10:MainScreenView::~MainScreenView()	8	static
+MainScreenView.hpp:11:10:virtual MainScreenView::~MainScreenView()	8	static
+Drawable.hpp:121:18:virtual void touchgfx::Drawable::invalidateContent() const	0	static
+MainScreenView.cpp:61:6:virtual void MainScreenView::handleSliderValue(int)	32	static
+MainScreenView.cpp:4:1:MainScreenView::MainScreenView()	8	static
+MainScreenView.cpp:29:6:void MainScreenView::updateTemperature(int32_t)	16	static
+MainScreenView.cpp:9:6:virtual void MainScreenView::setupScreen()	32	static
+MainScreenView.cpp:45:6:void MainScreenView::sensorConnected()	24	static
+MainScreenView.cpp:52:6:void MainScreenView::sensorDisconnected()	32	static
+MainScreenView.cpp:38:6:void MainScreenView::updateHumidity(uint32_t)	8	static

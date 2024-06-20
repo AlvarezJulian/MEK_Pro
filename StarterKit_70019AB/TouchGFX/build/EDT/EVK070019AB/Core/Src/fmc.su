@@ -1,0 +1,3 @@
+fmc.c:31:6:MX_FMC_Init	40	static
+fmc.c:218:6:HAL_SDRAM_MspInit	48	static
+fmc.c:327:6:HAL_SDRAM_MspDeInit	8	static

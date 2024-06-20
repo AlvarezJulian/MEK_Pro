@@ -1,0 +1,9 @@
+ModelListener.hpp:19:15:virtual void ModelListener::sensorEvent(Model::SensorConnectionStates)	0	static
+GraphScreenPresenter.hpp:28:10:GraphScreenPresenter::~GraphScreenPresenter()	0	static
+GraphScreenPresenter.cpp:10:6:virtual void GraphScreenPresenter::activate()	0	static
+GraphScreenPresenter.hpp:28:10:virtual GraphScreenPresenter::~GraphScreenPresenter()	8	static
+GraphScreenPresenter.cpp:20:6:virtual void GraphScreenPresenter::setTemperature(int32_t)	0	static
+GraphScreenPresenter.cpp:26:6:virtual void GraphScreenPresenter::setHumidity(int32_t)	0	static
+GraphScreenPresenter.hpp:28:10:virtual void* GraphScreenPresenter::_ZThn4_N20GraphScreenPresenterD1Ev()	0	static
+GraphScreenPresenter.cpp:4:1:GraphScreenPresenter::GraphScreenPresenter(GraphScreenView&)	8	static
+GraphScreenPresenter.cpp:32:6:void GraphScreenPresenter::updateSensorState()	0	static

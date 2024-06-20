@@ -1,0 +1,6 @@
+﻿  Converting images
+  Reading ./application.config
+  Reading ./target.config
+  Converting texts and fonts
+  Das System kann den angegebenen Pfad nicht finden.
+C:\TouchGFXProjects\StarterKit_70019AB\TouchGFX\generated\simulator\msvs\touchgfx_prebuild.targets(36,5): error MSB3073: Der Befehl ""..\..\..\..\..\TouchGFX\4.22.0\env\MinGW\msys\1.0\Ruby30-x64\bin\ruby.exe" "..\..\..\Middlewares\ST\touchgfx\framework\tools\textconvert\main.rb" "..\..\assets\texts\texts.xml" "..\..\..\Middlewares\ST\touchgfx\framework\tools\fontconvert\build\win\fontconvert.out" "..\..\generated\fonts" "..\..\generated\texts" "..\..\assets\fonts" "..\.."" wurde mit dem Code 3 beendet.

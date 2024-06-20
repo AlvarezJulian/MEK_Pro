@@ -1,0 +1,12 @@
+Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	0	static
+Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	0	static
+Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
+GraphScreenView.cpp:25:6:virtual void GraphScreenView::tearDownScreen()	0	static
+GraphScreenView.hpp:11:10:GraphScreenView::~GraphScreenView()	8	static
+GraphScreenView.hpp:11:10:virtual GraphScreenView::~GraphScreenView()	8	static
+AbstractDataGraph.hpp:627:17:virtual int touchgfx::AbstractDataGraph::getGraphRangeYMinAsInt() const	0	static
+AbstractDataGraph.hpp:659:17:virtual int touchgfx::AbstractDataGraph::getGraphRangeYMaxAsInt() const	0	static
+GraphScreenView.cpp:5:1:GraphScreenView::GraphScreenView()	24	static
+GraphScreenView.cpp:16:6:virtual void GraphScreenView::setupScreen()	8	static
+GraphScreenView.cpp:30:6:void GraphScreenView::updateTemperature(int32_t)	32	static
+GraphScreenView.cpp:58:6:void GraphScreenView::updateHumidity(uint32_t)	24	static

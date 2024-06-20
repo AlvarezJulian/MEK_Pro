@@ -1,0 +1,2 @@
+HardwareTask.c:18:6:hardwareTask	48	static
+HardwareTask.c:85:6:setPWMDuty	0	static
