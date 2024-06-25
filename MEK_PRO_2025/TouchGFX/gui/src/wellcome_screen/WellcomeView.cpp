@@ -13,11 +13,12 @@ void WellcomeView::tearDownScreen() {
 }
 
 #ifndef SIMULATOR
+/*
 void WellcomeView::Slot_ChangeWindow_Received() {
-
 	application().gotoStartScreenSlideTransitionEast();
-
 }
+*/
+
 
 void WellcomeView::Slot_change_Language(uint8_t index) {
 
@@ -34,4 +35,5 @@ void WellcomeView::Slot_change_Language(uint8_t index) {
 
 	WellcomeView::invalidate();
 }
+
 #endif

@@ -14,10 +14,10 @@
 #include <gui/common/FrontendApplication.hpp>
 #include <gui/model/Model.hpp>
 
-#include <gui/start_screen/StartView.hpp>
-#include <gui/start_screen/StartPresenter.hpp>
 #include <gui/wellcome_screen/WellcomeView.hpp>
 #include <gui/wellcome_screen/WellcomePresenter.hpp>
+#include <gui/start_screen/StartView.hpp>
+#include <gui/start_screen/StartPresenter.hpp>
 #include <gui/vehicle_screen/VehicleView.hpp>
 #include <gui/vehicle_screen/VehiclePresenter.hpp>
 #include <gui/vehiclecheck_screen/VehicleCheckView.hpp>
@@ -46,8 +46,8 @@ public:
      * A list of all view types. Must end with meta::Nil.
      * @note All view types used in the application MUST be added to this list!
      */
-    typedef touchgfx::meta::TypeList< StartView,
-            touchgfx::meta::TypeList< WellcomeView,
+    typedef touchgfx::meta::TypeList< WellcomeView,
+            touchgfx::meta::TypeList< StartView,
             touchgfx::meta::TypeList< VehicleView,
             touchgfx::meta::TypeList< VehicleCheckView,
             touchgfx::meta::TypeList< CrashView,
@@ -63,8 +63,8 @@ public:
      * A list of all presenter types. Must end with meta::Nil.
      * @note All presenter types used in the application MUST be added to this list!
      */
-    typedef touchgfx::meta::TypeList< StartPresenter,
-            touchgfx::meta::TypeList< WellcomePresenter,
+    typedef touchgfx::meta::TypeList< WellcomePresenter,
+            touchgfx::meta::TypeList< StartPresenter,
             touchgfx::meta::TypeList< VehiclePresenter,
             touchgfx::meta::TypeList< VehicleCheckPresenter,
             touchgfx::meta::TypeList< CrashPresenter,

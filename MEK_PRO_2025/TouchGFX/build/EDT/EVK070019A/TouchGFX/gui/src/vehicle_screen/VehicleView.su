@@ -7,4 +7,4 @@ VehicleView.hpp:16:10:VehicleView::~VehicleView()	8	static
 VehicleView.hpp:16:10:virtual VehicleView::~VehicleView()	8	static
 VehicleView.cpp:3:1:VehicleView::VehicleView()	8	static
 VehicleView.cpp:7:6:virtual void VehicleView::setupScreen()	0	static
-VehicleView.cpp:25:6:virtual void VehicleView::Slot_change_Language(uint8_t*)	16	static
+VehicleView.cpp:29:6:virtual void VehicleView::Slot_change_Language(uint8_t*)	16	static

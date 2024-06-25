@@ -108,9 +108,9 @@ TouchGFX/build/EDT/EVK070019A/TouchGFX/gui/src/start_screen/StartPresenter.o: \
  Drivers/Vendor/Driver/edt_bsp_ctp.h Drivers/Vendor/Device/Common/ts.h \
  Drivers/Vendor/Device/ctp/ili2511v6.h \
  Drivers/Vendor/Device/ctp/../Common/ts.h \
- Drivers/Vendor/Driver/edt_bsp_can.h Drivers/Vendor/Driver/edt_bsp_spi.h \
- Drivers/Vendor/Driver/edt_bsp_i2c.h Drivers/Vendor/Driver/edt_bsp_io.h \
- Core/Inc/can.h Core/Inc/main.h USB_DEVICE/App/usbd_cdc_if.h \
+ Drivers/Vendor/Driver/edt_bsp_can.h Core/Inc/can.h Core/Inc/main.h \
+ Drivers/Vendor/Driver/edt_bsp_spi.h Drivers/Vendor/Driver/edt_bsp_i2c.h \
+ Drivers/Vendor/Driver/edt_bsp_io.h USB_DEVICE/App/usbd_cdc_if.h \
  Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h \
  Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
  Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h \
@@ -124,18 +124,20 @@ TouchGFX/build/EDT/EVK070019A/TouchGFX/gui/src/start_screen/StartPresenter.o: \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ScalableImage.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
+ TouchGFX/gui/include/gui/containers/BottomMenu.hpp \
+ TouchGFX/generated/gui_generated/include/gui_generated/containers/BottomMenuBase.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp \
  TouchGFX/gui/include/gui/containers/TopMenu.hpp \
  TouchGFX/generated/gui_generated/include/gui_generated/containers/TopMenuBase.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SlideMenu.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp
 
 TouchGFX/gui/include/gui/start_screen/StartView.hpp:
 
@@ -363,15 +365,15 @@ Drivers/Vendor/Device/ctp/../Common/ts.h:
 
 Drivers/Vendor/Driver/edt_bsp_can.h:
 
+Core/Inc/can.h:
+
+Core/Inc/main.h:
+
 Drivers/Vendor/Driver/edt_bsp_spi.h:
 
 Drivers/Vendor/Driver/edt_bsp_i2c.h:
 
 Drivers/Vendor/Driver/edt_bsp_io.h:
-
-Core/Inc/can.h:
-
-Core/Inc/main.h:
 
 USB_DEVICE/App/usbd_cdc_if.h:
 
@@ -401,6 +403,20 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ScalableImage.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
 
+TouchGFX/gui/include/gui/containers/BottomMenu.hpp:
+
+TouchGFX/generated/gui_generated/include/gui_generated/containers/BottomMenuBase.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp:
+
 TouchGFX/gui/include/gui/containers/TopMenu.hpp:
 
 TouchGFX/generated/gui_generated/include/gui_generated/containers/TopMenuBase.hpp:
@@ -414,13 +430,3 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp:
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp:

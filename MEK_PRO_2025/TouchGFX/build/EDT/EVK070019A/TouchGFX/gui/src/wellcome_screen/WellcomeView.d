@@ -108,9 +108,9 @@ TouchGFX/build/EDT/EVK070019A/TouchGFX/gui/src/wellcome_screen/WellcomeView.o: \
  Drivers/Vendor/Driver/edt_bsp_ctp.h Drivers/Vendor/Device/Common/ts.h \
  Drivers/Vendor/Device/ctp/ili2511v6.h \
  Drivers/Vendor/Device/ctp/../Common/ts.h \
- Drivers/Vendor/Driver/edt_bsp_can.h Drivers/Vendor/Driver/edt_bsp_spi.h \
- Drivers/Vendor/Driver/edt_bsp_i2c.h Drivers/Vendor/Driver/edt_bsp_io.h \
- Core/Inc/can.h Core/Inc/main.h USB_DEVICE/App/usbd_cdc_if.h \
+ Drivers/Vendor/Driver/edt_bsp_can.h Core/Inc/can.h Core/Inc/main.h \
+ Drivers/Vendor/Driver/edt_bsp_spi.h Drivers/Vendor/Driver/edt_bsp_i2c.h \
+ Drivers/Vendor/Driver/edt_bsp_io.h USB_DEVICE/App/usbd_cdc_if.h \
  Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h \
  Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
  Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h \
@@ -372,15 +372,15 @@ Drivers/Vendor/Device/ctp/../Common/ts.h:
 
 Drivers/Vendor/Driver/edt_bsp_can.h:
 
+Core/Inc/can.h:
+
+Core/Inc/main.h:
+
 Drivers/Vendor/Driver/edt_bsp_spi.h:
 
 Drivers/Vendor/Driver/edt_bsp_i2c.h:
 
 Drivers/Vendor/Driver/edt_bsp_io.h:
-
-Core/Inc/can.h:
-
-Core/Inc/main.h:
 
 USB_DEVICE/App/usbd_cdc_if.h:
 

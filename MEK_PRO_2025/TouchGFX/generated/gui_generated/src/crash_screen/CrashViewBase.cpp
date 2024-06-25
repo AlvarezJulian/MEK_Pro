@@ -13,7 +13,7 @@ CrashViewBase::CrashViewBase() :
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     add(__background);
 
-    modalWindow1.setBackground(touchgfx::BitmapId(BITMAP_HINTERGRUNG_KONTROLLE_WEISS_400X179_ID), 40, 311);
+    modalWindow1.setBackground(touchgfx::BitmapId(BITMAP_IMAGE_08_ID), 40, 311);
     modalWindow1.setShadeColor(touchgfx::Color::getColorFromRGB(176, 58, 58));
     modalWindow1.setShadeAlpha(150);
     add(modalWindow1);
@@ -50,6 +50,10 @@ void CrashViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
         //ChangeToWellcome
         //When btn_escape clicked change screen to Wellcome
         //Go to Wellcome with screen transition towards East
-        application().gotoWellcomeScreenSlideTransitionEast();
+        application().gotoWellcomeScreenSlideTransitionEast();
+        //changeScreen
+        //When btn_escape clicked change screen to Crash
+        //Go to Crash with screen transition towards East
+        application().gotoCrashScreenSlideTransitionEast();
     }
 }

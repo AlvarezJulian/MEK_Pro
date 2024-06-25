@@ -2,6 +2,7 @@
 #define MODEL_HPP
 
 #include <touchgfx/Utils.hpp>
+#include <touchgfx/Screen.hpp>
 #include <texts/TextKeysAndLanguages.hpp>
 
 #ifndef SIMULATOR
@@ -19,7 +20,22 @@ extern "C" {
 }
 #endif // Simulator
 class ModelListener;
+class FrontendApplication;
 
+enum listOfWindows {
+	WELLCOMEWINDOW = 1,
+	STARTWINDOW,
+	WORKSHOPWINDOW,
+	VEHICLEWINDOW,
+	VEHICLECHECKWINDOW,
+	CHRASHWINDOW,
+};
+
+
+enum listOfLanguages{
+	DEUTSCH = DE+1,
+	ENLGISH
+};
 class Model {
 public:
 	Model();
@@ -28,7 +44,12 @@ public:
 		modelListener = listener;
 	}
 
+	 void bind(FrontendApplication *frontendApp) {
+	 frontendApplication = frontendApp;
+	 }
+
 	void tick();
+//	void forceScreenTransition(listOfWindows list);
 
 #ifndef SIMULATOR
 
@@ -37,13 +58,13 @@ public:
 	void HW_LED_orange_ON();
 	void HW_LED_red_ON();
 //	void Interface_CanSlider_send(int value);
-	void Interface_Can_send(int CAN_ID);
+	void Interface_Can_send(CANBUS_TX_ID CAN_ID);
 
 #endif // Simulator
 
 protected:
 	ModelListener *modelListener;
-
+	FrontendApplication *frontendApplication;
 
 private:
 

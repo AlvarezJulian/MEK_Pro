@@ -1,84 +1,115 @@
 #include <gui/model/Model.hpp>
 #include <gui/model/ModelListener.hpp>
+#include <gui/common/FrontendApplication.hpp>
+#include <texts/TextKeysAndLanguages.hpp>
+#include <touchgfx/Texts.hpp>
+#include <touchgfx/Screen.hpp>
 
-Model::Model() :modelListener(0) {
+Model::Model() :
+		modelListener(0) {
 
 }
 
 void Model::tick() {
 	// Nachricht empfangen
 #ifndef SIMULATOR
+	FrontendApplication *const ui =
+			static_cast<FrontendApplication*>(Application::getInstance());
 
 	if (CanHandleMsg.CAN_HandleDataEn == true) {
 		CanHandleMsg.CAN_HandleDataEn = false;
 
-		switch (RxHeader.StdId) {
-		case CANBUS_DISPLAY_RX_USER_ID:
-			modelListener->Wellcome_ChangeWindow_Received(0);
+		switch (msgType) {
+		case CANBUS_RX_START:
+			break;
+		case CANBUS_RX_IDNR2:
+			break;
+		case CANBUS_RX_IDNR3:
+			break;
+		case CANBUS_RX_IDNR4:
+			break;
+		case CANBUS_RX_IDNR5:
+			break;
+		case CANBUS_RX_IDNR6:
+			break;
+		case CANBUS_RX_IDNR7:
+			break;
+		case CANBUS_RX_IDNR8:
+			break;
+		case CANBUS_RX_IDNR9:
+			break;
+		case CANBUS_RX_IDNR10:
+			break;
+		case CANBUS_RX_IDNR11:
+			break;
+		case CANBUS_RX_IDNR12:
+			break;
+		case CANBUS_RX_IDNR13:
+			break;
+		case CANBUS_RX_IDNR14:
+			break;
+		case CANBUS_RX_IDNR15:
+			break;
+		case CANBUS_RX_USER_ID:
 			modelListener->Start_User_ID_Received(RxData);
 
 			break;
-		case CANBUS_DISPLAY_RX_LOG_IN:
+		case CANBUS_RX_LOG_IN:
 			modelListener->Start_Status_LOGIN_Received();
 			break;
 
-		case CANBUS_DISPLAY_RX_LOG_OUT:
+		case CANBUS_RX_LOG_OUT:
 			modelListener->Start_Status_LOGOUT_Received();
 			break;
 
-		case CANBUS_DISPLAY_RX_LANGUAGE:
+		case CANBUS_RX_LANGUAGE:
 
 			switch (CanHandleMsg.CAN_HandleDataSize) {
-			case 1: // Deuscth
+			case DEUTSCH: // Deuscth
 				if (RxData[0] == DE) {
-					modelListener->Wellcome_Change_Language_Received(DE);
-					modelListener->Start_Change_Language_Received(DE);
+					Texts::setLanguage(DE);
 				}
 				break;
-
-			case 2: // Englisch
-
+			case ENLGISH: // Englisch
 				if (RxData[1] == EN) {
-					modelListener->Wellcome_Change_Language_Received(EN);
-					modelListener->Start_Change_Language_Received(EN);
+					Texts::setLanguage(EN);
 				}
 				break;
-
 			default:
 				break;
 			}
+			ui->invalidate();
 
 			break;
 
-		case CANBUS_DISPLAY_RX_SCREEN:
-			modelListener->Wellcome_ChangeWindow_Received(0);
+		case CANBUS_RX_SCREEN:
+			switch (CanHandleMsg.CAN_HandleDataSize) {
+			case WELLCOMEWINDOW:
+				ui->gotoWellcomeScreenSlideTransitionEast();
+				break;
+			case STARTWINDOW:
+				ui->gotoStartScreenSlideTransitionEast();
+				break;
+			case WORKSHOPWINDOW:
+				ui->gotoVehicleScreenSlideTransitionEast();
+				break;
+			case VEHICLEWINDOW:
+				ui->gotoVehicleScreenSlideTransitionEast();
+				break;
+			case VEHICLECHECKWINDOW:
+				ui->gotoVehicleCheckScreenSlideTransitionEast();
+				break;
+			case CHRASHWINDOW:
+				ui->gotoCrashScreenSlideTransitionEast();
+				break;
+			default:
+				break;
+			} // end switch()
 			break;
-		}
+		default:
+			break;
+		} // end switch()
 
-		/*
-		 switch (msgType) {
-		 case CAN_USER_ID:
-		 modelListener->Interface_User_ID_Received(RxData);
-		 break;
-		 case CAN_STATUS_LOGIN:
-		 if (RxData[0] == 0x01) {
-		 modelListener->Interface_Status_LOGIN_Received();
-		 }
-		 break;
-		 case CAN_STATUS_LOGOUT:
-		 if (RxData[0] == 0x01) {
-		 modelListener->Interface_Status_LOGOUT_Received();
-		 }
-		 break;
-
-		 case CAN_LANGAUGE:
-		 modelListener->Interface_Change_Language_Received(RxData);
-		 break;
-
-		 default:
-		 break;
-		 } // end switch()
-		 */
 	} // end if
 #endif // SIMULATOR
 } // end Model::tick()
@@ -96,30 +127,27 @@ void Model::HW_LED_red_ON() {
 void Model::HW_LED_OFF() {
 	Led_Off();
 }
-//void Model::Interface_CanSlider_send(int value) {
-////	sendCAN(value);
-////	sendCAN(CANBUS_DISPLAY_TX_START, 8, &value);
-//}
-void Model::Interface_Can_send(int CAN_ID) {
+
+void Model::Interface_Can_send(CANBUS_TX_ID MsgTypeRX) {
 	uint8_t data[8];
 
-	switch (CAN_ID) {
-	case CANBUS_DISPLAY_TX_BTN_ACEPT_CONTROL:
+	switch (MsgTypeRX) {
+	case CANBUS_TX_BTN_ACEPT_CONTROL:
 		data[0] = 0x01;
-		CAN_Send(CANBUS_DISPLAY_TX_BTN_ACEPT_CONTROL, 1, data);
+		CAN_Send(CANBUS_TX_BTN_ACEPT_CONTROL, CANBUS_TX_BTN_ACEPT_CONTROL_DLC,
+				data);
 		break;
-	case CANBUS_DISPLAY_TX_BTN_GOOD:
+	case CANBUS_TX_BTN_GOOD:
 		data[0] = 0x01;
-		CAN_Send(CANBUS_DISPLAY_TX_BTN_GOOD, 1, data);
+		CAN_Send(CANBUS_TX_BTN_GOOD, CANBUS_TX_BTN_GOOD_DLC, data);
 		break;
-	case CANBUS_DISPLAY_TX_BTN_OK:
+	case CANBUS_TX_BTN_OK:
 		data[0] = 0x01;
-		CAN_Send(CANBUS_DISPLAY_TX_BTN_OK, 1, data);
+		CAN_Send(CANBUS_TX_BTN_OK, CANBUS_TX_BTN_OK_DLC, data);
 		break;
-	case CANBUS_DISPLAY_TX_BTN_BAD:
+	case CANBUS_TX_BTN_BAD:
 		data[0] = 0x01;
-		CAN_Send(CANBUS_DISPLAY_TX_BTN_BAD, 1, data);
-
+		CAN_Send(CANBUS_TX_BTN_BAD, CANBUS_TX_BTN_BAD_DLC, data);
 		break;
 	default:
 		break;

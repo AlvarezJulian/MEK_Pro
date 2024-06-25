@@ -3,8 +3,6 @@
 
 #include <gui_generated/vehiclecheck_screen/VehicleCheckViewBase.hpp>
 #include <gui/vehiclecheck_screen/VehicleCheckPresenter.hpp>
-//#include <gui/containers/RandomBtns.hpp>
-#include <texts/TextKeysAndLanguages.hpp>
 
 class VehicleCheckView: public VehicleCheckViewBase {
 public:
@@ -25,9 +23,10 @@ public:
 	virtual void btn_Next_Clicked();
 	virtual void btn_Pre_Clicked();
 	virtual void changeLanguage();
-	uint8_t value = 1;
+
 #endif // Simu
 protected:
+//	 CANBUS_TX_ID ID_btnPressed;
 };
 
 #endif // VEHICLECHECKVIEW_HPP

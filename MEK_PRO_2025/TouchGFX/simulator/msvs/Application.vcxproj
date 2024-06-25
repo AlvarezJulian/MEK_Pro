@@ -38,6 +38,8 @@
     <ClCompile Include="..\..\generated\gui_generated\src\crash_screen\CrashViewBase.cpp"/>
     <ClCompile Include="..\..\gui\src\containers\TopMenu.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\containers\TopMenuBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\containers\BottomMenu.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\containers\BottomMenuBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xml"/>
@@ -207,6 +209,8 @@
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\crash_screen\CrashViewBase.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\containers\TopMenu.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\TopMenuBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\containers\BottomMenu.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\BottomMenuBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

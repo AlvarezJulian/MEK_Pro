@@ -9,10 +9,10 @@
 #include <touchgfx/Texts.hpp>
 #include <touchgfx/hal/HAL.hpp>
 #include <platform/driver/lcd/LCD16bpp.hpp>
-#include <gui/start_screen/StartView.hpp>
-#include <gui/start_screen/StartPresenter.hpp>
 #include <gui/wellcome_screen/WellcomeView.hpp>
 #include <gui/wellcome_screen/WellcomePresenter.hpp>
+#include <gui/start_screen/StartView.hpp>
+#include <gui/start_screen/StartPresenter.hpp>
 #include <gui/vehicle_screen/VehicleView.hpp>
 #include <gui/vehicle_screen/VehiclePresenter.hpp>
 #include <gui/vehiclecheck_screen/VehicleCheckView.hpp>
@@ -38,30 +38,6 @@ FrontendApplicationBase::FrontendApplicationBase(Model& m, FrontendHeap& heap)
  * Screen Transition Declarations
  */
 
-// Start
-
-void FrontendApplicationBase::gotoStartScreenSlideTransitionEast()
-{
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoStartScreenSlideTransitionEastImpl);
-    pendingScreenTransitionCallback = &transitionCallback;
-}
-
-void FrontendApplicationBase::gotoStartScreenSlideTransitionEastImpl()
-{
-    touchgfx::makeTransition<StartView, StartPresenter, touchgfx::SlideTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
-}
-
-void FrontendApplicationBase::gotoStartScreenSlideTransitionWest()
-{
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoStartScreenSlideTransitionWestImpl);
-    pendingScreenTransitionCallback = &transitionCallback;
-}
-
-void FrontendApplicationBase::gotoStartScreenSlideTransitionWestImpl()
-{
-    touchgfx::makeTransition<StartView, StartPresenter, touchgfx::SlideTransition<WEST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
-}
-
 // Wellcome
 
 void FrontendApplicationBase::gotoWellcomeScreenNoTransition()
@@ -84,6 +60,30 @@ void FrontendApplicationBase::gotoWellcomeScreenSlideTransitionEast()
 void FrontendApplicationBase::gotoWellcomeScreenSlideTransitionEastImpl()
 {
     touchgfx::makeTransition<WellcomeView, WellcomePresenter, touchgfx::SlideTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// Start
+
+void FrontendApplicationBase::gotoStartScreenSlideTransitionEast()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoStartScreenSlideTransitionEastImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoStartScreenSlideTransitionEastImpl()
+{
+    touchgfx::makeTransition<StartView, StartPresenter, touchgfx::SlideTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+void FrontendApplicationBase::gotoStartScreenSlideTransitionWest()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoStartScreenSlideTransitionWestImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoStartScreenSlideTransitionWestImpl()
+{
+    touchgfx::makeTransition<StartView, StartPresenter, touchgfx::SlideTransition<WEST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
 // Vehicle
@@ -110,4 +110,17 @@ void FrontendApplicationBase::gotoVehicleCheckScreenSlideTransitionEast()
 void FrontendApplicationBase::gotoVehicleCheckScreenSlideTransitionEastImpl()
 {
     touchgfx::makeTransition<VehicleCheckView, VehicleCheckPresenter, touchgfx::SlideTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// Crash
+
+void FrontendApplicationBase::gotoCrashScreenSlideTransitionEast()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoCrashScreenSlideTransitionEastImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoCrashScreenSlideTransitionEastImpl()
+{
+    touchgfx::makeTransition<CrashView, CrashPresenter, touchgfx::SlideTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }

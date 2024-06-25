@@ -7,11 +7,11 @@
   <Texts>
     <TextGroup Id="Status">
       <Text Id="Status_aus" Alignment="Left" TypographyId="MEK_2">
-        <Translation Language="DE" Alignment="Left">Ausgeloggt</Translation>
+        <Translation Language="DE" Alignment="Center">Ausgeloggt</Translation>
         <Translation Language="EN" Alignment="Left">Log Out</Translation>
       </Text>
       <Text Id="Status_ein" Alignment="Left" TypographyId="MEK_2">
-        <Translation Language="DE" Alignment="Left">Eingeloggt</Translation>
+        <Translation Language="DE" Alignment="Center">Eingeloggt</Translation>
         <Translation Language="EN" Alignment="Left">Log In</Translation>
       </Text>
     </TextGroup>
@@ -30,6 +30,18 @@
       </Text>
     </TextGroup>
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_8R30" Alignment="Left" TypographyId="Medium">
+        <Translation Language="DE" Alignment="Center">ID: 12345468</Translation>
+        <Translation Language="EN" Alignment="Left">ID: 12345678</Translation>
+      </Text>
+      <Text Id="__SingleUse_LN6P" Alignment="Left" TypographyId="Medium">
+        <Translation Language="DE">10:10</Translation>
+        <Translation Language="EN">10:10</Translation>
+      </Text>
+      <Text Id="__SingleUse_80UH" Alignment="Left" TypographyId="Medium">
+        <Translation Language="DE">Log Zeit 00:12</Translation>
+        <Translation Language="EN">Log Time 00:10</Translation>
+      </Text>
       <Text Id="__SingleUse_4DD2" Alignment="Center" TypographyId="MEK_2">
         <Translation Language="DE">Please log in</Translation>
         <Translation Language="EN">Please log in</Translation>
@@ -62,17 +74,17 @@
         <Translation Language="DE">Status:</Translation>
         <Translation Language="EN">Status:</Translation>
       </Text>
-      <Text Id="__SingleUse_AB2Q" Alignment="Left" TypographyId="Large">
-        <Translation Language="DE">Benutzer </Translation>
-        <Translation Language="EN">User </Translation>
+      <Text Id="__SingleUse_AB2Q" Alignment="Left" TypographyId="Default">
+        <Translation Language="DE">Benutzer</Translation>
+        <Translation Language="EN">User</Translation>
       </Text>
       <Text Id="__SingleUse_NP9D" Alignment="Center" TypographyId="Default">
         <Translation Language="DE">Abbrechen(wegdenken)</Translation>
-        <Translation Language="EN"></Translation>
+        <Translation Language="EN">esc</Translation>
       </Text>
       <Text Id="__SingleUse_81PO" Alignment="Left" TypographyId="MEK_2">
         <Translation Language="DE">!!</Translation>
-        <Translation Language="EN"></Translation>
+        <Translation Language="EN">!!</Translation>
       </Text>
       <Text Id="__SingleUse_GT5J" Alignment="Left" TypographyId="MEK_2">
         <Translation Language="DE">ELS:</Translation>
@@ -80,11 +92,11 @@
       </Text>
       <Text Id="__SingleUse_ND65" Alignment="Left" TypographyId="Medium">
         <Translation Language="DE">00</Translation>
-        <Translation Language="EN"></Translation>
+        <Translation Language="EN">00</Translation>
       </Text>
       <Text Id="__SingleUse_AU2B" Alignment="Left" TypographyId="MEK_2">
         <Translation Language="DE">0h</Translation>
-        <Translation Language="EN"></Translation>
+        <Translation Language="EN">0h</Translation>
       </Text>
       <Text Id="__SingleUse_C6CN" Alignment="Left" TypographyId="MEK_2">
         <Translation Language="DE">EBZ:</Translation>
@@ -92,7 +104,7 @@
       </Text>
       <Text Id="__SingleUse_XF2H" Alignment="Center" TypographyId="Medium">
         <Translation Language="DE">Werkstattmodus</Translation>
-        <Translation Language="EN"></Translation>
+        <Translation Language="EN">Workshopmodus</Translation>
       </Text>
       <Text Id="__SingleUse_8YE7" Alignment="Center" TypographyId="Default">
         <Translation Language="DE">Zurück zum Startmenü</Translation>
@@ -100,7 +112,7 @@
       </Text>
       <Text Id="__SingleUse_6VQB" Alignment="Center" TypographyId="Medium">
         <Translation Language="DE">CRASH ! &#10;Betrieb &#10;eingeschränkt</Translation>
-        <Translation Language="EN"></Translation>
+        <Translation Language="EN">CRASH !&#10;Operation &#10;restricted</Translation>
       </Text>
       <Text Id="__SingleUse_GYFR" Alignment="Center" TypographyId="Default">
         <Translation Language="DE">OK</Translation>
@@ -112,27 +124,27 @@
       </Text>
       <Text Id="__SingleUse_FN4I" Alignment="Left" TypographyId="Default">
         <Translation Language="DE">5</Translation>
-        <Translation Language="EN"></Translation>
+        <Translation Language="EN">5</Translation>
       </Text>
       <Text Id="__SingleUse_Z3DE" Alignment="Left" TypographyId="Default">
         <Translation Language="DE">1</Translation>
-        <Translation Language="EN"></Translation>
+        <Translation Language="EN">1</Translation>
       </Text>
       <Text Id="__SingleUse_JBEU" Alignment="Center" TypographyId="Medium">
         <Translation Language="DE">Abfahrskontrolle</Translation>
         <Translation Language="EN">departure control</Translation>
       </Text>
       <Text Id="__SingleUse_DSJX" Alignment="Center" TypographyId="Default">
-        <Translation Language="DE">Bitte führen Sie die &#10;Abfahrtskrontrolle durch.</Translation>
-        <Translation Language="EN">Please run the &#10;Departure control.</Translation>
+        <Translation Language="DE">Bitte führen Sie die &#10;Abfahrtskrontrolle durch</Translation>
+        <Translation Language="EN">Please run the &#10;Departure control</Translation>
       </Text>
       <Text Id="__SingleUse_TMQ7" Alignment="Center" TypographyId="MEK_2">
-        <Translation Language="DE"> Bitte einloggen</Translation>
+        <Translation Language="DE">Bitte einloggen</Translation>
         <Translation Language="EN"> Bitte einloggen</Translation>
       </Text>
       <Text Id="__SingleUse_A2NM" Alignment="Left" TypographyId="MEK_1">
         <Translation Language="DE">MEK Pro 2025</Translation>
-        <Translation Language="EN"></Translation>
+        <Translation Language="EN">MEK Pro 2025</Translation>
       </Text>
     </TextGroup>
     <TextGroup Id="Wildcards">
@@ -142,7 +154,7 @@
       </Text>
       <Text Id="__SingleUse_0X1T" Alignment="Center" TypographyId="Default">
         <Translation Language="DE">Hallo &lt;value&gt; !</Translation>
-        <Translation Language="EN">&lt;value&gt;</Translation>
+        <Translation Language="EN">Hello &lt;value&gt; !</Translation>
       </Text>
       <Text Id="__SingleUse_HMWN" Alignment="Center" TypographyId="MEK_2">
         <Translation Language="DE">&lt;value&gt;</Translation>

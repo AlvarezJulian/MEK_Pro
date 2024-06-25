@@ -62,11 +62,11 @@ TouchGFX/build/EDT/EVK070019A/Drivers/Vendor/Board/SE21070/Config/edt_board_conf
  Drivers/Vendor/Driver/edt_bsp_ctp.h Drivers/Vendor/Device/Common/ts.h \
  Drivers/Vendor/Device/ctp/ili2511v6.h \
  Drivers/Vendor/Device/ctp/../Common/ts.h \
- Drivers/Vendor/Driver/edt_bsp_can.h Drivers/Vendor/Driver/edt_bsp_spi.h \
- Drivers/Vendor/Driver/edt_bsp_i2c.h Drivers/Vendor/Driver/edt_bsp_io.h \
- Core/Inc/gpio.h Core/Inc/main.h Core/Inc/crc.h Core/Inc/dma2d.h \
- Core/Inc/fmc.h Core/Inc/ltdc.h Core/Inc/i2c.h Core/Inc/adc.h \
- Core/Inc/tim.h Core/Inc/spi.h Core/Inc/can.h
+ Drivers/Vendor/Driver/edt_bsp_can.h Core/Inc/can.h Core/Inc/main.h \
+ Drivers/Vendor/Driver/edt_bsp_spi.h Drivers/Vendor/Driver/edt_bsp_i2c.h \
+ Drivers/Vendor/Driver/edt_bsp_io.h Core/Inc/gpio.h Core/Inc/crc.h \
+ Core/Inc/dma2d.h Core/Inc/fmc.h Core/Inc/ltdc.h Core/Inc/i2c.h \
+ Core/Inc/adc.h Core/Inc/tim.h Core/Inc/spi.h
 
 Core/Inc/main.h:
 
@@ -202,6 +202,10 @@ Drivers/Vendor/Device/ctp/../Common/ts.h:
 
 Drivers/Vendor/Driver/edt_bsp_can.h:
 
+Core/Inc/can.h:
+
+Core/Inc/main.h:
+
 Drivers/Vendor/Driver/edt_bsp_spi.h:
 
 Drivers/Vendor/Driver/edt_bsp_i2c.h:
@@ -209,8 +213,6 @@ Drivers/Vendor/Driver/edt_bsp_i2c.h:
 Drivers/Vendor/Driver/edt_bsp_io.h:
 
 Core/Inc/gpio.h:
-
-Core/Inc/main.h:
 
 Core/Inc/crc.h:
 
@@ -227,5 +229,3 @@ Core/Inc/adc.h:
 Core/Inc/tim.h:
 
 Core/Inc/spi.h:
-
-Core/Inc/can.h:

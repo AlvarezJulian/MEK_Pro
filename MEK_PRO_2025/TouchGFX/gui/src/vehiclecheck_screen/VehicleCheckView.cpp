@@ -22,15 +22,17 @@ void VehicleCheckView::tearDownScreen() {
 #ifndef SIMULATOR
 
 void VehicleCheckView::btn_Good_Clicked() {
-	presenter->SW_LED_green_ON_Clicked();
-//	presenter->btn_Good_Clicked(CANBUS_DISPLAY_TX_BTN_GOOD);
+	ID_btnPressed = CANBUS_TX_BTN_GOOD;
+	presenter->btn_Good_Clicked(ID_btnPressed);
 }
 
 void VehicleCheckView::btn_Ok_Clicked() {
-	presenter->SW_LED_orange_ON_Clicked();
+	ID_btnPressed = CANBUS_TX_BTN_OK;
+	presenter->btn_Good_Clicked(ID_btnPressed);
 }
 void VehicleCheckView::btn_Bad_Clicked() {
-	presenter->SW_LED_red_ON_Clicked();
+	ID_btnPressed = CANBUS_TX_BTN_BAD;
+	presenter->btn_Good_Clicked(ID_btnPressed);
 }
 
 void VehicleCheckView::btn_Next_Clicked() {
@@ -39,11 +41,9 @@ void VehicleCheckView::btn_Next_Clicked() {
 //touchgfx::Unicode::UnicodeChar data[200] ;
 //data = "Hallo das ist ein Beispieltext. \n Hier ist ihr Text...";
 
-	value++;
-
-	// snprintf = integer
-	Unicode::snprintf(Check_CounBuffer1, CHECK_COUNBUFFER1_SIZE, "%d", value);
-	Check_Coun.invalidate();
+// snprintf = integer
+//	Unicode::snprintf(Check_CounBuffer1, CHECK_COUNBUFFER1_SIZE, "%d", value);
+//	Check_Coun.invalidate();
 //	// strncpy = Text
 //	Unicode::strncpy(question_TextBuffer,
 //			"Hallo das ist ein Beispieltext. \n Hier ist ihr Text...", QUESTION_TEXT_SIZE);
@@ -55,18 +55,15 @@ void VehicleCheckView::btn_Next_Clicked() {
 //	btn_bad.invalidate();
 }
 void VehicleCheckView::btn_Pre_Clicked() {
-	value--;
-	Unicode::snprintf(Check_CounBuffer1, CHECK_COUNBUFFER1_SIZE, "%d", value);
-	Check_Coun.invalidate();
 
 }
 
 void VehicleCheckView::changeLanguage() {
-	int idLanguage = Texts::getLanguage() + 1;
-	if (idLanguage == NUMBER_OF_LANGUAGES) {
-		idLanguage = 0;
-	}
-	Texts::setLanguage(idLanguage);
-	VehicleCheckView::invalidate();
+//	int idLanguage = Texts::getLanguage() + 1;
+//	if (idLanguage == NUMBER_OF_LANGUAGES) {
+//		idLanguage = 0;
+//	}
+//	Texts::setLanguage(idLanguage);
+//	VehicleCheckView::invalidate();
 }
 #endif

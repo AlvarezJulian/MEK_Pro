@@ -5,6 +5,35 @@ TouchGFX/build/EDT/EVK070019A/TouchGFX/gui/src/model/Model.o: \
  Middlewares/ST/touchgfx/framework/include/touchgfx/Bitmap.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Config.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/Container.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/events/ClickEvent.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/Event.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/events/DragEvent.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/events/GestureEvent.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/hal/HAL.hpp \
+ Middlewares/ST/touchgfx/framework/include/platform/core/MCUInstrumentation.hpp \
+ Middlewares/ST/touchgfx/framework/include/platform/driver/button/ButtonController.hpp \
+ Middlewares/ST/touchgfx/framework/include/platform/driver/touch/TouchController.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/hal/BlitOp.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/hal/DMA.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Atomic.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/hal/FrameBufferAllocator.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Gestures.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/UIEventListener.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/Font.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/Unicode.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/TextProvider.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/TextureMapTypes.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VectorFontRenderer.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VectorRenderer.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/Matrix3x3.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VGData.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/DebugPrinter.hpp \
  TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp \
  Drivers/Vendor/Driver/edt_bsp_uart.h Core/Inc/main.h \
  Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h \
@@ -69,9 +98,9 @@ TouchGFX/build/EDT/EVK070019A/TouchGFX/gui/src/model/Model.o: \
  Drivers/Vendor/Driver/edt_bsp_ctp.h Drivers/Vendor/Device/Common/ts.h \
  Drivers/Vendor/Device/ctp/ili2511v6.h \
  Drivers/Vendor/Device/ctp/../Common/ts.h \
- Drivers/Vendor/Driver/edt_bsp_can.h Drivers/Vendor/Driver/edt_bsp_spi.h \
- Drivers/Vendor/Driver/edt_bsp_i2c.h Drivers/Vendor/Driver/edt_bsp_io.h \
- Core/Inc/can.h Core/Inc/main.h USB_DEVICE/App/usbd_cdc_if.h \
+ Drivers/Vendor/Driver/edt_bsp_can.h Core/Inc/can.h Core/Inc/main.h \
+ Drivers/Vendor/Driver/edt_bsp_spi.h Drivers/Vendor/Driver/edt_bsp_i2c.h \
+ Drivers/Vendor/Driver/edt_bsp_io.h USB_DEVICE/App/usbd_cdc_if.h \
  Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h \
  Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
  Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h \
@@ -79,7 +108,16 @@ TouchGFX/build/EDT/EVK070019A/TouchGFX/gui/src/model/Model.o: \
  Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h \
  Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
  Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h \
- TouchGFX/gui/include/gui/model/ModelListener.hpp
+ TouchGFX/gui/include/gui/model/ModelListener.hpp \
+ TouchGFX/gui/include/gui/common/FrontendApplication.hpp \
+ TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp \
+ Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp \
+ Middlewares/ST/touchgfx/framework/include/common/AbstractPartition.hpp \
+ Middlewares/ST/touchgfx/framework/include/mvp/MVPHeap.hpp \
+ Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/Application.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/Transition.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp
 
 TouchGFX/gui/include/gui/model/Model.hpp:
 
@@ -90,6 +128,64 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/Bitmap.hpp:
 Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Config.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/Container.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/events/ClickEvent.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/Event.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/events/DragEvent.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/events/GestureEvent.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/hal/HAL.hpp:
+
+Middlewares/ST/touchgfx/framework/include/platform/core/MCUInstrumentation.hpp:
+
+Middlewares/ST/touchgfx/framework/include/platform/driver/button/ButtonController.hpp:
+
+Middlewares/ST/touchgfx/framework/include/platform/driver/touch/TouchController.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/hal/BlitOp.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/hal/DMA.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Atomic.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/hal/FrameBufferAllocator.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Gestures.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/UIEventListener.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/Font.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/Unicode.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/TextProvider.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/TextureMapTypes.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VectorFontRenderer.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VectorRenderer.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/Matrix3x3.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VGData.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/DebugPrinter.hpp:
 
 TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp:
 
@@ -229,15 +325,15 @@ Drivers/Vendor/Device/ctp/../Common/ts.h:
 
 Drivers/Vendor/Driver/edt_bsp_can.h:
 
+Core/Inc/can.h:
+
+Core/Inc/main.h:
+
 Drivers/Vendor/Driver/edt_bsp_spi.h:
 
 Drivers/Vendor/Driver/edt_bsp_i2c.h:
 
 Drivers/Vendor/Driver/edt_bsp_io.h:
-
-Core/Inc/can.h:
-
-Core/Inc/main.h:
 
 USB_DEVICE/App/usbd_cdc_if.h:
 
@@ -256,3 +352,21 @@ Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:
 Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:
 
 TouchGFX/gui/include/gui/model/ModelListener.hpp:
+
+TouchGFX/gui/include/gui/common/FrontendApplication.hpp:
+
+TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp:
+
+Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp:
+
+Middlewares/ST/touchgfx/framework/include/common/AbstractPartition.hpp:
+
+Middlewares/ST/touchgfx/framework/include/mvp/MVPHeap.hpp:
+
+Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/Application.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/Transition.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp:

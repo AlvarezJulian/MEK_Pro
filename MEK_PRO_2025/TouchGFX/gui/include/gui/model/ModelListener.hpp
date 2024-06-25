@@ -2,8 +2,6 @@
 #define MODELLISTENER_HPP
 
 #include <gui/model/Model.hpp>
-//#include <gui/common/FrontendApplication.hpp>
-//#include <touchgfx/Texts.hpp>
 
 class ModelListener {
 public:
@@ -50,9 +48,7 @@ public:
 	}
 protected:
 	Model *model;
-//	FrontendApplication& application() {
-//		return *static_cast<FrontendApplication*>(touchgfx::Application::getInstance());
-//	}
+
 };
 
 #endif // MODELLISTENER_HPP

@@ -25,7 +25,7 @@ public:
      */
     virtual void deactivate();
 #ifndef SIMULATOR
-	virtual void btn_AceptControl_clicked(int CAN_ID);
+	virtual void btn_AceptControl_clicked(CANBUS_TX_ID CAN_ID);
 	virtual void btn_backToMenu_clicked();
 	virtual void Can_Send(int CAN_ID);
 	virtual void Signal_Change_Language_Received(uint8_t *data);

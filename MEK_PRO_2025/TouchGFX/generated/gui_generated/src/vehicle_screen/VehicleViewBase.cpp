@@ -38,25 +38,27 @@ VehicleViewBase::VehicleViewBase() :
     btn_backToMainMenu.setAction(buttonCallback);
     add(btn_backToMainMenu);
 
-    text_Hinweis.setXY(114, 240);
+    text_Hinweis.setPosition(117, 246, 246, 48);
     text_Hinweis.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     text_Hinweis.setLinespacing(0);
     text_Hinweis.setTypedText(touchgfx::TypedText(T___SINGLEUSE_DSJX));
     text_Hinweis.setAlpha(195);
     add(text_Hinweis);
 
-    User_ID.setXY(170, 186);
+    User_ID.setPosition(159, 190, 163, 24);
     User_ID.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     User_ID.setLinespacing(0);
     Unicode::snprintf(User_IDBuffer, USER_ID_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_AB2Q).getText());
     User_ID.setWildcard(User_IDBuffer);
-    User_ID.resizeToCurrentText();
     User_ID.setTypedText(touchgfx::TypedText(T___SINGLEUSE_0X1T));
     User_ID.setAlpha(195);
     add(User_ID);
 
     topMenu.setXY(0, 0);
     add(topMenu);
+
+    bottomMenu1.setXY(0, 743);
+    add(bottomMenu1);
 }
 
 VehicleViewBase::~VehicleViewBase()
@@ -67,6 +69,7 @@ VehicleViewBase::~VehicleViewBase()
 void VehicleViewBase::setupScreen()
 {
     topMenu.initialize();
+    bottomMenu1.initialize();
 }
 
 void VehicleViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)

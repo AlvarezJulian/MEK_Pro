@@ -14,6 +14,7 @@
 #include <touchgfx/widgets/TextArea.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <gui/containers/TopMenu.hpp>
+#include <gui/containers/BottomMenu.hpp>
 
 class VehicleViewBase : public touchgfx::View<VehiclePresenter>
 {
@@ -50,6 +51,7 @@ protected:
     touchgfx::TextArea text_Hinweis;
     touchgfx::TextAreaWithOneWildcard User_ID;
     TopMenu topMenu;
+    BottomMenu bottomMenu1;
 
     /*
      * Wildcard Buffers

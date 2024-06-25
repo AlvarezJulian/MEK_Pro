@@ -18,7 +18,7 @@ VehicleCheckViewBase::VehicleCheckViewBase() :
     background_blueWhite.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
     add(background_blueWhite);
 
-    Background_question.setBitmap(touchgfx::Bitmap(BITMAP_HINTERGRUNG_KONTROLLE_WEISS_400X179_ID));
+    Background_question.setBitmap(touchgfx::Bitmap(BITMAP_IMAGE_08_ID));
     Background_question.setPosition(40, 154, 400, 145);
     Background_question.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
     add(Background_question);
@@ -38,7 +38,7 @@ VehicleCheckViewBase::VehicleCheckViewBase() :
     btn_bad.setAction(buttonCallback);
     add(btn_bad);
 
-    btn_ok.setXY(90, 465);
+    btn_ok.setXY(90, 464);
     btn_ok.setBitmaps(touchgfx::Bitmap(BITMAP_BUTTON_10_ID), touchgfx::Bitmap(BITMAP_BUTTON_10_PRESSED_ID));
     btn_ok.setLabelText(touchgfx::TypedText(T___SINGLEUSE_ZVD9));
     btn_ok.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
@@ -54,7 +54,7 @@ VehicleCheckViewBase::VehicleCheckViewBase() :
     btn_good.setAction(buttonCallback);
     add(btn_good);
 
-    Check_Coun.setPosition(155, 745, 170, 29);
+    Check_Coun.setPosition(155, 683, 170, 29);
     Check_Coun.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     Check_Coun.setLinespacing(0);
     touchgfx::Unicode::snprintf(Check_CounBuffer1, CHECK_COUNBUFFER1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_Z3DE).getText());
@@ -64,12 +64,12 @@ VehicleCheckViewBase::VehicleCheckViewBase() :
     Check_Coun.setTypedText(touchgfx::TypedText(T___SINGLEUSE_N3WC));
     add(Check_Coun);
 
-    btnNext.setXY(390, 728);
+    btnNext.setXY(390, 666);
     btnNext.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_07_ID), touchgfx::Bitmap(BITMAP_ICON_07_ID));
     btnNext.setAction(buttonCallback);
     add(btnNext);
 
-    btnPrevius.setXY(40, 728);
+    btnPrevius.setXY(40, 666);
     btnPrevius.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_06_ID), touchgfx::Bitmap(BITMAP_ICON_06_ID));
     btnPrevius.setAction(buttonCallback);
     add(btnPrevius);
@@ -82,6 +82,9 @@ VehicleCheckViewBase::VehicleCheckViewBase() :
 
     topMenu.setXY(0, 0);
     add(topMenu);
+
+    bottomMenu1.setXY(0, 743);
+    add(bottomMenu1);
 }
 
 VehicleCheckViewBase::~VehicleCheckViewBase()
@@ -92,6 +95,7 @@ VehicleCheckViewBase::~VehicleCheckViewBase()
 void VehicleCheckViewBase::setupScreen()
 {
     topMenu.initialize();
+    bottomMenu1.initialize();
 }
 
 void VehicleCheckViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)

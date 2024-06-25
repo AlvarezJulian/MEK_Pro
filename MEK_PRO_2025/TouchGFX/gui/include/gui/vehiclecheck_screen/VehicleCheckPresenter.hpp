@@ -29,9 +29,9 @@ public:
 #ifndef SIMULATOR
 
 
-	virtual void btn_Good_Clicked(int CAN_ID);
-	virtual void btn_Ok_Clicked(int CAN_ID);
-	virtual void btn_Bad_Clicked(int CAN_ID);
+	virtual void btn_Good_Clicked(CANBUS_TX_ID CAN_ID);
+	virtual void btn_Ok_Clicked(CANBUS_TX_ID CAN_ID);
+	virtual void btn_Bad_Clicked(CANBUS_TX_ID CAN_ID);
 	virtual void SW_LED_green_ON_Clicked();
 	virtual void SW_LED_orange_ON_Clicked();
 	virtual void SW_LED_red_ON_Clicked();

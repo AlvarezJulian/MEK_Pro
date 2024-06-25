@@ -13,16 +13,18 @@ Drawable.hpp:588:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	4	
 Drawable.hpp:703:18:virtual void touchgfx::Drawable::setupDrawChain(const touchgfx::Rect&, touchgfx::Drawable**)	0	static
 Widget.hpp:45:18:virtual void touchgfx::Widget::getLastChild(int16_t, int16_t, touchgfx::Drawable**)	0	static
 Container.hpp:165:23:virtual touchgfx::Drawable* touchgfx::Container::getFirstChild()	0	static
-TopMenuBase.cpp:83:6:virtual void TopMenuBase::initialize()	0	static
+TypedText.hpp:65:13:touchgfx::TypedText::~TypedText()	0	static
+TopMenuBase.cpp:131:6:virtual void TopMenuBase::initialize()	0	static
 Callback.hpp:357:8:touchgfx::Callback<TopMenuBase, const touchgfx::AbstractButton&>::~Callback()	0	static
 Callback.hpp:386:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = TopMenuBase; T1 = const touchgfx::AbstractButton&]	8	static
 Callback.hpp:396:18:bool touchgfx::Callback<dest_type, T1, void, void>::isValid() const [with dest_type = TopMenuBase; T1 = const touchgfx::AbstractButton&]	0	static
+TypedText.hpp:65:13:virtual touchgfx::TypedText::~TypedText()	8	static
 Callback.hpp:357:8:virtual touchgfx::Callback<TopMenuBase, const touchgfx::AbstractButton&>::~Callback()	8	static
 Drawable.hpp:48:5:touchgfx::Drawable::Drawable()	0	static
 Drawable.hpp:343:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
 Image.hpp:50:5:touchgfx::Image::Image(const touchgfx::Bitmap&)	16	static
 Button.hpp:34:5:touchgfx::Button::Button()	8	static
-TopMenuBase.cpp:7:1:TopMenuBase::TopMenuBase()	88	static
-TopMenuBase.cpp:78:1:TopMenuBase::~TopMenuBase()	8	static
-TopMenuBase.cpp:78:1:virtual TopMenuBase::~TopMenuBase()	8	static
-TopMenuBase.cpp:88:6:void TopMenuBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	16	static
+TopMenuBase.cpp:9:1:TopMenuBase::TopMenuBase()	152	static
+TopMenuBase.cpp:126:1:TopMenuBase::~TopMenuBase()	8	static
+TopMenuBase.cpp:126:1:virtual TopMenuBase::~TopMenuBase()	8	static
+TopMenuBase.cpp:136:6:void TopMenuBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	16	static

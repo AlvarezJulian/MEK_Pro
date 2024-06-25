@@ -51,28 +51,17 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/common/FrontendApplicationBase.
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/SnapshotWidget.hpp \
  gui/include/gui/common/FrontendApplication.hpp \
- gui/include/gui/start_screen/StartView.hpp \
- generated/gui_generated/include/gui_generated/start_screen/StartViewBase.hpp \
+ gui/include/gui/wellcome_screen/WellcomeView.hpp \
+ generated/gui_generated/include/gui_generated/wellcome_screen/WellcomeViewBase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp \
- gui/include/gui/start_screen/StartPresenter.hpp \
+ gui/include/gui/wellcome_screen/WellcomePresenter.hpp \
  gui/include/gui/model/ModelListener.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ScalableImage.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
- gui/include/gui/containers/TopMenu.hpp \
- generated/gui_generated/include/gui_generated/containers/TopMenuBase.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SlideMenu.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp \
- gui/include/gui/wellcome_screen/WellcomeView.hpp \
- generated/gui_generated/include/gui_generated/wellcome_screen/WellcomeViewBase.hpp \
- gui/include/gui/wellcome_screen/WellcomePresenter.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/Buttons.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/AnimatedImageButtonStyle.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/AbstractButtonContainer.hpp \
@@ -89,7 +78,20 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/common/FrontendApplicationBase.
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/ToggleButtonTrigger.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/TouchButtonTrigger.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/WildcardTextButtonStyle.hpp \
+ gui/include/gui/start_screen/StartView.hpp \
+ generated/gui_generated/include/gui_generated/start_screen/StartViewBase.hpp \
+ gui/include/gui/start_screen/StartPresenter.hpp \
+ gui/include/gui/containers/BottomMenu.hpp \
+ generated/gui_generated/include/gui_generated/containers/BottomMenuBase.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp \
+ gui/include/gui/containers/TopMenu.hpp \
+ generated/gui_generated/include/gui_generated/containers/TopMenuBase.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SlideMenu.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
  gui/include/gui/vehicle_screen/VehicleView.hpp \
  generated/gui_generated/include/gui_generated/vehicle_screen/VehicleViewBase.hpp \
  gui/include/gui/vehicle_screen/VehiclePresenter.hpp \
@@ -205,13 +207,13 @@ generated/gui_generated/include/gui_generated/common/FrontendHeapBase.hpp:
 
 gui/include/gui/common/FrontendApplication.hpp:
 
-gui/include/gui/start_screen/StartView.hpp:
+gui/include/gui/wellcome_screen/WellcomeView.hpp:
 
-generated/gui_generated/include/gui_generated/start_screen/StartViewBase.hpp:
+generated/gui_generated/include/gui_generated/wellcome_screen/WellcomeViewBase.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:
 
-gui/include/gui/start_screen/StartPresenter.hpp:
+gui/include/gui/wellcome_screen/WellcomePresenter.hpp:
 
 gui/include/gui/model/ModelListener.hpp:
 
@@ -221,33 +223,11 @@ gui/include/gui/model/ModelListener.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
 
-gui/include/gui/containers/TopMenu.hpp:
-
-generated/gui_generated/include/gui_generated/containers/TopMenuBase.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SlideMenu.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
-
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp:
-
-gui/include/gui/wellcome_screen/WellcomeView.hpp:
-
-generated/gui_generated/include/gui_generated/wellcome_screen/WellcomeViewBase.hpp:
-
-gui/include/gui/wellcome_screen/WellcomePresenter.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/Buttons.hpp:
 
@@ -281,7 +261,33 @@ gui/include/gui/wellcome_screen/WellcomePresenter.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp:
 
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
+
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/WildcardTextButtonStyle.hpp:
+
+gui/include/gui/start_screen/StartView.hpp:
+
+generated/gui_generated/include/gui_generated/start_screen/StartViewBase.hpp:
+
+gui/include/gui/start_screen/StartPresenter.hpp:
+
+gui/include/gui/containers/BottomMenu.hpp:
+
+generated/gui_generated/include/gui_generated/containers/BottomMenuBase.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp:
+
+gui/include/gui/containers/TopMenu.hpp:
+
+generated/gui_generated/include/gui_generated/containers/TopMenuBase.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SlideMenu.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
 
 gui/include/gui/vehicle_screen/VehicleView.hpp:
 

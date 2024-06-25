@@ -62,7 +62,9 @@ build/MINGW32_NT-6.2/gui/src/vehiclecheck_screen/VehicleCheckPresenter.o: \
  generated/gui_generated/include/gui_generated/containers/TopMenuBase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SlideMenu.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp \
+ gui/include/gui/containers/BottomMenu.hpp \
+ generated/gui_generated/include/gui_generated/containers/BottomMenuBase.hpp
 
 gui/include/gui/vehiclecheck_screen/VehicleCheckView.hpp:
 
@@ -189,3 +191,7 @@ generated/gui_generated/include/gui_generated/containers/TopMenuBase.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp:
+
+gui/include/gui/containers/BottomMenu.hpp:
+
+generated/gui_generated/include/gui_generated/containers/BottomMenuBase.hpp:

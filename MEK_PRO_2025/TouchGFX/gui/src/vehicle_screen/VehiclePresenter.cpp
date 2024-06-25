@@ -14,7 +14,7 @@ void VehiclePresenter::deactivate() {
 
 }
 #ifndef SIMULATOR
-void VehiclePresenter::btn_AceptControl_clicked(int CAN_ID){
+void VehiclePresenter::btn_AceptControl_clicked(CANBUS_TX_ID CAN_ID){
 	model->Interface_Can_send(CAN_ID);
 }
 

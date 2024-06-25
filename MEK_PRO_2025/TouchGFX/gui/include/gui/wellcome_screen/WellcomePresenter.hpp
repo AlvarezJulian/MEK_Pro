@@ -24,8 +24,8 @@ public:
 	 */
 	virtual void deactivate();
 #ifndef SIMULATOR
-	virtual void Wellcome_ChangeWindow_Received(uint8_t index);
-	virtual void Wellcome_Change_Language_Received(uint8_t index);
+//	virtual void Wellcome_ChangeWindow_Received(uint8_t index);
+//	virtual void Wellcome_Change_Language_Received(uint8_t index);
 
 #endif
 	virtual ~WellcomePresenter() {

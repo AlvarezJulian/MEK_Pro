@@ -20,15 +20,15 @@ public:
         gotoWellcomeScreenNoTransition();
     }
 
-    // Start
-    void gotoStartScreenSlideTransitionEast();
-
-    void gotoStartScreenSlideTransitionWest();
-
     // Wellcome
     void gotoWellcomeScreenNoTransition();
 
     void gotoWellcomeScreenSlideTransitionEast();
+
+    // Start
+    void gotoStartScreenSlideTransitionEast();
+
+    void gotoStartScreenSlideTransitionWest();
 
     // Vehicle
     void gotoVehicleScreenSlideTransitionEast();
@@ -36,26 +36,32 @@ public:
     // VehicleCheck
     void gotoVehicleCheckScreenSlideTransitionEast();
 
+    // Crash
+    void gotoCrashScreenSlideTransitionEast();
+
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
     FrontendHeap& frontendHeap;
     Model& model;
-
-    // Start
-    void gotoStartScreenSlideTransitionEastImpl();
-
-    void gotoStartScreenSlideTransitionWestImpl();
 
     // Wellcome
     void gotoWellcomeScreenNoTransitionImpl();
 
     void gotoWellcomeScreenSlideTransitionEastImpl();
 
+    // Start
+    void gotoStartScreenSlideTransitionEastImpl();
+
+    void gotoStartScreenSlideTransitionWestImpl();
+
     // Vehicle
     void gotoVehicleScreenSlideTransitionEastImpl();
 
     // VehicleCheck
     void gotoVehicleCheckScreenSlideTransitionEastImpl();
+
+    // Crash
+    void gotoCrashScreenSlideTransitionEastImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

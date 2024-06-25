@@ -44,6 +44,7 @@
    
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"  
+#include "can.h"
 #include <stdbool.h>
    
 typedef struct{

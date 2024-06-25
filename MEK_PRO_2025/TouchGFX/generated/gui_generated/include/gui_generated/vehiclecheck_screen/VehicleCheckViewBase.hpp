@@ -14,6 +14,7 @@
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/widgets/Button.hpp>
 #include <gui/containers/TopMenu.hpp>
+#include <gui/containers/BottomMenu.hpp>
 
 class VehicleCheckViewBase : public touchgfx::View<VehicleCheckPresenter>
 {
@@ -66,6 +67,7 @@ protected:
     touchgfx::Button btnPrevius;
     touchgfx::TextArea text_Abfahrskontrolle;
     TopMenu topMenu;
+    BottomMenu bottomMenu1;
 
     /*
      * Wildcard Buffers

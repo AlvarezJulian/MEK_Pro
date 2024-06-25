@@ -63,8 +63,9 @@ TouchGFX/build/EDT/EVK070019A/Drivers/Vendor/Driver/edt_bsp_uart.o: \
  Drivers/Vendor/Driver/edt_bsp_ctp.h Drivers/Vendor/Device/Common/ts.h \
  Drivers/Vendor/Device/ctp/ili2511v6.h \
  Drivers/Vendor/Device/ctp/../Common/ts.h \
- Drivers/Vendor/Driver/edt_bsp_can.h Drivers/Vendor/Driver/edt_bsp_spi.h \
- Drivers/Vendor/Driver/edt_bsp_i2c.h Drivers/Vendor/Driver/edt_bsp_io.h
+ Drivers/Vendor/Driver/edt_bsp_can.h Core/Inc/can.h Core/Inc/main.h \
+ Drivers/Vendor/Driver/edt_bsp_spi.h Drivers/Vendor/Driver/edt_bsp_i2c.h \
+ Drivers/Vendor/Driver/edt_bsp_io.h
 
 Drivers/Vendor/Driver/edt_bsp_uart.h:
 
@@ -201,6 +202,10 @@ Drivers/Vendor/Device/ctp/ili2511v6.h:
 Drivers/Vendor/Device/ctp/../Common/ts.h:
 
 Drivers/Vendor/Driver/edt_bsp_can.h:
+
+Core/Inc/can.h:
+
+Core/Inc/main.h:
 
 Drivers/Vendor/Driver/edt_bsp_spi.h:
 

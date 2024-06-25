@@ -62,6 +62,8 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/vehiclecheck_screen/VehicleChec
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SlideMenu.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp \
+ gui/include/gui/containers/BottomMenu.hpp \
+ generated/gui_generated/include/gui_generated/containers/BottomMenuBase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp \
  generated/images/include/images/BitmapDatabase.hpp
 
@@ -188,6 +190,10 @@ generated/gui_generated/include/gui_generated/containers/TopMenuBase.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp:
+
+gui/include/gui/containers/BottomMenu.hpp:
+
+generated/gui_generated/include/gui_generated/containers/BottomMenuBase.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp:
 

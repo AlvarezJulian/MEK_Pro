@@ -17,15 +17,15 @@ StartViewBase::StartViewBase()
     background_BlueLogo.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
     add(background_BlueLogo);
 
+    bottomMenu.setXY(0, 743);
+    add(bottomMenu);
+
     scalableImage1.setBitmap(touchgfx::Bitmap(BITMAP_IMAGE_06_ID));
-    scalableImage1.setPosition(36, 104, 394, 80);
+    scalableImage1.setPosition(36, 104, 379, 80);
     scalableImage1.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
     add(scalableImage1);
 
-    topMenu.setXY(0, 0);
-    add(topMenu);
-
-    User_ID_Start.setPosition(115, 115, 315, 56);
+    User_ID_Start.setPosition(103, 115, 298, 56);
     User_ID_Start.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     User_ID_Start.setLinespacing(0);
     User_ID_StartBuffer[0] = 0;
@@ -40,13 +40,13 @@ StartViewBase::StartViewBase()
     text_ID.setTypedText(touchgfx::TypedText(T___SINGLEUSE_PPAU));
     add(text_ID);
 
-    logInOut_Status.setPosition(199, 278, 231, 56);
+    logInOut_Status.setPosition(183, 278, 247, 56);
     logInOut_Status.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     logInOut_Status.setLinespacing(0);
     logInOut_Status.setTypedText(touchgfx::TypedText(T_STATUS_AUS));
     add(logInOut_Status);
 
-    EZB_time.setPosition(89, 615, 173, 57);
+    EZB_time.setPosition(199, 361, 173, 57);
     EZB_time.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     EZB_time.setLinespacing(0);
     touchgfx::Unicode::snprintf(EZB_timeBuffer1, EZB_TIMEBUFFER1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_AU2B).getText());
@@ -56,7 +56,7 @@ StartViewBase::StartViewBase()
     EZB_time.setTypedText(touchgfx::TypedText(T___SINGLEUSE_4Q6T));
     add(EZB_time);
 
-    ELS_value.setPosition(341, 616, 139, 56);
+    ELS_value.setPosition(193, 449, 139, 56);
     ELS_value.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     ELS_value.setLinespacing(0);
     Unicode::snprintf(ELS_valueBuffer, ELS_VALUE_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_81PO).getText());
@@ -70,13 +70,13 @@ StartViewBase::StartViewBase()
     text_Status.setTypedText(touchgfx::TypedText(T___SINGLEUSE_399X));
     add(text_Status);
 
-    text_EZB.setXY(4, 616);
+    text_EZB.setXY(36, 361);
     text_EZB.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     text_EZB.setLinespacing(0);
     text_EZB.setTypedText(touchgfx::TypedText(T___SINGLEUSE_C6CN));
     add(text_EZB);
 
-    tex_ELS.setXY(262, 616);
+    tex_ELS.setXY(39, 447);
     tex_ELS.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     tex_ELS.setLinespacing(0);
     tex_ELS.setTypedText(touchgfx::TypedText(T___SINGLEUSE_GT5J));
@@ -88,7 +88,7 @@ StartViewBase::StartViewBase()
     text_Startmenue.setTypedText(touchgfx::TypedText(T___SINGLEUSE_KP4Q));
     add(text_Startmenue);
 
-    Workshop_status.setBackground(touchgfx::BitmapId(BITMAP_HINTERGRUNG_KONTROLLE_WEISS_400X179_ID), 40, 311);
+    Workshop_status.setBackground(touchgfx::BitmapId(BITMAP_IMAGE_08_ID), 40, 311);
     Workshop_status.setShadeColor(touchgfx::Color::getColorFromRGB(199, 196, 26));
     Workshop_status.setShadeAlpha(150);
     Workshop_status.hide();
@@ -99,6 +99,32 @@ StartViewBase::StartViewBase()
     Workshop_status.add(text_Hinweis);
 
     add(Workshop_status);
+
+    topMenu.setXY(0, 0);
+    add(topMenu);
+
+    Led_grey.setXY(360, 120);
+    Led_grey.setBitmap(touchgfx::Bitmap(BITMAP_ICON_15_ID));
+    Led_grey.setVisible(false);
+    add(Led_grey);
+
+    Led_1.setXY(424, 118);
+    Led_1.setBitmap(touchgfx::Bitmap(BITMAP_ICON_11_ID));
+    add(Led_1);
+
+    Led_green.setXY(360, 120);
+    Led_green.setBitmap(touchgfx::Bitmap(BITMAP_ICON_13_ID));
+    add(Led_green);
+
+    Led_red.setXY(360, 120);
+    Led_red.setBitmap(touchgfx::Bitmap(BITMAP_ICON_12_ID));
+    Led_red.setVisible(false);
+    add(Led_red);
+
+    Led_orange.setXY(360, 120);
+    Led_orange.setBitmap(touchgfx::Bitmap(BITMAP_ICON_14_ID));
+    Led_orange.setVisible(false);
+    add(Led_orange);
 }
 
 StartViewBase::~StartViewBase()
@@ -108,5 +134,6 @@ StartViewBase::~StartViewBase()
 
 void StartViewBase::setupScreen()
 {
+    bottomMenu.initialize();
     topMenu.initialize();
 }

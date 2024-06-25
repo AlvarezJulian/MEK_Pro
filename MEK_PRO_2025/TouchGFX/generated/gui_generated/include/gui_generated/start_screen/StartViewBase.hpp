@@ -9,10 +9,12 @@
 #include <gui/start_screen/StartPresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/ScalableImage.hpp>
-#include <gui/containers/TopMenu.hpp>
+#include <gui/containers/BottomMenu.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
 #include <touchgfx/containers/ModalWindow.hpp>
+#include <gui/containers/TopMenu.hpp>
+#include <touchgfx/widgets/Image.hpp>
 
 class StartViewBase : public touchgfx::View<StartPresenter>
 {
@@ -31,8 +33,8 @@ protected:
      */
     touchgfx::Box __background;
     touchgfx::ScalableImage background_BlueLogo;
+    BottomMenu bottomMenu;
     touchgfx::ScalableImage scalableImage1;
-    TopMenu topMenu;
     touchgfx::TextAreaWithOneWildcard User_ID_Start;
     touchgfx::TextArea text_ID;
     touchgfx::TextArea logInOut_Status;
@@ -44,6 +46,12 @@ protected:
     touchgfx::TextArea text_Startmenue;
     touchgfx::ModalWindow Workshop_status;
     touchgfx::TextArea text_Hinweis;
+    TopMenu topMenu;
+    touchgfx::Image Led_grey;
+    touchgfx::Image Led_1;
+    touchgfx::Image Led_green;
+    touchgfx::Image Led_red;
+    touchgfx::Image Led_orange;
 
     /*
      * Wildcard Buffers

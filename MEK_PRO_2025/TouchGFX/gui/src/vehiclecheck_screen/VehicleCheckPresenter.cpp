@@ -15,14 +15,14 @@ void VehicleCheckPresenter::deactivate() {
 }
 #ifndef SIMULATOR
 
-void VehicleCheckPresenter::btn_Good_Clicked(int CAN_ID) {
+void VehicleCheckPresenter::btn_Good_Clicked(CANBUS_TX_ID CAN_ID) {
 	model->Interface_Can_send(CAN_ID);
 }
-void VehicleCheckPresenter::btn_Ok_Clicked(int CAN_ID) {
-
+void VehicleCheckPresenter::btn_Ok_Clicked(CANBUS_TX_ID CAN_ID) {
+	model->Interface_Can_send(CAN_ID);
 }
-void VehicleCheckPresenter::btn_Bad_Clicked(int CAN_ID) {
-
+void VehicleCheckPresenter::btn_Bad_Clicked(CANBUS_TX_ID CAN_ID) {
+	model->Interface_Can_send(CAN_ID);
 }
 
 void VehicleCheckPresenter::SW_LED_green_ON_Clicked() {

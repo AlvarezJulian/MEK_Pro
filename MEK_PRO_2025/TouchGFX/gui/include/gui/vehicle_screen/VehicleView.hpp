@@ -33,8 +33,9 @@ public:
 
     virtual void Slot_change_Language(uint8_t *data);
 #endif
+
 protected:
-    int ID_btnPressed ;
+
 };
 
 #endif // VEHICLEVIEW_HPP

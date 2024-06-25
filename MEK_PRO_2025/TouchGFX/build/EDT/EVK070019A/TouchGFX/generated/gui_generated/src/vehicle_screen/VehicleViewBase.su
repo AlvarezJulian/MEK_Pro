@@ -26,8 +26,8 @@ TextArea.hpp:127:18:virtual void touchgfx::TextArea::setXBaselineY(int16_t, int1
 TextArea.hpp:403:41:virtual const UnicodeChar* touchgfx::TextArea::getWildcard2() const	0	static
 TextAreaWithWildcard.hpp:43:18:virtual void touchgfx::TextAreaWithWildcardBase::invalidateContent() const	8	static
 TextAreaWithWildcard.hpp:84:41:virtual const UnicodeChar* touchgfx::TextAreaWithOneWildcard::getWildcard1() const	0	static
-VehicleViewBase.hpp:28:18:virtual void VehicleViewBase::btn_AceptControl_clicked()	0	static
-VehicleViewBase.hpp:32:18:virtual void VehicleViewBase::btn_backToMenu_clicked()	0	static
+VehicleViewBase.hpp:29:18:virtual void VehicleViewBase::btn_AceptControl_clicked()	0	static
+VehicleViewBase.hpp:33:18:virtual void VehicleViewBase::btn_backToMenu_clicked()	0	static
 View.hpp:36:7:touchgfx::View<VehiclePresenter>::~View()	0	static
 Callback.hpp:357:8:touchgfx::Callback<VehicleViewBase, const touchgfx::AbstractButton&>::~Callback()	0	static
 TextAreaWithWildcard.hpp:62:7:touchgfx::TextAreaWithOneWildcard::~TextAreaWithOneWildcard()	0	static
@@ -38,11 +38,11 @@ View.hpp:36:7:virtual touchgfx::View<VehiclePresenter>::~View()	8	static
 TextAreaWithWildcard.hpp:62:7:virtual touchgfx::TextAreaWithOneWildcard::~TextAreaWithOneWildcard()	8	static
 Callback.hpp:357:8:virtual touchgfx::Callback<VehicleViewBase, const touchgfx::AbstractButton&>::~Callback()	8	static
 TextArea.hpp:111:18:virtual void touchgfx::TextArea::setBaselineY(int16_t)	16	static
-VehicleViewBase.cpp:67:6:virtual void VehicleViewBase::setupScreen()	0	static
-VehicleViewBase.cpp:72:6:void VehicleViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	16	static
+VehicleViewBase.cpp:69:6:virtual void VehicleViewBase::setupScreen()	8	static
+VehicleViewBase.cpp:75:6:void VehicleViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	16	static
 TextAreaWithWildcard.hpp:49:36:virtual touchgfx::TextArea::BoundingArea touchgfx::TextAreaWithWildcardBase::calculateBoundingArea() const	0	static
-VehicleViewBase.cpp:62:1:VehicleViewBase::~VehicleViewBase()	8	static
-VehicleViewBase.cpp:62:1:virtual VehicleViewBase::~VehicleViewBase()	8	static
+VehicleViewBase.cpp:64:1:VehicleViewBase::~VehicleViewBase()	8	static
+VehicleViewBase.cpp:64:1:virtual VehicleViewBase::~VehicleViewBase()	8	static
 Drawable.hpp:48:5:touchgfx::Drawable::Drawable()	0	static
 Drawable.hpp:343:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
 Drawable.hpp:233:10:void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	16	static

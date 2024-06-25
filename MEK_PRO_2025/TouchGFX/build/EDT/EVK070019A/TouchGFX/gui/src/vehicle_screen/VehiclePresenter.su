@@ -1,14 +1,14 @@
-ModelListener.hpp:21:15:virtual void ModelListener::Wellcome_ChangeWindow_Received(uint8_t)	0	static
-ModelListener.hpp:22:15:virtual void ModelListener::Wellcome_Change_Language_Received(uint8_t)	0	static
-ModelListener.hpp:28:15:virtual void ModelListener::Start_User_ID_Received(uint8_t*)	0	static
-ModelListener.hpp:29:15:virtual void ModelListener::Start_Status_LOGIN_Received()	0	static
-ModelListener.hpp:30:15:virtual void ModelListener::Start_Status_LOGOUT_Received()	0	static
-ModelListener.hpp:31:15:virtual void ModelListener::Start_Change_Language_Received(uint8_t)	0	static
+ModelListener.hpp:19:15:virtual void ModelListener::Wellcome_ChangeWindow_Received(uint8_t)	0	static
+ModelListener.hpp:20:15:virtual void ModelListener::Wellcome_Change_Language_Received(uint8_t)	0	static
+ModelListener.hpp:26:15:virtual void ModelListener::Start_User_ID_Received(uint8_t*)	0	static
+ModelListener.hpp:27:15:virtual void ModelListener::Start_Status_LOGIN_Received()	0	static
+ModelListener.hpp:28:15:virtual void ModelListener::Start_Status_LOGOUT_Received()	0	static
+ModelListener.hpp:29:15:virtual void ModelListener::Start_Change_Language_Received(uint8_t)	0	static
 VehiclePresenter.hpp:34:13:VehiclePresenter::~VehiclePresenter()	0	static
 VehiclePresenter.cpp:9:6:virtual void VehiclePresenter::activate()	0	static
 VehiclePresenter.cpp:24:6:virtual void VehiclePresenter::Can_Send(int)	0	static
 VehiclePresenter.cpp:28:6:virtual void VehiclePresenter::Signal_Change_Language_Received(uint8_t*)	0	static
 VehiclePresenter.hpp:34:13:virtual VehiclePresenter::~VehiclePresenter()	8	static
-VehiclePresenter.cpp:17:6:virtual void VehiclePresenter::btn_AceptControl_clicked(int)	0	static
+VehiclePresenter.cpp:17:6:virtual void VehiclePresenter::btn_AceptControl_clicked(CANBUS_TX_ID)	0	static
 VehiclePresenter.hpp:34:13:virtual void* VehiclePresenter::_ZThn4_N16VehiclePresenterD1Ev()	0	static
 VehiclePresenter.cpp:4:1:VehiclePresenter::VehiclePresenter(VehicleView&)	8	static

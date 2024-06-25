@@ -61,8 +61,9 @@ TouchGFX/build/EDT/EVK070019A/Core/Src/freertos.o: Core/Src/freertos.c \
  Drivers/Vendor/Driver/edt_bsp_ctp.h Drivers/Vendor/Device/Common/ts.h \
  Drivers/Vendor/Device/ctp/ili2511v6.h \
  Drivers/Vendor/Device/ctp/../Common/ts.h \
- Drivers/Vendor/Driver/edt_bsp_can.h Drivers/Vendor/Driver/edt_bsp_spi.h \
- Drivers/Vendor/Driver/edt_bsp_i2c.h Drivers/Vendor/Driver/edt_bsp_io.h
+ Drivers/Vendor/Driver/edt_bsp_can.h Core/Inc/can.h Core/Inc/main.h \
+ Drivers/Vendor/Driver/edt_bsp_spi.h Drivers/Vendor/Driver/edt_bsp_i2c.h \
+ Drivers/Vendor/Driver/edt_bsp_io.h
 
 Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
 
@@ -197,6 +198,10 @@ Drivers/Vendor/Device/ctp/ili2511v6.h:
 Drivers/Vendor/Device/ctp/../Common/ts.h:
 
 Drivers/Vendor/Driver/edt_bsp_can.h:
+
+Core/Inc/can.h:
+
+Core/Inc/main.h:
 
 Drivers/Vendor/Driver/edt_bsp_spi.h:
 
