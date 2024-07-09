@@ -12,119 +12,121 @@ StartViewBase::StartViewBase()
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     add(__background);
 
-    background_BlueLogo.setBitmap(touchgfx::Bitmap(BITMAP_IMAGE_01_ID));
+    background_BlueLogo.setBitmap(touchgfx::Bitmap(BITMAP_IMAGE_03_ID));
     background_BlueLogo.setPosition(0, 0, 480, 800);
     background_BlueLogo.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
     add(background_BlueLogo);
 
-    bottomMenu.setXY(0, 743);
-    add(bottomMenu);
+    EbzTimeClock.setPosition(253, 621, 134, 30);
+    EbzTimeClock.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    EbzTimeClock.setTypedText(touchgfx::TypedText(T___SINGLEUSE_P975));
+    EbzTimeClock.displayLeadingZeroForHourIndicator(true);
+    EbzTimeClock.setDisplayMode(touchgfx::DigitalClock::DISPLAY_24_HOUR);
+    EbzTimeClock.setTime24Hour(0, 0, 0);
+    EbzTimeClock.setAlpha(190);
+    add(EbzTimeClock);
 
-    scalableImage1.setBitmap(touchgfx::Bitmap(BITMAP_IMAGE_06_ID));
-    scalableImage1.setPosition(36, 104, 379, 80);
-    scalableImage1.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
-    add(scalableImage1);
+    line5.setBitmap(touchgfx::Bitmap(BITMAP_IMAGE_07_ID));
+    line5.setPosition(45, 602, 395, 1);
+    line5.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
+    add(line5);
 
-    User_ID_Start.setPosition(103, 115, 298, 56);
+    text_EZB.setXY(178, 621);
+    text_EZB.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    text_EZB.setLinespacing(0);
+    text_EZB.setTypedText(touchgfx::TypedText(T___SINGLEUSE_C6CN));
+    text_EZB.setAlpha(190);
+    add(text_EZB);
+
+    LogTimeClock.setPosition(320, 559, 142, 30);
+    LogTimeClock.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    LogTimeClock.setTypedText(touchgfx::TypedText(T___SINGLEUSE_10I5));
+    LogTimeClock.displayLeadingZeroForHourIndicator(true);
+    LogTimeClock.setDisplayMode(touchgfx::DigitalClock::DISPLAY_24_HOUR);
+    LogTimeClock.setTime24Hour(0, 0, 0);
+    LogTimeClock.setAlpha(190);
+    add(LogTimeClock);
+
+    textLogtime.setXY(178, 559);
+    textLogtime.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textLogtime.setLinespacing(0);
+    textLogtime.setTypedText(touchgfx::TypedText(T___SINGLEUSE_8W76));
+    textLogtime.setAlpha(190);
+    add(textLogtime);
+
+    line4.setBitmap(touchgfx::Bitmap(BITMAP_IMAGE_07_ID));
+    line4.setPosition(45, 540, 395, 1);
+    line4.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
+    add(line4);
+
+    tex_ELS.setXY(178, 496);
+    tex_ELS.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    tex_ELS.setLinespacing(0);
+    tex_ELS.setTypedText(touchgfx::TypedText(T___SINGLEUSE_GT5J));
+    tex_ELS.setAlpha(190);
+    add(tex_ELS);
+
+    ELS_Icon.setBitmap(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_IMAGEPROGRESS_STYLED_BATTERIES_BATTERY_SMALL_ID));
+    ELS_Icon.setPosition(107, 500, 54, 22);
+    ELS_Icon.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
+    add(ELS_Icon);
+
+    line3.setBitmap(touchgfx::Bitmap(BITMAP_IMAGE_07_ID));
+    line3.setPosition(45, 479, 395, 1);
+    line3.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
+    add(line3);
+
+    Tetxt_Bluetooth.setXY(178, 432);
+    Tetxt_Bluetooth.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    Tetxt_Bluetooth.setLinespacing(0);
+    Tetxt_Bluetooth.setTypedText(touchgfx::TypedText(T___SINGLEUSE_4O6A));
+    Tetxt_Bluetooth.setAlpha(190);
+    add(Tetxt_Bluetooth);
+
+    Bluetooth_Icon.setBitmap(touchgfx::Bitmap(BITMAP_ICON_02_1_ID));
+    Bluetooth_Icon.setPosition(117, 430, 35, 35);
+    Bluetooth_Icon.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
+    add(Bluetooth_Icon);
+
+    Line2.setBitmap(touchgfx::Bitmap(BITMAP_IMAGE_07_ID));
+    Line2.setPosition(45, 411, 395, 1);
+    Line2.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
+    add(Line2);
+
+    text_Wifi.setXY(178, 371);
+    text_Wifi.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    text_Wifi.setLinespacing(0);
+    text_Wifi.setTypedText(touchgfx::TypedText(T___SINGLEUSE_D3S5));
+    text_Wifi.setAlpha(190);
+    add(text_Wifi);
+
+    Wifi_Icon.setBitmap(touchgfx::Bitmap(BITMAP_ICON_05_4_ID));
+    Wifi_Icon.setPosition(117, 369, 35, 35);
+    Wifi_Icon.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
+    add(Wifi_Icon);
+
+    line1.setBitmap(touchgfx::Bitmap(BITMAP_IMAGE_07_ID));
+    line1.setPosition(45, 350, 395, 1);
+    line1.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
+    add(line1);
+
+    User_ID_Start.setPosition(178, 300, 227, 30);
     User_ID_Start.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     User_ID_Start.setLinespacing(0);
-    User_ID_StartBuffer[0] = 0;
+    Unicode::snprintf(User_ID_StartBuffer, USER_ID_START_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_L9J3).getText());
     User_ID_Start.setWildcard(User_ID_StartBuffer);
     User_ID_Start.setTypedText(touchgfx::TypedText(T___SINGLEUSE_RQ8E));
     User_ID_Start.setAlpha(190);
     add(User_ID_Start);
 
-    text_ID.setXY(36, 115);
-    text_ID.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    text_ID.setLinespacing(0);
-    text_ID.setTypedText(touchgfx::TypedText(T___SINGLEUSE_PPAU));
-    add(text_ID);
+    ID_Icon.setBitmap(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_PERM_IDENTITY_50_50_000000_SVG_ID));
+    ID_Icon.setPosition(117, 298, 35, 35);
+    ID_Icon.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
+    ID_Icon.setAlpha(190);
+    add(ID_Icon);
 
-    logInOut_Status.setPosition(183, 278, 247, 56);
-    logInOut_Status.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    logInOut_Status.setLinespacing(0);
-    logInOut_Status.setTypedText(touchgfx::TypedText(T_STATUS_AUS));
-    add(logInOut_Status);
-
-    EZB_time.setPosition(199, 361, 173, 57);
-    EZB_time.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    EZB_time.setLinespacing(0);
-    touchgfx::Unicode::snprintf(EZB_timeBuffer1, EZB_TIMEBUFFER1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_AU2B).getText());
-    EZB_time.setWildcard1(EZB_timeBuffer1);
-    touchgfx::Unicode::snprintf(EZB_timeBuffer2, EZB_TIMEBUFFER2_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_ND65).getText());
-    EZB_time.setWildcard2(EZB_timeBuffer2);
-    EZB_time.setTypedText(touchgfx::TypedText(T___SINGLEUSE_4Q6T));
-    add(EZB_time);
-
-    ELS_value.setPosition(193, 449, 139, 56);
-    ELS_value.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    ELS_value.setLinespacing(0);
-    Unicode::snprintf(ELS_valueBuffer, ELS_VALUE_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_81PO).getText());
-    ELS_value.setWildcard(ELS_valueBuffer);
-    ELS_value.setTypedText(touchgfx::TypedText(T___SINGLEUSE_HMWN));
-    add(ELS_value);
-
-    text_Status.setXY(36, 278);
-    text_Status.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    text_Status.setLinespacing(0);
-    text_Status.setTypedText(touchgfx::TypedText(T___SINGLEUSE_399X));
-    add(text_Status);
-
-    text_EZB.setXY(36, 361);
-    text_EZB.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    text_EZB.setLinespacing(0);
-    text_EZB.setTypedText(touchgfx::TypedText(T___SINGLEUSE_C6CN));
-    add(text_EZB);
-
-    tex_ELS.setXY(39, 447);
-    tex_ELS.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    tex_ELS.setLinespacing(0);
-    tex_ELS.setTypedText(touchgfx::TypedText(T___SINGLEUSE_GT5J));
-    add(tex_ELS);
-
-    text_Startmenue.setXY(173, 50);
-    text_Startmenue.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    text_Startmenue.setLinespacing(0);
-    text_Startmenue.setTypedText(touchgfx::TypedText(T___SINGLEUSE_KP4Q));
-    add(text_Startmenue);
-
-    Workshop_status.setBackground(touchgfx::BitmapId(BITMAP_IMAGE_08_ID), 40, 311);
-    Workshop_status.setShadeColor(touchgfx::Color::getColorFromRGB(199, 196, 26));
-    Workshop_status.setShadeAlpha(150);
-    Workshop_status.hide();
-    text_Hinweis.setXY(97, 74);
-    text_Hinweis.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    text_Hinweis.setLinespacing(0);
-    text_Hinweis.setTypedText(touchgfx::TypedText(T___SINGLEUSE_XF2H));
-    Workshop_status.add(text_Hinweis);
-
-    add(Workshop_status);
-
-    topMenu.setXY(0, 0);
-    add(topMenu);
-
-    Led_grey.setXY(360, 120);
-    Led_grey.setBitmap(touchgfx::Bitmap(BITMAP_ICON_15_ID));
-    Led_grey.setVisible(false);
-    add(Led_grey);
-
-    Led_1.setXY(424, 118);
-    Led_1.setBitmap(touchgfx::Bitmap(BITMAP_ICON_11_ID));
-    add(Led_1);
-
-    Led_green.setXY(360, 120);
-    Led_green.setBitmap(touchgfx::Bitmap(BITMAP_ICON_13_ID));
-    add(Led_green);
-
-    Led_red.setXY(360, 120);
-    Led_red.setBitmap(touchgfx::Bitmap(BITMAP_ICON_12_ID));
-    Led_red.setVisible(false);
-    add(Led_red);
-
-    Led_orange.setXY(360, 120);
-    Led_orange.setBitmap(touchgfx::Bitmap(BITMAP_ICON_14_ID));
-    Led_orange.setVisible(false);
-    add(Led_orange);
+    topMenu1.setXY(-2, 0);
+    add(topMenu1);
 }
 
 StartViewBase::~StartViewBase()
@@ -134,6 +136,5 @@ StartViewBase::~StartViewBase()
 
 void StartViewBase::setupScreen()
 {
-    bottomMenu.initialize();
-    topMenu.initialize();
+    topMenu1.initialize();
 }

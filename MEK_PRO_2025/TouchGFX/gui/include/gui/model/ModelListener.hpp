@@ -2,31 +2,41 @@
 #define MODELLISTENER_HPP
 
 #include <gui/model/Model.hpp>
+//#include <gui/containers/TopMenu.hpp>
 
 class ModelListener {
 public:
-	ModelListener() :
-			model(0) {
+	ModelListener() : model(0) {
 	}
 
 	virtual ~ModelListener() {
 	}
 
 	/*
+	 * SIGNALS TOP Menu
+	 *
+	 */
+//	virtual void TopMenu_Wifi_Signal_Chaneged(uint8_t val);
+	/*
 	 * SIGNALS Wellcome
 	 */
-
-	virtual void Wellcome_ChangeWindow_Received(uint8_t index) {}
-	virtual void Wellcome_Change_Language_Received (uint8_t index){}
-
+	virtual void Wellcome_User_ID_Received(char *data) {
+	}
 	/*
 	 * SIGNALS Start
 	 */
 
-	virtual void Start_User_ID_Received(uint8_t *data) {}
-	virtual void Start_Status_LOGIN_Received() {}
-	virtual void Start_Status_LOGOUT_Received() {}
-	virtual void Start_Change_Language_Received(uint8_t index) {}
+	virtual void Start_User_ID_Received(char *data) {
+	}
+//	virtual void Start_Status_LOGIN_Received() {}
+//	virtual void Start_Status_LOGOUT_Received() {}
+	virtual void Start_Status_LOGIN_OUT_Received(bool state) {
+	}
+	virtual void Start_wifi_Signal_Changed(uint8_t val){
+	}
+	virtual void Start_Bluetooth_Status_Changed(bool state){
+
+	}
 	/*
 	 * SIGNALS Vehicle
 	 */
@@ -48,6 +58,7 @@ public:
 	}
 protected:
 	Model *model;
+//	TopMenu topMenu;
 
 };
 

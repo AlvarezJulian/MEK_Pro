@@ -17,51 +17,47 @@ public:
 
     virtual void changeToStartScreen()
     {
-        gotoWellcomeScreenNoTransition();
+        gotoLoginScreenNoTransition();
     }
 
+    // Login
+    void gotoLoginScreenNoTransition();
+
+    void gotoLoginScreenSlideTransitionWest();
+
     // Wellcome
-    void gotoWellcomeScreenNoTransition();
-
     void gotoWellcomeScreenSlideTransitionEast();
-
-    // Start
-    void gotoStartScreenSlideTransitionEast();
-
-    void gotoStartScreenSlideTransitionWest();
-
-    // Vehicle
-    void gotoVehicleScreenSlideTransitionEast();
 
     // VehicleCheck
     void gotoVehicleCheckScreenSlideTransitionEast();
 
-    // Crash
-    void gotoCrashScreenSlideTransitionEast();
+    // Start
+    void gotoStartScreenSlideTransitionEast();
+
+    // StatusScreen
+    void gotoStatusScreenScreenSlideTransitionNorth();
 
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
     FrontendHeap& frontendHeap;
     Model& model;
 
+    // Login
+    void gotoLoginScreenNoTransitionImpl();
+
+    void gotoLoginScreenSlideTransitionWestImpl();
+
     // Wellcome
-    void gotoWellcomeScreenNoTransitionImpl();
-
     void gotoWellcomeScreenSlideTransitionEastImpl();
-
-    // Start
-    void gotoStartScreenSlideTransitionEastImpl();
-
-    void gotoStartScreenSlideTransitionWestImpl();
-
-    // Vehicle
-    void gotoVehicleScreenSlideTransitionEastImpl();
 
     // VehicleCheck
     void gotoVehicleCheckScreenSlideTransitionEastImpl();
 
-    // Crash
-    void gotoCrashScreenSlideTransitionEastImpl();
+    // Start
+    void gotoStartScreenSlideTransitionEastImpl();
+
+    // StatusScreen
+    void gotoStatusScreenScreenSlideTransitionNorthImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

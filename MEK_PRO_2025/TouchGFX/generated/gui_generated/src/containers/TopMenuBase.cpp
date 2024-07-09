@@ -6,121 +6,84 @@
 #include <texts/TextKeysAndLanguages.hpp>
 #include <touchgfx/Color.hpp>
 
-TopMenuBase::TopMenuBase() :
-    buttonCallback(this, &TopMenuBase::buttonCallbackHandler)
+TopMenuBase::TopMenuBase()
 {
     setWidth(480);
-    setHeight(330);
-    TopImage.setBitmap(touchgfx::Bitmap(BITMAP_IMAGE_07_ID));
-    TopImage.setPosition(0, 0, 480, 50);
+    setHeight(47);
+    TopImage.setBitmap(touchgfx::Bitmap(BITMAP_IMAGE_06_ID));
+    TopImage.setPosition(0, 0, 480, 47);
     TopImage.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
     add(TopImage);
 
-    textArea1_1.setXY(203, 10);
-    textArea1_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    textArea1_1.setLinespacing(0);
-    textArea1_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_LN6P));
-    add(textArea1_1);
+    wifi_sig_0.setBitmap(touchgfx::Bitmap(BITMAP_ICON_05_ID));
+    wifi_sig_0.setPosition(419, 11, 25, 25);
+    wifi_sig_0.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
+    add(wifi_sig_0);
 
-    slideMenuLeft.setXY(0, 50);
-    slideMenuLeft.setup(touchgfx::SlideMenu::SOUTH,
-        touchgfx::Bitmap(BITMAP_IMAGE_05_ID),
-        1, 0);
-    slideMenuLeft.setState(touchgfx::SlideMenu::COLLAPSED);
-    slideMenuLeft.setVisiblePixelsWhenCollapsed(0);
-    slideMenuLeft.setHiddenPixelsWhenExpanded(2);
-    slideMenuLeft.setAnimationEasingEquation(touchgfx::EasingEquations::cubicEaseInOut);
-    slideMenuLeft.setAnimationDuration(18);
-    slideMenuLeft.setExpandedStateTimeout(180);
-    Btn_User.setXY(4, 3);
-    Btn_User.setBitmaps(touchgfx::Bitmap(BITMAP_BUTTON_00_ID), touchgfx::Bitmap(BITMAP_BUTTON_00_PRESSED_ID));
-    slideMenuLeft.add(Btn_User);
-
-    btn_Wifi.setXY(4, 53);
-    btn_Wifi.setBitmaps(touchgfx::Bitmap(BITMAP_MENU_TOGGLE_BUTTON_00_ID), touchgfx::Bitmap(BITMAP_MENU_TOGGLE_BUTTON_SELECTED_00_ID));
-    slideMenuLeft.add(btn_Wifi);
-
-    btn_Bluetooth.setXY(4, 103);
-    btn_Bluetooth.setBitmaps(touchgfx::Bitmap(BITMAP_MENU_TOGGLE_BUTTON_02_ID), touchgfx::Bitmap(BITMAP_MENU_TOGGLE_BUTTON_SELECTED_02_ID));
-    slideMenuLeft.add(btn_Bluetooth);
-
-    btn_Settings.setXY(4, 153);
-    btn_Settings.setBitmaps(touchgfx::Bitmap(BITMAP_BUTTON_01_ID), touchgfx::Bitmap(BITMAP_BUTTON_01_PRESSED_ID));
-    slideMenuLeft.add(btn_Settings);
-
-    btn_logOut.setXY(4, 203);
-    btn_logOut.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_LOGOUT_50_50_000000_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_LOGOUT_50_50_000000_SVG_ID));
-    btn_logOut.setAlpha(190);
-    slideMenuLeft.add(btn_logOut);
-
-    add(slideMenuLeft);
-
-    btn_Menu.setXY(0, 0);
-    btn_Menu.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_NAVIGATION_MENU_50_50_000000_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_NAVIGATION_MENU_OPEN_50_50_FFFFFF_SVG_ID));
-    btn_Menu.setAlpha(190);
-    btn_Menu.setAction(buttonCallback);
-    add(btn_Menu);
-
-    btn_CheckVehicle.setXY(50, 0);
-    btn_CheckVehicle.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_CONTENT_CONTENT_PASTE_50_50_000000_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_CONTENT_CONTENT_PASTE_50_50_000000_SVG_ID));
-    btn_CheckVehicle.setAlpha(190);
-    btn_CheckVehicle.setAction(buttonCallback);
-    add(btn_CheckVehicle);
-
-    log_status_led_1.setXY(100, 3);
-    log_status_led_1.setBitmap(touchgfx::Bitmap(BITMAP_ICON_09_ID));
-    log_status_led_1.setVisible(false);
-    add(log_status_led_1);
-
-    log_status_led_2.setXY(100, 0);
-    log_status_led_2.setBitmap(touchgfx::Bitmap(BITMAP_ICON_10_ID));
-    add(log_status_led_2);
-
-    wifi_sig_1.setXY(330, 0);
-    wifi_sig_1.setBitmap(touchgfx::Bitmap(BITMAP_ICON_05_1_ID));
-    wifi_sig_1.setAlpha(190);
+    wifi_sig_1.setBitmap(touchgfx::Bitmap(BITMAP_ICON_05_2_ID));
+    wifi_sig_1.setPosition(419, 11, 25, 25);
+    wifi_sig_1.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
     wifi_sig_1.setVisible(false);
     add(wifi_sig_1);
 
-    wifi_sig_2.setXY(330, 0);
-    wifi_sig_2.setBitmap(touchgfx::Bitmap(BITMAP_ICON_05_2_ID));
-    wifi_sig_2.setAlpha(190);
+    wifi_sig_2.setBitmap(touchgfx::Bitmap(BITMAP_ICON_05_3_ID));
+    wifi_sig_2.setPosition(419, 11, 25, 25);
+    wifi_sig_2.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
     wifi_sig_2.setVisible(false);
     add(wifi_sig_2);
 
-    wifi_sig_3.setXY(330, 0);
-    wifi_sig_3.setBitmap(touchgfx::Bitmap(BITMAP_ICON_05_3_ID));
-    wifi_sig_3.setAlpha(190);
+    wifi_sig_3.setBitmap(touchgfx::Bitmap(BITMAP_ICON_05_4_ID));
+    wifi_sig_3.setPosition(419, 11, 25, 25);
+    wifi_sig_3.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
+    wifi_sig_3.setVisible(false);
     add(wifi_sig_3);
 
-    wifi_sig_4.setXY(330, 0);
-    wifi_sig_4.setBitmap(touchgfx::Bitmap(BITMAP_ICON_05_4_ID));
-    wifi_sig_4.setAlpha(190);
-    wifi_sig_4.setVisible(false);
-    add(wifi_sig_4);
+    bluetooth_0.setBitmap(touchgfx::Bitmap(BITMAP_ICON_02_ID));
+    bluetooth_0.setPosition(444, 11, 25, 25);
+    bluetooth_0.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
+    add(bluetooth_0);
 
-    bluetooth_1.setXY(380, 0);
-    bluetooth_1.setBitmap(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_DEVICE_BLUETOOTH_50_50_000000_SVG_ID));
-    bluetooth_1.setAlpha(190);
-    bluetooth_1.setVisible(false);
-    add(bluetooth_1);
+    bluetooth_Active.setBitmap(touchgfx::Bitmap(BITMAP_ICON_02_1_ID));
+    bluetooth_Active.setPosition(444, 11, 25, 25);
+    bluetooth_Active.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
+    bluetooth_Active.setVisible(false);
+    add(bluetooth_Active);
 
-    bluetooth_2.setXY(380, 0);
-    bluetooth_2.setBitmap(touchgfx::Bitmap(BITMAP_ICON_02_1_ID));
-    bluetooth_2.setAlpha(190);
-    add(bluetooth_2);
+    currentClock.setPosition(353, 13, 66, 20);
+    currentClock.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    currentClock.setTypedText(touchgfx::TypedText(T___SINGLEUSE_AB6P));
+    currentClock.displayLeadingZeroForHourIndicator(true);
+    currentClock.setDisplayMode(touchgfx::DigitalClock::DISPLAY_24_HOUR_NO_SECONDS);
+    currentClock.setTime24Hour(9, 30, 0);
+    currentClock.setAlpha(190);
+    add(currentClock);
 
-    bluetooth_3.setXY(380, 0);
-    bluetooth_3.setBitmap(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_DEVICE_BLUETOOTH_DISABLED_50_50_000000_SVG_ID));
-    bluetooth_3.setAlpha(190);
-    bluetooth_3.setVisible(false);
-    add(bluetooth_3);
+    logOut_Led.setBitmap(touchgfx::Bitmap(BITMAP_ICON_15_ID));
+    logOut_Led.setPosition(228, 11, 25, 25);
+    logOut_Led.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
+    add(logOut_Led);
 
-    btn_Home.setXY(430, 0);
-    btn_Home.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_HOME_50_50_000000_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_HOME_50_50_000000_SVG_ID));
-    btn_Home.setAlpha(190);
-    btn_Home.setAction(buttonCallback);
-    add(btn_Home);
+    logIn_Led.setBitmap(touchgfx::Bitmap(BITMAP_ICON_13_ID));
+    logIn_Led.setPosition(228, 11, 25, 25);
+    logIn_Led.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
+    logIn_Led.setVisible(false);
+    add(logIn_Led);
+
+    LoginClock.setPosition(89, 13, 58, 20);
+    LoginClock.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    LoginClock.setTypedText(touchgfx::TypedText(T___SINGLEUSE_XN9G));
+    LoginClock.displayLeadingZeroForHourIndicator(true);
+    LoginClock.setDisplayMode(touchgfx::DigitalClock::DISPLAY_24_HOUR_NO_SECONDS);
+    LoginClock.setTime24Hour(0, 15, 0);
+    LoginClock.setAlpha(190);
+    add(LoginClock);
+
+    Tetxt_LogInTime.setPosition(9, 13, 80, 20);
+    Tetxt_LogInTime.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    Tetxt_LogInTime.setLinespacing(0);
+    Tetxt_LogInTime.setTypedText(touchgfx::TypedText(T___SINGLEUSE_NBVV));
+    Tetxt_LogInTime.setAlpha(190);
+    add(Tetxt_LogInTime);
 }
 
 TopMenuBase::~TopMenuBase()
@@ -131,29 +94,4 @@ TopMenuBase::~TopMenuBase()
 void TopMenuBase::initialize()
 {
 
-}
-
-void TopMenuBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
-{
-    if (&src == &btn_Menu)
-    {
-        //show_Menu
-        //When btn_Menu clicked animateToState slideMenuLeft
-        //Set State on slideMenuLeft to Expanded
-        slideMenuLeft.animateToState(SlideMenu::EXPANDED);
-    }
-    if (&src == &btn_Home)
-    {
-        //Home
-        //When btn_Home clicked change screen to Start
-        //Go to Start with screen transition towards West
-        application().gotoStartScreenSlideTransitionWest();
-    }
-    if (&src == &btn_CheckVehicle)
-    {
-        //ChangeToVehicle
-        //When btn_CheckVehicle clicked change screen to Vehicle
-        //Go to Vehicle with screen transition towards East
-        application().gotoVehicleScreenSlideTransitionEast();
-    }
 }

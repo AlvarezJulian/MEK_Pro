@@ -7,10 +7,8 @@
 #include <gui/common/FrontendApplication.hpp>
 #include <touchgfx/containers/Container.hpp>
 #include <touchgfx/widgets/ScalableImage.hpp>
+#include <touchgfx/containers/clock/DigitalClock.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
-#include <touchgfx/containers/SlideMenu.hpp>
-#include <touchgfx/widgets/Button.hpp>
-#include <touchgfx/widgets/Image.hpp>
 
 class TopMenuBase : public touchgfx::Container
 {
@@ -28,37 +26,19 @@ protected:
      * Member Declarations
      */
     touchgfx::ScalableImage TopImage;
-    touchgfx::TextArea textArea1_1;
-    touchgfx::SlideMenu slideMenuLeft;
-    touchgfx::Button Btn_User;
-    touchgfx::Button btn_Wifi;
-    touchgfx::Button btn_Bluetooth;
-    touchgfx::Button btn_Settings;
-    touchgfx::Button btn_logOut;
-    touchgfx::Button btn_Menu;
-    touchgfx::Button btn_CheckVehicle;
-    touchgfx::Image log_status_led_1;
-    touchgfx::Image log_status_led_2;
-    touchgfx::Image wifi_sig_1;
-    touchgfx::Image wifi_sig_2;
-    touchgfx::Image wifi_sig_3;
-    touchgfx::Image wifi_sig_4;
-    touchgfx::Image bluetooth_1;
-    touchgfx::Image bluetooth_2;
-    touchgfx::Image bluetooth_3;
-    touchgfx::Button btn_Home;
+    touchgfx::ScalableImage wifi_sig_0;
+    touchgfx::ScalableImage wifi_sig_1;
+    touchgfx::ScalableImage wifi_sig_2;
+    touchgfx::ScalableImage wifi_sig_3;
+    touchgfx::ScalableImage bluetooth_0;
+    touchgfx::ScalableImage bluetooth_Active;
+    touchgfx::DigitalClock currentClock;
+    touchgfx::ScalableImage logOut_Led;
+    touchgfx::ScalableImage logIn_Led;
+    touchgfx::DigitalClock LoginClock;
+    touchgfx::TextArea Tetxt_LogInTime;
 
 private:
-
-    /*
-     * Callback Declarations
-     */
-    touchgfx::Callback<TopMenuBase, const touchgfx::AbstractButton&> buttonCallback;
-
-    /*
-     * Callback Handler Declarations
-     */
-    void buttonCallbackHandler(const touchgfx::AbstractButton& src);
 
 };
 

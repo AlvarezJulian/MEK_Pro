@@ -133,11 +133,8 @@ TouchGFX/build/EDT/EVK070019A/TouchGFX/gui/src/vehiclecheck_screen/VehicleCheckV
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  TouchGFX/gui/include/gui/containers/TopMenu.hpp \
  TouchGFX/generated/gui_generated/include/gui_generated/containers/TopMenuBase.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SlideMenu.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp \
- TouchGFX/gui/include/gui/containers/BottomMenu.hpp \
- TouchGFX/generated/gui_generated/include/gui_generated/containers/BottomMenuBase.hpp
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp
 
 TouchGFX/gui/include/gui/vehiclecheck_screen/VehicleCheckView.hpp:
 
@@ -421,12 +418,6 @@ TouchGFX/gui/include/gui/containers/TopMenu.hpp:
 
 TouchGFX/generated/gui_generated/include/gui_generated/containers/TopMenuBase.hpp:
 
-Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SlideMenu.hpp:
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp:
 
-Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp:
-
-TouchGFX/gui/include/gui/containers/BottomMenu.hpp:
-
-TouchGFX/generated/gui_generated/include/gui_generated/containers/BottomMenuBase.hpp:
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp:

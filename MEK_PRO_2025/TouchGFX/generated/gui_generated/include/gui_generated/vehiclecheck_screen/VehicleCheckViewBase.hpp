@@ -9,12 +9,10 @@
 #include <gui/vehiclecheck_screen/VehicleCheckPresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/ScalableImage.hpp>
-#include <touchgfx/widgets/TextArea.hpp>
-#include <touchgfx/widgets/ButtonWithLabel.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
-#include <touchgfx/widgets/Button.hpp>
+#include <touchgfx/widgets/ButtonWithLabel.hpp>
+#include <touchgfx/widgets/TextArea.hpp>
 #include <gui/containers/TopMenu.hpp>
-#include <gui/containers/BottomMenu.hpp>
 
 class VehicleCheckViewBase : public touchgfx::View<VehicleCheckPresenter>
 {
@@ -38,14 +36,6 @@ public:
     {
         // Override and implement this function in VehicleCheck
     }
-    virtual void btn_Pre_Clicked()
-    {
-        // Override and implement this function in VehicleCheck
-    }
-    virtual void btn_Next_Clicked()
-    {
-        // Override and implement this function in VehicleCheck
-    }
 
 protected:
     FrontendApplication& application() {
@@ -57,17 +47,14 @@ protected:
      */
     touchgfx::Box __background;
     touchgfx::ScalableImage background_blueWhite;
-    touchgfx::ScalableImage Background_question;
-    touchgfx::TextArea question_Text;
+    touchgfx::TextAreaWithTwoWildcards Check_Coun;
     touchgfx::ButtonWithLabel btn_bad;
     touchgfx::ButtonWithLabel btn_ok;
     touchgfx::ButtonWithLabel btn_good;
-    touchgfx::TextAreaWithTwoWildcards Check_Coun;
-    touchgfx::Button btnNext;
-    touchgfx::Button btnPrevius;
+    touchgfx::ScalableImage Background_question;
+    touchgfx::TextArea question_Text;
     touchgfx::TextArea text_Abfahrskontrolle;
-    TopMenu topMenu;
-    BottomMenu bottomMenu1;
+    TopMenu topMenu1;
 
     /*
      * Wildcard Buffers

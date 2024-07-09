@@ -123,12 +123,15 @@ TouchGFX/build/EDT/EVK070019A/TouchGFX/generated/gui_generated/src/crash_screen/
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
+ TouchGFX/gui/include/gui/containers/TopMenu.hpp \
+ TouchGFX/generated/gui_generated/include/gui_generated/containers/TopMenuBase.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ScalableImage.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp \
  TouchGFX/generated/images/include/images/BitmapDatabase.hpp
 
@@ -394,17 +397,23 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
 
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp:
 
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
+TouchGFX/gui/include/gui/containers/TopMenu.hpp:
 
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
+TouchGFX/generated/gui_generated/include/gui_generated/containers/TopMenuBase.hpp:
 
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ScalableImage.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp:
 

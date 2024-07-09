@@ -13,20 +13,18 @@ public:
 	virtual void tearDownScreen();
 
 #ifndef SIMULATOR
-//	void ModelCanToView(uint8_t *data);
+
 	/*
 	 * #################SIGNASL################
 	 */
 	virtual void btn_Good_Clicked();
 	virtual void btn_Ok_Clicked();
 	virtual void btn_Bad_Clicked();
-	virtual void btn_Next_Clicked();
-	virtual void btn_Pre_Clicked();
-	virtual void changeLanguage();
+
 
 #endif // Simu
 protected:
-//	 CANBUS_TX_ID ID_btnPressed;
+
 };
 
 #endif // VEHICLECHECKVIEW_HPP

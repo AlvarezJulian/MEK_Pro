@@ -7,42 +7,44 @@
 #include <texts/TextKeysAndLanguages.hpp>
 
 WellcomeViewBase::WellcomeViewBase() :
-    flexButtonCallback(this, &WellcomeViewBase::flexButtonCallbackHandler)
+    buttonCallback(this, &WellcomeViewBase::buttonCallbackHandler)
 {
     __background.setPosition(0, 0, 480, 800);
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     add(__background);
 
-    Background_BluePicLogo.setBitmap(touchgfx::Bitmap(BITMAP_IMAGE_02_ID));
-    Background_BluePicLogo.setPosition(0, 0, 480, 800);
-    Background_BluePicLogo.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
-    add(Background_BluePicLogo);
+    background_WhiteBlue.setBitmap(touchgfx::Bitmap(BITMAP_IMAGE_03_ID));
+    background_WhiteBlue.setPosition(0, 0, 480, 800);
+    background_WhiteBlue.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
+    add(background_WhiteBlue);
 
-    text_hinweis.setPosition(78, 178, 325, 58);
-    text_hinweis.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    text_hinweis.setLinespacing(0);
-    text_hinweis.setTypedText(touchgfx::TypedText(T___SINGLEUSE_TMQ7));
-    add(text_hinweis);
+    MEK_Logo.setXY(0, 0);
+    MEK_Logo.setBitmap(touchgfx::Bitmap(BITMAP_LOGO_00_ID));
+    add(MEK_Logo);
 
-    text_hinweis_1.setPosition(78, 236, 325, 58);
-    text_hinweis_1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    text_hinweis_1.setLinespacing(0);
-    text_hinweis_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_4DD2));
-    add(text_hinweis_1);
+    btn_StartControl.setXY(90, 516);
+    btn_StartControl.setBitmaps(touchgfx::Bitmap(BITMAP_BUTTON_10_ID), touchgfx::Bitmap(BITMAP_BUTTON_10_PRESSED_ID));
+    btn_StartControl.setLabelText(touchgfx::TypedText(T___SINGLEUSE_GYFR));
+    btn_StartControl.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    btn_StartControl.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    btn_StartControl.setAction(buttonCallback);
+    add(btn_StartControl);
 
-    btnToStart.setBoxWithBorderPosition(0, 0, 325, 276);
-    btnToStart.setBorderSize(5);
-    btnToStart.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    btnToStart.setAlpha(0);
-    btnToStart.setAction(flexButtonCallback);
-    btnToStart.setPosition(88, 329, 325, 276);
-    add(btnToStart);
+    text_Hinweis.setPosition(117, 316, 246, 48);
+    text_Hinweis.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    text_Hinweis.setLinespacing(0);
+    text_Hinweis.setTypedText(touchgfx::TypedText(T___SINGLEUSE_DSJX));
+    text_Hinweis.setAlpha(190);
+    add(text_Hinweis);
 
-    textProductName.setXY(129, 70);
-    textProductName.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    textProductName.setLinespacing(0);
-    textProductName.setTypedText(touchgfx::TypedText(T___SINGLEUSE_A2NM));
-    add(textProductName);
+    textArea1.setXY(125, 209);
+    textArea1.setColor(touchgfx::Color::getColorFromRGB(0, 159, 227));
+    textArea1.setLinespacing(0);
+    textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_5WPA));
+    add(textArea1);
+
+    topMenu1.setXY(0, 0);
+    add(topMenu1);
 }
 
 WellcomeViewBase::~WellcomeViewBase()
@@ -52,16 +54,16 @@ WellcomeViewBase::~WellcomeViewBase()
 
 void WellcomeViewBase::setupScreen()
 {
-
+    topMenu1.initialize();
 }
 
-void WellcomeViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src)
+void WellcomeViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
 {
-    if (&src == &btnToStart)
+    if (&src == &btn_StartControl)
     {
-        //GoToStart
-        //When btnToStart clicked change screen to Start
-        //Go to Start with screen transition towards East
-        application().gotoStartScreenSlideTransitionEast();
+        //btn_StartControl_clicked
+        //When btn_StartControl clicked call virtual function
+        //Call btn_StartControl_clicked
+        btn_StartControl_clicked();
     }
 }

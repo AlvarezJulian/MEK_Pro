@@ -124,20 +124,14 @@ TouchGFX/build/EDT/EVK070019A/TouchGFX/gui/src/start_screen/StartPresenter.o: \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ScalableImage.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
- TouchGFX/gui/include/gui/containers/BottomMenu.hpp \
- TouchGFX/generated/gui_generated/include/gui_generated/containers/BottomMenuBase.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
  TouchGFX/gui/include/gui/containers/TopMenu.hpp \
- TouchGFX/generated/gui_generated/include/gui_generated/containers/TopMenuBase.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SlideMenu.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp
+ TouchGFX/generated/gui_generated/include/gui_generated/containers/TopMenuBase.hpp
 
 TouchGFX/gui/include/gui/start_screen/StartView.hpp:
 
@@ -403,30 +397,18 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ScalableImage.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
 
-TouchGFX/gui/include/gui/containers/BottomMenu.hpp:
-
-TouchGFX/generated/gui_generated/include/gui_generated/containers/BottomMenuBase.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp:
 
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp:
+
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 
-Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp:
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
 
 TouchGFX/gui/include/gui/containers/TopMenu.hpp:
 
 TouchGFX/generated/gui_generated/include/gui_generated/containers/TopMenuBase.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SlideMenu.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:

@@ -4,7 +4,6 @@ build/MINGW32_NT-6.2/gui/src/model/Model.o: gui/src/model/Model.cpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Bitmap.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Config.hpp \
- generated/texts/include/texts/TextKeysAndLanguages.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/Container.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp \
@@ -34,6 +33,7 @@ build/MINGW32_NT-6.2/gui/src/model/Model.o: gui/src/model/Model.cpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/VGData.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/DebugPrinter.hpp \
+ generated/texts/include/texts/TextKeysAndLanguages.hpp \
  gui/include/gui/model/ModelListener.hpp \
  gui/include/gui/common/FrontendApplication.hpp \
  generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp \
@@ -42,7 +42,8 @@ build/MINGW32_NT-6.2/gui/src/model/Model.o: gui/src/model/Model.cpp \
  ../Middlewares/ST/touchgfx/framework/include/mvp/MVPHeap.hpp \
  ../Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Application.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/Transition.hpp
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/Transition.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp
 
 gui/include/gui/model/Model.hpp:
 
@@ -53,8 +54,6 @@ gui/include/gui/model/Model.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Config.hpp:
-
-generated/texts/include/texts/TextKeysAndLanguages.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:
 
@@ -114,6 +113,8 @@ generated/texts/include/texts/TextKeysAndLanguages.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/DebugPrinter.hpp:
 
+generated/texts/include/texts/TextKeysAndLanguages.hpp:
+
 gui/include/gui/model/ModelListener.hpp:
 
 gui/include/gui/common/FrontendApplication.hpp:
@@ -131,3 +132,5 @@ generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Application.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/Transition.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp:

@@ -23,14 +23,80 @@ public:
 	 */
 	virtual void deactivate();
 	virtual void activate();
-#ifndef SIMULATOR
-//	virtual void CANReceived(uint8_t *data);
-	virtual void Start_User_ID_Received(uint8_t *data);
-	virtual void Start_Status_LOGIN_Received();
-	virtual void Start_Status_LOGOUT_Received();
-	virtual void Start_Change_Language_Received(uint8_t index);
 
-#endif
+#ifndef SIMULATOR
+
+	virtual void Start_User_ID_Received(char *data);
+//	virtual void Start_Status_LOGIN_Received();
+//	virtual void Start_Status_LOGOUT_Received();
+	virtual void Start_Status_LOGIN_OUT_Received(bool state);
+	virtual void Start_wifi_Signal_Changed(uint8_t val);
+	virtual void Start_Bluetooth_Status_Changed(bool state);
+	/*
+	 * SET
+	 */
+	void SaveUserID(char *UserID) {
+		model->setCurrentUserID(UserID);
+	}
+	void saveLogStatus(bool state) {
+		model->SetLogStatus(state);
+	}
+	void saveWorkshopStatus(bool state) {
+		model->SetWorkshopStatus(state);
+	}
+	void saveHour(uint16_t hour) {
+		model->setCurrentHour(hour);
+	}
+	void saveMinute(uint16_t minute) {
+		model->setCurrentMinute(minute);
+	}
+	void saveSecond(uint16_t second) {
+		model->setCurrentSecond(second);
+	}
+
+	void saveLogHour(uint16_t hour) {
+		model->SetLogHour(hour);
+	}
+	void saveLogMinute(uint16_t minute) {
+		model->SetLogMinute(minute);
+	}
+	void saveLogSecond(uint16_t second) {
+		model->SetLogSecond(second);
+	}
+
+	/*
+	 * GET
+	 */
+	char* getUserId() {
+		return model->getCurrentUserID();
+	}
+	bool getLogStatus() {
+		return model->getLogStatus();
+	}
+	bool getWorkshopStatus() {
+		return model->getWorkshopStatus();
+	}
+	int16_t getHour() {
+		return model->getCurrentHour();
+	}
+	int16_t getMinute() {
+		return model->getCurrentMinute();
+	}
+	int16_t getSecond() {
+		return model->getCurrentSecond();
+	}
+
+	int16_t getLogHour() {
+		return model->getLogHour();
+	}
+	int16_t getLogMinute() {
+		return model->getLogMinute();
+	}
+	int16_t getLogSecond() {
+		return model->getLogSecond();
+	}
+#endif // SIMULATOR
+
 	virtual ~StartPresenter() {
 	}
 

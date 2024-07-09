@@ -13,22 +13,21 @@ VehicleCheckViewBase::VehicleCheckViewBase() :
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     add(__background);
 
-    background_blueWhite.setBitmap(touchgfx::Bitmap(BITMAP_IMAGE_04_ID));
+    background_blueWhite.setBitmap(touchgfx::Bitmap(BITMAP_IMAGE_03_ID));
     background_blueWhite.setPosition(0, 0, 480, 800);
     background_blueWhite.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
     add(background_blueWhite);
 
-    Background_question.setBitmap(touchgfx::Bitmap(BITMAP_IMAGE_08_ID));
-    Background_question.setPosition(40, 154, 400, 145);
-    Background_question.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
-    add(Background_question);
-
-    question_Text.setPosition(89, 176, 300, 100);
-    question_Text.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    question_Text.setLinespacing(1);
-    question_Text.setTypedText(touchgfx::TypedText(T_S07_BATTERIE));
-    question_Text.setAlpha(195);
-    add(question_Text);
+    Check_Coun.setXY(210, 672);
+    Check_Coun.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    Check_Coun.setLinespacing(0);
+    touchgfx::Unicode::snprintf(Check_CounBuffer1, CHECK_COUNBUFFER1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_Z3DE).getText());
+    Check_Coun.setWildcard1(Check_CounBuffer1);
+    touchgfx::Unicode::snprintf(Check_CounBuffer2, CHECK_COUNBUFFER2_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_FN4I).getText());
+    Check_Coun.setWildcard2(Check_CounBuffer2);
+    Check_Coun.resizeToCurrentText();
+    Check_Coun.setTypedText(touchgfx::TypedText(T___SINGLEUSE_N3WC));
+    add(Check_Coun);
 
     btn_bad.setXY(90, 566);
     btn_bad.setBitmaps(touchgfx::Bitmap(BITMAP_BUTTON_10_ID), touchgfx::Bitmap(BITMAP_BUTTON_10_PRESSED_ID));
@@ -38,7 +37,7 @@ VehicleCheckViewBase::VehicleCheckViewBase() :
     btn_bad.setAction(buttonCallback);
     add(btn_bad);
 
-    btn_ok.setXY(90, 464);
+    btn_ok.setXY(89, 464);
     btn_ok.setBitmaps(touchgfx::Bitmap(BITMAP_BUTTON_10_ID), touchgfx::Bitmap(BITMAP_BUTTON_10_PRESSED_ID));
     btn_ok.setLabelText(touchgfx::TypedText(T___SINGLEUSE_ZVD9));
     btn_ok.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
@@ -51,40 +50,30 @@ VehicleCheckViewBase::VehicleCheckViewBase() :
     btn_good.setLabelText(touchgfx::TypedText(T___SINGLEUSE_8G32));
     btn_good.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     btn_good.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    btn_good.setVisible(false);
     btn_good.setAction(buttonCallback);
     add(btn_good);
 
-    Check_Coun.setPosition(155, 683, 170, 29);
-    Check_Coun.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    Check_Coun.setLinespacing(0);
-    touchgfx::Unicode::snprintf(Check_CounBuffer1, CHECK_COUNBUFFER1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_Z3DE).getText());
-    Check_Coun.setWildcard1(Check_CounBuffer1);
-    touchgfx::Unicode::snprintf(Check_CounBuffer2, CHECK_COUNBUFFER2_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_FN4I).getText());
-    Check_Coun.setWildcard2(Check_CounBuffer2);
-    Check_Coun.setTypedText(touchgfx::TypedText(T___SINGLEUSE_N3WC));
-    add(Check_Coun);
+    Background_question.setBitmap(touchgfx::Bitmap(BITMAP_IMAGE_08_ID));
+    Background_question.setPosition(38, 281, 404, 159);
+    Background_question.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
+    add(Background_question);
 
-    btnNext.setXY(390, 666);
-    btnNext.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_07_ID), touchgfx::Bitmap(BITMAP_ICON_07_ID));
-    btnNext.setAction(buttonCallback);
-    add(btnNext);
+    question_Text.setPosition(100, 311, 278, 98);
+    question_Text.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    question_Text.setLinespacing(1);
+    question_Text.setTypedText(touchgfx::TypedText(T_F01_BELEUCHTUNG));
+    question_Text.setAlpha(195);
+    add(question_Text);
 
-    btnPrevius.setXY(40, 666);
-    btnPrevius.setBitmaps(touchgfx::Bitmap(BITMAP_ICON_06_ID), touchgfx::Bitmap(BITMAP_ICON_06_ID));
-    btnPrevius.setAction(buttonCallback);
-    add(btnPrevius);
-
-    text_Abfahrskontrolle.setPosition(117, 47, 245, 30);
-    text_Abfahrskontrolle.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    text_Abfahrskontrolle.setPosition(70, 213, 340, 58);
+    text_Abfahrskontrolle.setColor(touchgfx::Color::getColorFromRGB(12, 179, 250));
     text_Abfahrskontrolle.setLinespacing(0);
     text_Abfahrskontrolle.setTypedText(touchgfx::TypedText(T___SINGLEUSE_JBEU));
     add(text_Abfahrskontrolle);
 
-    topMenu.setXY(0, 0);
-    add(topMenu);
-
-    bottomMenu1.setXY(0, 743);
-    add(bottomMenu1);
+    topMenu1.setXY(0, 0);
+    add(topMenu1);
 }
 
 VehicleCheckViewBase::~VehicleCheckViewBase()
@@ -94,8 +83,7 @@ VehicleCheckViewBase::~VehicleCheckViewBase()
 
 void VehicleCheckViewBase::setupScreen()
 {
-    topMenu.initialize();
-    bottomMenu1.initialize();
+    topMenu1.initialize();
 }
 
 void VehicleCheckViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
@@ -120,19 +108,5 @@ void VehicleCheckViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&
         //When btn_bad clicked call virtual function
         //Call btn_Bad_Clicked
         btn_Bad_Clicked();
-    }
-    if (&src == &btnPrevius)
-    {
-        //btn_Pre_Clicked
-        //When btnPrevius clicked call virtual function
-        //Call btn_Pre_Clicked
-        btn_Pre_Clicked();
-    }
-    if (&src == &btnNext)
-    {
-        //btn_Next_Clicked
-        //When btnNext clicked call virtual function
-        //Call btn_Next_Clicked
-        btn_Next_Clicked();
     }
 }

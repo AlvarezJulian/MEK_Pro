@@ -1,9 +1,8 @@
-ModelListener.hpp:19:15:virtual void ModelListener::Wellcome_ChangeWindow_Received(uint8_t)	0	static
-ModelListener.hpp:20:15:virtual void ModelListener::Wellcome_Change_Language_Received(uint8_t)	0	static
-ModelListener.hpp:26:15:virtual void ModelListener::Start_User_ID_Received(uint8_t*)	0	static
-ModelListener.hpp:27:15:virtual void ModelListener::Start_Status_LOGIN_Received()	0	static
-ModelListener.hpp:28:15:virtual void ModelListener::Start_Status_LOGOUT_Received()	0	static
-ModelListener.hpp:29:15:virtual void ModelListener::Start_Change_Language_Received(uint8_t)	0	static
+ModelListener.hpp:23:15:virtual void ModelListener::Wellcome_User_ID_Received(char*)	0	static
+ModelListener.hpp:29:15:virtual void ModelListener::Start_User_ID_Received(char*)	0	static
+ModelListener.hpp:33:15:virtual void ModelListener::Start_Status_LOGIN_OUT_Received(bool)	0	static
+ModelListener.hpp:35:15:virtual void ModelListener::Start_wifi_Signal_Changed(uint8_t)	0	static
+ModelListener.hpp:37:15:virtual void ModelListener::Start_Bluetooth_Status_Changed(bool)	0	static
 VehicleCheckPresenter.hpp:28:13:VehicleCheckPresenter::~VehicleCheckPresenter()	0	static
 VehicleCheckPresenter.cpp:9:6:virtual void VehicleCheckPresenter::activate()	0	static
 VehicleCheckPresenter.hpp:28:13:virtual VehicleCheckPresenter::~VehicleCheckPresenter()	8	static

@@ -1,60 +1,115 @@
 #include <gui/start_screen/StartView.hpp>
 
-StartView::StartView() {
+StartView::StartView() :
+		_logHours(0),
+		_logMinutes(0),
+		_logSeconds(0),
+		_UserID(0),
+		_log_Status(false),
+		_Workshop_Status(false),
+		_EZB_hour(0),
+		_EZB_minute(0),
+		_ELS_status(0) {
 
 }
 
 void StartView::setupScreen() {
 	StartViewBase::setupScreen();
 
+	/*
+	 * get the Current valus
+	 */
+//	_UserID = presenter->getUserId();
+//	_log_Status = presenter->getLogStatus();
+//	_EZB_hour = presenter->getEZBHour();
+//	_EZB_minute = presenter->getEZBMinute();
+//	_ELS_status = presenter->getELSStatus();
+	/*
+	 * update the new Values on Screen
+	 */
+//	digitalHours = digitalClock.getCurrentHour();
+//	digitalMinutes = digitalClock.getCurrentMinute();
+//	digitalSeconds = digitalClock.getCurrentSecond();
+	_logHours = presenter->getLogHour();
+	_logMinutes = presenter->getLogMinute();
+	_logSeconds = presenter->getLogSecond();
+
 }
 
 void StartView::tearDownScreen() {
 	StartViewBase::tearDownScreen();
 
+	presenter->saveLogHour(_logHours);
+	presenter->saveLogMinute(_logMinutes);
+	presenter->saveLogSecond(_logSeconds);
 }
 
 #ifndef SIMULATOR
 
-void StartView::Slot_User_ID_Received(uint8_t *data) {
-	memset(User_ID_StartBuffer, 0, sizeof(User_ID_StartBuffer));
-	Unicode::strncpy(User_ID_StartBuffer, (char*) data, 8);
+void StartView::Slot_User_ID_Received(char *data) {
+
+	if (data != _UserID) {
+		_UserID = data;
+		presenter->SaveUserID(_UserID);
+	}
+	// Show Data
+	Unicode::strncpy(User_ID_StartBuffer, _UserID, USER_ID_START_SIZE);
 	User_ID_Start.invalidate();
 }
 
-void StartView::Slot_status_LogIN() {
-	logInOut_Status.setTypedText(touchgfx::TypedText(T_STATUS_EIN));
-	logInOut_Status.invalidate();
+void StartView::Slot_wifi_Signal_Changed(uint8_t val) {
+	topMenu1.Slot_Wifi_Signal_Changed(val);
 }
 
-void StartView::Slot_status_LogOUT() {
-	logInOut_Status.setTypedText(touchgfx::TypedText(T_STATUS_AUS));
-	logInOut_Status.invalidate();
-//	application().gotoWellcomeScreenSlideTransitionEast();
+void StartView::Slot_Bluetooth_Status_Changed(bool state) {
+	topMenu1.Slot_Bluetooth_Status_Changed(state);
 }
 
-void StartView::Slot_changeLanguage() {
-	int idLanguage = Texts::getLanguage() + 1;
-	if (idLanguage == NUMBER_OF_LANGUAGES) {
-		idLanguage = 0;
+void StartView::Slot_status_LogginOut_Changed(bool state) {
+
+	if (state != _log_Status) {
+		_log_Status = state;
+		presenter->saveLogStatus(_log_Status);
 	}
-	Texts::setLanguage(idLanguage);
-	StartView::invalidate();
-}
+	if (_log_Status == true) {
+//		logInOut_Status.setTypedText(touchgfx::TypedText(T_STATUS_IN));
+	} else {
+//		logInOut_Status.setTypedText(touchgfx::TypedText(T_STATUS_OUT));
 
-void StartView::Slot_change_Language(uint8_t index) {
-
-	switch (index) {
-	case DE:
-		Texts::setLanguage(DE);
-		break;
-	case EN:
-		Texts::setLanguage(EN);
-		break;
-	default:
-		break;
 	}
-	StartView::invalidate();
+//	logInOut_Status.invalidate();
+
+	topMenu1.Slot_logInOut_Changed(_log_Status);
+
 }
 
-#endif
+#endif // SIMULATOR
+
+void StartView::handleTickEvent() {
+
+	if (_log_Status == true) {
+
+		tickCounter++;
+
+		if (tickCounter % 60 == 0) {
+			if (++_logSeconds >= 60) {
+				_logSeconds = 0;
+				if (++_logMinutes >= 60) {
+					_logMinutes = 0;
+					if (++_logHours >= 24) {
+						_logHours = 0;
+					}
+				}
+			}
+
+			// Update the clock
+			LogTimeClock.setTime24Hour(_logHours, _logMinutes, _logSeconds);
+		}
+	} else {
+		setLogHour(0);
+		setLogMinute(0);
+		setLogSecond(0);
+		// Update the clock
+		LogTimeClock.setTime24Hour(getLogHour(), getLogMinute(), getLogSecond());
+	}
+}

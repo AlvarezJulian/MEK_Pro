@@ -1,6 +1,6 @@
 #include <gui/wellcome_screen/WellcomeView.hpp>
 
-WellcomeView::WellcomeView() {
+WellcomeView::WellcomeView()  {
 
 }
 
@@ -13,27 +13,10 @@ void WellcomeView::tearDownScreen() {
 }
 
 #ifndef SIMULATOR
-/*
-void WellcomeView::Slot_ChangeWindow_Received() {
-	application().gotoStartScreenSlideTransitionEast();
+
+
+void WellcomeView::btn_StartControl_clicked() {
+	ID_btnPressed = CANBUS_TX_BTN_START_CONTROL;
+	presenter->btn_StartControl_clicked(ID_btnPressed);
 }
-*/
-
-
-void WellcomeView::Slot_change_Language(uint8_t index) {
-
-	switch (index) {
-	case DE:
-		Texts::setLanguage(DE);
-		break;
-	case EN:
-		Texts::setLanguage(EN);
-		break;
-	default:
-		break;
-	}
-
-	WellcomeView::invalidate();
-}
-
 #endif

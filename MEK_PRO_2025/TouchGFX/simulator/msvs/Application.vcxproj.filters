@@ -208,35 +208,11 @@
     <Filter Include="Header Files\gui\vehiclecheck_screen">
       <UniqueIdentifier>A34FC226-9D8B-D108-866A-AF919A4D47CD</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\gui\vehicle_screen">
-      <UniqueIdentifier>2333D338-2CCD-B081-CFAE-492CF50E9549</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\gui\vehicle_screen">
-      <UniqueIdentifier>EB823618-B181-3A3E-C5E4-0850FF4EE2A1</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\generated\gui_generated\vehiclecheck_screen">
       <UniqueIdentifier>2C9AB10F-DC9E-0BE6-6E1C-16542EAB0C64</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\generated\gui_generated\vehicle_screen">
-      <UniqueIdentifier>6BC27230-C2B0-ECFB-8401-50D8AE27CB46</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\generated\gui_generated\vehiclecheck_screen">
       <UniqueIdentifier>C503CA83-6A0C-A7E7-EC31-B2C1B025568E</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\vehicle_screen">
-      <UniqueIdentifier>143EEE53-2A3E-8A43-41C1-199064307C0B</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\gui\crash_screen">
-      <UniqueIdentifier>29769ADC-4AEE-571A-D4EE-4BF290DF9384</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\gui\crash_screen">
-      <UniqueIdentifier>37A3BD68-513C-8360-98A8-6EF15287F83E</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\crash_screen">
-      <UniqueIdentifier>946741E1-F871-D24A-BA9A-D17F31CD9109</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\crash_screen">
-      <UniqueIdentifier>4F54A1DA-9A77-16EA-FDED-0E7016CBE4C5</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\gui\containers">
       <UniqueIdentifier>857568D4-839B-9223-58C3-BA249BBF65AC</UniqueIdentifier>
@@ -249,6 +225,30 @@
     </Filter>
     <Filter Include="Source Files\generated\gui_generated\containers">
       <UniqueIdentifier>F0D3D7E0-4117-F170-59AD-636D3D290CA2</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\login_screen">
+      <UniqueIdentifier>FD948BCC-92AA-A01A-34FF-A2687B4AC4F1</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\login_screen">
+      <UniqueIdentifier>43EF3F5E-6BB8-8A2D-F84F-88FB2FC35CBC</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\login_screen">
+      <UniqueIdentifier>3B3670A8-512E-A9FB-5A7D-B5AD930419DC</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\login_screen">
+      <UniqueIdentifier>10BE8C8C-E654-8A10-8DF7-3823218180C0</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\statusscreen_screen">
+      <UniqueIdentifier>0693307C-83B3-8F9F-E76F-F6C82FA6B2EB</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\statusscreen_screen">
+      <UniqueIdentifier>8BAFB591-4632-B076-9985-51958E93685E</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\statusscreen_screen">
+      <UniqueIdentifier>CB4EC6C9-1F46-6B9E-2F88-1C3F12657464</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\statusscreen_screen">
+      <UniqueIdentifier>89F6B498-CEAA-21CC-8109-026258AA5F27</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -309,35 +309,35 @@
     <ClCompile Include="..\..\generated\gui_generated\src\vehiclecheck_screen\VehicleCheckViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\vehiclecheck_screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\gui\src\vehicle_screen\VehiclePresenter.cpp">
-      <Filter>Source Files\gui\vehicle_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\vehicle_screen\VehicleView.cpp">
-      <Filter>Source Files\gui\vehicle_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\vehicle_screen\VehicleViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\vehicle_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\crash_screen\CrashPresenter.cpp">
-      <Filter>Source Files\gui\crash_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\crash_screen\CrashView.cpp">
-      <Filter>Source Files\gui\crash_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\crash_screen\CrashViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\crash_screen</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\gui\src\containers\TopMenu.cpp">
       <Filter>Source Files\gui\containers</Filter>
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\containers\TopMenuBase.cpp">
       <Filter>Source Files\generated\gui_generated\containers</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\gui\src\containers\BottomMenu.cpp">
+    <ClCompile Include="..\..\gui\src\containers\ButtonsToChangeScreen.cpp">
       <Filter>Source Files\gui\containers</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\containers\BottomMenuBase.cpp">
+    <ClCompile Include="..\..\generated\gui_generated\src\containers\ButtonsToChangeScreenBase.cpp">
       <Filter>Source Files\generated\gui_generated\containers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\login_screen\LoginPresenter.cpp">
+      <Filter>Source Files\gui\login_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\login_screen\LoginView.cpp">
+      <Filter>Source Files\gui\login_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\login_screen\LoginViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\login_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\statusscreen_screen\StatusScreenPresenter.cpp">
+      <Filter>Source Files\gui\statusscreen_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\statusscreen_screen\StatusScreenView.cpp">
+      <Filter>Source Files\gui\statusscreen_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\statusscreen_screen\StatusScreenViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\statusscreen_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -814,35 +814,35 @@
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\vehiclecheck_screen\VehicleCheckViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\vehiclecheck_screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\vehicle_screen\VehiclePresenter.hpp">
-      <Filter>Header Files\gui\vehicle_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\vehicle_screen\VehicleView.hpp">
-      <Filter>Header Files\gui\vehicle_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\vehicle_screen\VehicleViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\vehicle_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\crash_screen\CrashPresenter.hpp">
-      <Filter>Header Files\gui\crash_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\crash_screen\CrashView.hpp">
-      <Filter>Header Files\gui\crash_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\crash_screen\CrashViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\crash_screen</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\containers\TopMenu.hpp">
       <Filter>Header Files\gui\containers</Filter>
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\TopMenuBase.hpp">
       <Filter>Header Files\generated\gui_generated\containers</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\containers\BottomMenu.hpp">
+    <ClInclude Include="..\..\gui\include\gui\containers\ButtonsToChangeScreen.hpp">
       <Filter>Header Files\gui\containers</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\BottomMenuBase.hpp">
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\ButtonsToChangeScreenBase.hpp">
       <Filter>Header Files\generated\gui_generated\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\login_screen\LoginPresenter.hpp">
+      <Filter>Header Files\gui\login_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\login_screen\LoginView.hpp">
+      <Filter>Header Files\gui\login_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\login_screen\LoginViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\login_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\statusscreen_screen\StatusScreenPresenter.hpp">
+      <Filter>Header Files\gui\statusscreen_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\statusscreen_screen\StatusScreenView.hpp">
+      <Filter>Header Files\gui\statusscreen_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\statusscreen_screen\StatusScreenViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\statusscreen_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

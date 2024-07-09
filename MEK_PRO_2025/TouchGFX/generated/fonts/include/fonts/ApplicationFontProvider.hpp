@@ -15,25 +15,29 @@ struct Typography
 {
     static const touchgfx::FontId LARGE = 0;
     static const touchgfx::FontId DEFAULT = 1;
-    static const touchgfx::FontId MEDIUM = 2;
-    static const touchgfx::FontId VERYBIG = 3;
-    static const touchgfx::FontId SMALL = 4;
-    static const touchgfx::FontId BIGGER = 5;
-    static const touchgfx::FontId MEK_1 = 6;
-    static const touchgfx::FontId MEK_2 = 7;
+    static const touchgfx::FontId DEFAULT_2 = 2;
+    static const touchgfx::FontId MEDIUM = 3;
+    static const touchgfx::FontId VERYBIG = 4;
+    static const touchgfx::FontId SMALL = 5;
+    static const touchgfx::FontId BIGGER = 6;
+    static const touchgfx::FontId MEK_1 = 7;
+    static const touchgfx::FontId MEK_2 = 8;
+    static const touchgfx::FontId MEK_3 = 9;
 };
 
 struct TypographyFontIndex
 {
-    static const touchgfx::FontId LARGE = 0;   // verdana_40_4bpp
-    static const touchgfx::FontId DEFAULT = 1; // verdana_20_4bpp
-    static const touchgfx::FontId MEDIUM = 2;  // verdana_25_4bpp
-    static const touchgfx::FontId VERYBIG = 3; // verdanab_60_4bpp
-    static const touchgfx::FontId SMALL = 4;   // verdana_10_4bpp
-    static const touchgfx::FontId BIGGER = 5;  // verdana_60_4bpp
-    static const touchgfx::FontId MEK_1 = 6;   // Anton_Regular_45_4bpp
-    static const touchgfx::FontId MEK_2 = 7;   // OpenSans_Italic_45_4bpp
-    static const uint16_t NUMBER_OF_FONTS = 8;
+    static const touchgfx::FontId LARGE = 0;     // verdana_40_4bpp
+    static const touchgfx::FontId DEFAULT = 1;   // verdana_15_4bpp
+    static const touchgfx::FontId DEFAULT_2 = 2; // verdana_20_4bpp
+    static const touchgfx::FontId MEDIUM = 3;    // verdana_25_4bpp
+    static const touchgfx::FontId VERYBIG = 4;   // verdanab_60_4bpp
+    static const touchgfx::FontId SMALL = 5;     // verdana_10_4bpp
+    static const touchgfx::FontId BIGGER = 6;    // verdana_60_4bpp
+    static const touchgfx::FontId MEK_1 = 7;     // Anton_Regular_45_4bpp
+    static const touchgfx::FontId MEK_2 = 8;     // OpenSans_Italic_45_4bpp
+    static const touchgfx::FontId MEK_3 = 9;     // OpenSans_Condensed_Bold_43_4bpp
+    static const uint16_t NUMBER_OF_FONTS = 10;
 };
 
 class ApplicationFontProvider : public touchgfx::FontProvider

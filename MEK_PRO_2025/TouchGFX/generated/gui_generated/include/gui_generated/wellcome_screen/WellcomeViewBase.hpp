@@ -9,8 +9,10 @@
 #include <gui/wellcome_screen/WellcomePresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/ScalableImage.hpp>
+#include <touchgfx/widgets/Image.hpp>
+#include <touchgfx/widgets/ButtonWithLabel.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
-#include <touchgfx/containers/buttons/Buttons.hpp>
+#include <gui/containers/TopMenu.hpp>
 
 class WellcomeViewBase : public touchgfx::View<WellcomePresenter>
 {
@@ -18,6 +20,14 @@ public:
     WellcomeViewBase();
     virtual ~WellcomeViewBase();
     virtual void setupScreen();
+
+    /*
+     * Virtual Action Handlers
+     */
+    virtual void btn_StartControl_clicked()
+    {
+        // Override and implement this function in Wellcome
+    }
 
 protected:
     FrontendApplication& application() {
@@ -28,23 +38,24 @@ protected:
      * Member Declarations
      */
     touchgfx::Box __background;
-    touchgfx::ScalableImage Background_BluePicLogo;
-    touchgfx::TextArea text_hinweis;
-    touchgfx::TextArea text_hinweis_1;
-    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  btnToStart;
-    touchgfx::TextArea textProductName;
+    touchgfx::ScalableImage background_WhiteBlue;
+    touchgfx::Image MEK_Logo;
+    touchgfx::ButtonWithLabel btn_StartControl;
+    touchgfx::TextArea text_Hinweis;
+    touchgfx::TextArea textArea1;
+    TopMenu topMenu1;
 
 private:
 
     /*
      * Callback Declarations
      */
-    touchgfx::Callback<WellcomeViewBase, const touchgfx::AbstractButtonContainer&> flexButtonCallback;
+    touchgfx::Callback<WellcomeViewBase, const touchgfx::AbstractButton&> buttonCallback;
 
     /*
      * Callback Handler Declarations
      */
-    void flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src);
+    void buttonCallbackHandler(const touchgfx::AbstractButton& src);
 
 };
 

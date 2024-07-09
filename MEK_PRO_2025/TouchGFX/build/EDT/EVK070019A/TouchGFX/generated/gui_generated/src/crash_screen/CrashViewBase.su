@@ -20,16 +20,10 @@ Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	stati
 TypedText.hpp:65:13:touchgfx::TypedText::~TypedText()	0	static
 CrashViewBase.hpp:25:18:virtual void CrashViewBase::action1()	0	static
 View.hpp:36:7:touchgfx::View<CrashPresenter>::~View()	0	static
-CrashViewBase.cpp:36:1:CrashViewBase::~CrashViewBase()	0	static
-CrashViewBase.cpp:41:6:virtual void CrashViewBase::setupScreen()	0	static
-Callback.hpp:357:8:touchgfx::Callback<CrashViewBase, const touchgfx::AbstractButton&>::~Callback()	0	static
-Callback.hpp:386:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = CrashViewBase; T1 = const touchgfx::AbstractButton&]	8	static
-Callback.hpp:396:18:bool touchgfx::Callback<dest_type, T1, void, void>::isValid() const [with dest_type = CrashViewBase; T1 = const touchgfx::AbstractButton&]	0	static
 TypedText.hpp:65:13:virtual touchgfx::TypedText::~TypedText()	8	static
 View.hpp:36:7:virtual touchgfx::View<CrashPresenter>::~View()	8	static
-Callback.hpp:357:8:virtual touchgfx::Callback<CrashViewBase, const touchgfx::AbstractButton&>::~Callback()	8	static
-CrashViewBase.cpp:36:1:virtual CrashViewBase::~CrashViewBase()	8	static
-CrashViewBase.cpp:46:6:void CrashViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	8	static
+CrashViewBase.cpp:35:6:virtual void CrashViewBase::setupScreen()	0	static
+CrashViewBase.cpp:30:1:CrashViewBase::~CrashViewBase()	8	static
+CrashViewBase.cpp:30:1:virtual CrashViewBase::~CrashViewBase()	8	static
 Drawable.hpp:343:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
-ButtonWithLabel.hpp:132:10:void touchgfx::ButtonWithLabel::updateTextPosition()	24	static
-CrashViewBase.cpp:9:1:CrashViewBase::CrashViewBase()	72	static
+CrashViewBase.cpp:9:1:CrashViewBase::CrashViewBase()	64	static

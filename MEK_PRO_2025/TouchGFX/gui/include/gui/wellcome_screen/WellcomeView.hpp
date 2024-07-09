@@ -14,9 +14,7 @@ public:
 
 
 #ifndef SIMULATOR
-//    virtual void Slot_ChangeWindow_Received();
-    virtual void Slot_change_Language(uint8_t index);
-
+	virtual void btn_StartControl_clicked();
 #endif
 protected:
 };

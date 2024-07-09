@@ -119,9 +119,8 @@ TouchGFX/build/EDT/EVK070019A/TouchGFX/gui/src/containers/BottomMenu.o: \
  Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
  Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp
 
 TouchGFX/gui/include/gui/containers/BottomMenu.hpp:
 
@@ -377,8 +376,6 @@ Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
 
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
 
-Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp:
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:

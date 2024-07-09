@@ -14,16 +14,16 @@
 #include <gui/common/FrontendApplication.hpp>
 #include <gui/model/Model.hpp>
 
+#include <gui/login_screen/LoginView.hpp>
+#include <gui/login_screen/LoginPresenter.hpp>
 #include <gui/wellcome_screen/WellcomeView.hpp>
 #include <gui/wellcome_screen/WellcomePresenter.hpp>
-#include <gui/start_screen/StartView.hpp>
-#include <gui/start_screen/StartPresenter.hpp>
-#include <gui/vehicle_screen/VehicleView.hpp>
-#include <gui/vehicle_screen/VehiclePresenter.hpp>
 #include <gui/vehiclecheck_screen/VehicleCheckView.hpp>
 #include <gui/vehiclecheck_screen/VehicleCheckPresenter.hpp>
-#include <gui/crash_screen/CrashView.hpp>
-#include <gui/crash_screen/CrashPresenter.hpp>
+#include <gui/start_screen/StartView.hpp>
+#include <gui/start_screen/StartPresenter.hpp>
+#include <gui/statusscreen_screen/StatusScreenView.hpp>
+#include <gui/statusscreen_screen/StatusScreenPresenter.hpp>
 
 
 /**
@@ -46,11 +46,11 @@ public:
      * A list of all view types. Must end with meta::Nil.
      * @note All view types used in the application MUST be added to this list!
      */
-    typedef touchgfx::meta::TypeList< WellcomeView,
-            touchgfx::meta::TypeList< StartView,
-            touchgfx::meta::TypeList< VehicleView,
+    typedef touchgfx::meta::TypeList< LoginView,
+            touchgfx::meta::TypeList< WellcomeView,
             touchgfx::meta::TypeList< VehicleCheckView,
-            touchgfx::meta::TypeList< CrashView,
+            touchgfx::meta::TypeList< StartView,
+            touchgfx::meta::TypeList< StatusScreenView,
             touchgfx::meta::Nil > > > >
             > GeneratedViewTypes;
 
@@ -63,11 +63,11 @@ public:
      * A list of all presenter types. Must end with meta::Nil.
      * @note All presenter types used in the application MUST be added to this list!
      */
-    typedef touchgfx::meta::TypeList< WellcomePresenter,
-            touchgfx::meta::TypeList< StartPresenter,
-            touchgfx::meta::TypeList< VehiclePresenter,
+    typedef touchgfx::meta::TypeList< LoginPresenter,
+            touchgfx::meta::TypeList< WellcomePresenter,
             touchgfx::meta::TypeList< VehicleCheckPresenter,
-            touchgfx::meta::TypeList< CrashPresenter,
+            touchgfx::meta::TypeList< StartPresenter,
+            touchgfx::meta::TypeList< StatusScreenPresenter,
             touchgfx::meta::Nil > > > >
             > GeneratedPresenterTypes;
 
@@ -81,9 +81,10 @@ public:
      * @note All transition types used in the application MUST be added to this list!
      */
     typedef touchgfx::meta::TypeList< touchgfx::NoTransition,
-            touchgfx::meta::TypeList< SlideTransition<EAST>,
             touchgfx::meta::TypeList< SlideTransition<WEST>,
-            touchgfx::meta::Nil > >
+            touchgfx::meta::TypeList< SlideTransition<EAST>,
+            touchgfx::meta::TypeList< SlideTransition<NORTH>,
+            touchgfx::meta::Nil > > >
             > GeneratedTransitionTypes;
 
     /**
@@ -93,7 +94,7 @@ public:
 
     virtual void gotoStartScreen(FrontendApplication& app)
     {
-        app.gotoWellcomeScreenNoTransition();
+        app.gotoLoginScreenNoTransition();
     }
 protected:
     FrontendHeapBase(touchgfx::AbstractPartition& presenters, touchgfx::AbstractPartition& views, touchgfx::AbstractPartition& transitions, FrontendApplication& app)

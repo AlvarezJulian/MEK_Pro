@@ -1,32 +1,69 @@
 #include <gui/model/Model.hpp>
 #include <gui/model/ModelListener.hpp>
 #include <gui/common/FrontendApplication.hpp>
-#include <texts/TextKeysAndLanguages.hpp>
+//#include <texts/TextKeysAndLanguages.hpp>
 #include <touchgfx/Texts.hpp>
-#include <touchgfx/Screen.hpp>
+//#include <touchgfx/Screen.hpp>
+//#include <gui/containers/TopMenu.hpp>
 
 Model::Model() :
-		modelListener(0) {
-
+		modelListener(0),
+		current_Wifi_Signal(0),
+		current_bluetooth_Status(false),
+		current_hour(0),
+		current_minute(0),
+		current_second(0),
+		current_UserID(0),
+		current_log_Status(false),
+		current_Workshop_Status(false),
+		current_Crash_Status(false),
+		current_EZB_hour(0),
+		current_EZB_minute(0),
+		current_EZB_second(0),
+		current_ELS_status(false),
+		current_log_hour(0),
+		current_log_minute(0) {
 }
+
+/*
+ *
+ * muss getestet werden mit HARDWARE- TFT Display
+ *
+ * -> fehlt ::getInstance(); irgendwo !?
+ */
 
 void Model::tick() {
 	// Nachricht empfangen
 #ifndef SIMULATOR
+
 	FrontendApplication *const ui =
 			static_cast<FrontendApplication*>(Application::getInstance());
 
 	if (CanHandleMsg.CAN_HandleDataEn == true) {
-		CanHandleMsg.CAN_HandleDataEn = false;
+
 
 		switch (msgType) {
-		case CANBUS_RX_START:
+		case CANBUS_RX_USER_ID:
+			strncpy(ID_Data, (char*) RxData, CAN_SIZE);
+			modelListener->Start_User_ID_Received(ID_Data);
+			modelListener->Wellcome_User_ID_Received(ID_Data);
 			break;
-		case CANBUS_RX_IDNR2:
+
+		case CANBUS_RX_LOG_IN:
+			modelListener->Start_Status_LOGIN_OUT_Received(true);
 			break;
-		case CANBUS_RX_IDNR3:
+
+		case CANBUS_RX_LOG_OUT:
+			modelListener->Start_Status_LOGIN_OUT_Received(false);
 			break;
+
 		case CANBUS_RX_IDNR4:
+
+/*
+ * Test Funktion  um das Top menu zu aktualiersen
+ * ohne MPV
+ */
+
 			break;
 		case CANBUS_RX_IDNR5:
 			break;
@@ -50,66 +87,55 @@ void Model::tick() {
 			break;
 		case CANBUS_RX_IDNR15:
 			break;
-		case CANBUS_RX_USER_ID:
-			modelListener->Start_User_ID_Received(RxData);
-
-			break;
-		case CANBUS_RX_LOG_IN:
-			modelListener->Start_Status_LOGIN_Received();
-			break;
-
-		case CANBUS_RX_LOG_OUT:
-			modelListener->Start_Status_LOGOUT_Received();
-			break;
-
 		case CANBUS_RX_LANGUAGE:
 
-			switch (CanHandleMsg.CAN_HandleDataSize) {
-			case DEUTSCH: // Deuscth
-				if (RxData[0] == DE) {
-					Texts::setLanguage(DE);
-				}
+			switch (RxData[0]) { // Select the langguage and update the Screen
+			case GERMAN: // Deuscth
+				Texts::setLanguage(DE);
 				break;
-			case ENLGISH: // Englisch
-				if (RxData[1] == EN) {
-					Texts::setLanguage(EN);
-				}
+			case ENGLISH: // Englisch
+				Texts::setLanguage(EN);
 				break;
 			default:
 				break;
-			}
-			ui->invalidate();
+			} // end Switch
 
 			break;
-
-		case CANBUS_RX_SCREEN:
-			switch (CanHandleMsg.CAN_HandleDataSize) {
+		case CANBUS_RX_SCREEN_CHANGE:
+			switch (RxData[0]) {
+			case LOGINWINDOW:
+				ui->gotoLoginScreenSlideTransitionWest();
+				break;
 			case WELLCOMEWINDOW:
 				ui->gotoWellcomeScreenSlideTransitionEast();
-				break;
-			case STARTWINDOW:
-				ui->gotoStartScreenSlideTransitionEast();
-				break;
-			case WORKSHOPWINDOW:
-				ui->gotoVehicleScreenSlideTransitionEast();
-				break;
-			case VEHICLEWINDOW:
-				ui->gotoVehicleScreenSlideTransitionEast();
 				break;
 			case VEHICLECHECKWINDOW:
 				ui->gotoVehicleCheckScreenSlideTransitionEast();
 				break;
-			case CHRASHWINDOW:
-				ui->gotoCrashScreenSlideTransitionEast();
+			case STARTWINDOW:
+				ui->gotoStartScreenSlideTransitionEast();
+				break;
+			case STATUSWINDOW:
+				ui->gotoStatusScreenScreenSlideTransitionNorth();
 				break;
 			default:
 				break;
 			} // end switch()
+
+		case CANBUS_RX_CURRENT_TIME:
+
+			break;
+		case CANBUS_RX_WIFI_SIGNAL:
+			modelListener->Start_wifi_Signal_Changed(RxData[0]);
+			break;
+		case CANBUS_RX_BLUETOOTH_ACTIVE:
+			modelListener->Start_Bluetooth_Status_Changed(RxData[0]);
 			break;
 		default:
 			break;
 		} // end switch()
-
+		CanHandleMsg.CAN_HandleDataEn = false;
+		ui->invalidate();
 	} // end if
 #endif // SIMULATOR
 } // end Model::tick()
@@ -129,13 +155,12 @@ void Model::HW_LED_OFF() {
 }
 
 void Model::Interface_Can_send(CANBUS_TX_ID MsgTypeRX) {
-	uint8_t data[8];
+	uint8_t data[CAN_SIZE];
 
 	switch (MsgTypeRX) {
-	case CANBUS_TX_BTN_ACEPT_CONTROL:
+	case CANBUS_TX_BTN_START_CONTROL:
 		data[0] = 0x01;
-		CAN_Send(CANBUS_TX_BTN_ACEPT_CONTROL, CANBUS_TX_BTN_ACEPT_CONTROL_DLC,
-				data);
+		CAN_Send(CANBUS_TX_BTN_START_CONTROL, CANBUS_TX_BTN_START_CONTROL_DLC, data);
 		break;
 	case CANBUS_TX_BTN_GOOD:
 		data[0] = 0x01;

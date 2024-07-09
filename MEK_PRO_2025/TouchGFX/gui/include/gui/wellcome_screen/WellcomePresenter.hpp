@@ -23,11 +23,11 @@ public:
 	 * (ie. made inactive). Teardown functionality can be placed here.
 	 */
 	virtual void deactivate();
-#ifndef SIMULATOR
-//	virtual void Wellcome_ChangeWindow_Received(uint8_t index);
-//	virtual void Wellcome_Change_Language_Received(uint8_t index);
 
+#ifndef SIMULATOR
+	virtual void btn_StartControl_clicked(CANBUS_TX_ID CAN_ID);
 #endif
+
 	virtual ~WellcomePresenter() {
 	}
 

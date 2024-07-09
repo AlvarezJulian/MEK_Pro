@@ -9,12 +9,10 @@
 #include <gui/start_screen/StartPresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/ScalableImage.hpp>
-#include <gui/containers/BottomMenu.hpp>
-#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
+#include <touchgfx/containers/clock/DigitalClock.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
-#include <touchgfx/containers/ModalWindow.hpp>
+#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <gui/containers/TopMenu.hpp>
-#include <touchgfx/widgets/Image.hpp>
 
 class StartViewBase : public touchgfx::View<StartPresenter>
 {
@@ -33,37 +31,30 @@ protected:
      */
     touchgfx::Box __background;
     touchgfx::ScalableImage background_BlueLogo;
-    BottomMenu bottomMenu;
-    touchgfx::ScalableImage scalableImage1;
-    touchgfx::TextAreaWithOneWildcard User_ID_Start;
-    touchgfx::TextArea text_ID;
-    touchgfx::TextArea logInOut_Status;
-    touchgfx::TextAreaWithTwoWildcards EZB_time;
-    touchgfx::TextAreaWithOneWildcard ELS_value;
-    touchgfx::TextArea text_Status;
+    touchgfx::DigitalClock EbzTimeClock;
+    touchgfx::ScalableImage line5;
     touchgfx::TextArea text_EZB;
+    touchgfx::DigitalClock LogTimeClock;
+    touchgfx::TextArea textLogtime;
+    touchgfx::ScalableImage line4;
     touchgfx::TextArea tex_ELS;
-    touchgfx::TextArea text_Startmenue;
-    touchgfx::ModalWindow Workshop_status;
-    touchgfx::TextArea text_Hinweis;
-    TopMenu topMenu;
-    touchgfx::Image Led_grey;
-    touchgfx::Image Led_1;
-    touchgfx::Image Led_green;
-    touchgfx::Image Led_red;
-    touchgfx::Image Led_orange;
+    touchgfx::ScalableImage ELS_Icon;
+    touchgfx::ScalableImage line3;
+    touchgfx::TextArea Tetxt_Bluetooth;
+    touchgfx::ScalableImage Bluetooth_Icon;
+    touchgfx::ScalableImage Line2;
+    touchgfx::TextArea text_Wifi;
+    touchgfx::ScalableImage Wifi_Icon;
+    touchgfx::ScalableImage line1;
+    touchgfx::TextAreaWithOneWildcard User_ID_Start;
+    touchgfx::ScalableImage ID_Icon;
+    TopMenu topMenu1;
 
     /*
      * Wildcard Buffers
      */
-    static const uint16_t USER_ID_START_SIZE = 15;
+    static const uint16_t USER_ID_START_SIZE = 32;
     touchgfx::Unicode::UnicodeChar User_ID_StartBuffer[USER_ID_START_SIZE];
-    static const uint16_t EZB_TIMEBUFFER1_SIZE = 5;
-    touchgfx::Unicode::UnicodeChar EZB_timeBuffer1[EZB_TIMEBUFFER1_SIZE];
-    static const uint16_t EZB_TIMEBUFFER2_SIZE = 10;
-    touchgfx::Unicode::UnicodeChar EZB_timeBuffer2[EZB_TIMEBUFFER2_SIZE];
-    static const uint16_t ELS_VALUE_SIZE = 2;
-    touchgfx::Unicode::UnicodeChar ELS_valueBuffer[ELS_VALUE_SIZE];
 
 private:
 

@@ -1,8 +1,7 @@
 #include <gui/wellcome_screen/WellcomeView.hpp>
 #include <gui/wellcome_screen/WellcomePresenter.hpp>
 
-WellcomePresenter::WellcomePresenter(WellcomeView &v) :
-		view(v) {
+WellcomePresenter::WellcomePresenter(WellcomeView &v) : view(v) {
 
 }
 
@@ -15,15 +14,13 @@ void WellcomePresenter::deactivate() {
 }
 
 #ifndef SIMULATOR
-/*
-void WellcomePresenter::Wellcome_ChangeWindow_Received(uint8_t index) {
-	view.Slot_ChangeWindow_Received();
-}
-*/
 
 /*
-void WellcomePresenter::Wellcome_Change_Language_Received(uint8_t index) {
-	view.Slot_change_Language(index);
+ * Function HERE
+ */
+
+
+void WellcomePresenter::btn_StartControl_clicked(CANBUS_TX_ID CAN_ID) {
+	model->Interface_Can_send(CAN_ID);
 }
-*/
 #endif

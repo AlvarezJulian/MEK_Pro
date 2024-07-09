@@ -21,8 +21,8 @@
 #include "can.h"
 
 /* USER CODE BEGIN 0 */
-uint8_t TxData[8];
-uint8_t RxData[8];
+uint8_t TxData[CAN_SIZE];
+uint8_t RxData[CAN_SIZE];
 uint32_t TxMailbox;
 CAN_TxHeaderTypeDef TxHeader;
 CAN_RxHeaderTypeDef RxHeader;
@@ -44,12 +44,17 @@ void MX_CAN2_Init(void) {
 	/* USER CODE BEGIN CAN2_Init 1 */
 
 	/* USER CODE END CAN2_Init 1 */
-	hcan2.Instance = CAN2;
+	hcan2.Instance =
+	CAN2;
 	hcan2.Init.Prescaler = 24;
-	hcan2.Init.Mode = CAN_MODE_NORMAL;
-	hcan2.Init.SyncJumpWidth = CAN_SJW_1TQ;
-	hcan2.Init.TimeSeg1 = CAN_BS1_9TQ;
-	hcan2.Init.TimeSeg2 = CAN_BS2_8TQ;
+	hcan2.Init.Mode =
+	CAN_MODE_NORMAL;
+	hcan2.Init.SyncJumpWidth =
+	CAN_SJW_1TQ;
+	hcan2.Init.TimeSeg1 =
+	CAN_BS1_9TQ;
+	hcan2.Init.TimeSeg2 =
+	CAN_BS2_8TQ;
 	hcan2.Init.TimeTriggeredMode = DISABLE;
 	hcan2.Init.AutoBusOff = DISABLE;
 	hcan2.Init.AutoWakeUp = DISABLE;
@@ -81,12 +86,18 @@ void HAL_CAN_MspInit(CAN_HandleTypeDef *canHandle) {
 		 PB13     ------> CAN2_TX
 		 PB12     ------> CAN2_RX
 		 */
-		GPIO_InitStruct.Pin = GPIO_PIN_13 | GPIO_PIN_12;
-		GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
-		GPIO_InitStruct.Pull = GPIO_NOPULL;
-		GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
-		GPIO_InitStruct.Alternate = GPIO_AF9_CAN2;
-		HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+		GPIO_InitStruct.Pin =
+		GPIO_PIN_13 | GPIO_PIN_12;
+		GPIO_InitStruct.Mode =
+		GPIO_MODE_AF_PP;
+		GPIO_InitStruct.Pull =
+		GPIO_NOPULL;
+		GPIO_InitStruct.Speed =
+		GPIO_SPEED_FREQ_HIGH;
+		GPIO_InitStruct.Alternate =
+		GPIO_AF9_CAN2;
+		HAL_GPIO_Init(
+		GPIOB, &GPIO_InitStruct);
 
 		/* CAN2 interrupt Init */
 		HAL_NVIC_SetPriority(CAN2_TX_IRQn, 5, 0);
@@ -115,7 +126,9 @@ void HAL_CAN_MspDeInit(CAN_HandleTypeDef *canHandle) {
 		 PB13     ------> CAN2_TX
 		 PB12     ------> CAN2_RX
 		 */
-		HAL_GPIO_DeInit(GPIOB, GPIO_PIN_13 | GPIO_PIN_12);
+		HAL_GPIO_DeInit(
+		GPIOB,
+		GPIO_PIN_13 | GPIO_PIN_12);
 
 		/* CAN2 interrupt Deinit */
 		HAL_NVIC_DisableIRQ(CAN2_TX_IRQn);
@@ -131,16 +144,19 @@ void HAL_CAN_MspDeInit(CAN_HandleTypeDef *canHandle) {
 
 void CAN_Send(CANBUS_TX_ID CAN_ID, uint8_t dlc, uint8_t *Pdata) {
 
-	if ((CAN_ID >= CANBUS_TX_START) && (CAN_ID <= CANBUS_TX_MAX)) {
+	if ((CAN_ID >= CANBUS_TX_START) && (CAN_ID < CANBUS_TX_MAX)) {
 		TxHeader.StdId = CAN_ID;
 	}
 //	TxHeader.ExtId = CAN_ID;
-	TxHeader.RTR = CAN_RTR_DATA;
-	TxHeader.IDE = CAN_ID_STD;
+	TxHeader.RTR =
+	CAN_RTR_DATA;
+	TxHeader.IDE =
+	CAN_ID_STD;
 	if (dlc > 0) {
 		TxHeader.DLC = dlc;
 	}
 	TxHeader.TransmitGlobalTime = ENABLE;
+
 	/*
 	 char TX_Buffer[30];
 	 sprintf((char*) TX_Buffer, "Val:%d", (int) value);
@@ -151,17 +167,16 @@ void CAN_Send(CANBUS_TX_ID CAN_ID, uint8_t dlc, uint8_t *Pdata) {
 	for (int i = 0; i < dlc; ++i) {
 		TxData[i] = Pdata[i];
 	}
-
 	HAL_CAN_AddTxMessage(&hcan2, &TxHeader, TxData, &TxMailbox);
 }
 
 void CAN_Receive(CAN_HandleTypeDef *hcan) {
 
-	if (HAL_CAN_GetRxMessage(&hcan2, CAN_RX_FIFO0, &RxHeader, RxData)
-			== HAL_OK) {
+	if (HAL_CAN_GetRxMessage(&hcan2, CAN_RX_FIFO0, &RxHeader, RxData) == HAL_OK) {
 
-		if ((RxHeader.StdId >= CANBUS_RX_START)
-				&& (RxHeader.StdId <= CANBUS_RX_MAX) && RxHeader.DLC > 0) {
+		if ((RxHeader.StdId >= CANBUS_RX_USER_ID) && (RxHeader.StdId < CANBUS_RX_MAX)
+				&& RxHeader.DLC > 0) {
+
 			CanHandleMsg.CAN_HandleDataEn = true;
 			CanHandleMsg.CAN_HandleDataSize = RxHeader.DLC;
 			msgType = RxHeader.StdId;

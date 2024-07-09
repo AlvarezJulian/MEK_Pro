@@ -10,6 +10,7 @@ Drawable.hpp:490:18:virtual void touchgfx::Drawable::handleDragEvent(const touch
 Drawable.hpp:501:18:virtual void touchgfx::Drawable::handleTickEvent()	0	static
 Drawable.hpp:588:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	4	static
 Container.hpp:165:23:virtual touchgfx::Drawable* touchgfx::Container::getFirstChild()	0	static
+BottomMenuBase.hpp:22:18:virtual void BottomMenuBase::btn_home_Clicked()	0	static
 BottomMenu.hpp:10:13:BottomMenu::~BottomMenu()	8	static
 BottomMenu.hpp:10:13:virtual BottomMenu::~BottomMenu()	8	static
 BottomMenu.cpp:3:1:BottomMenu::BottomMenu()	8	static
