@@ -13,6 +13,7 @@
 #include <touchgfx/widgets/TextArea.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <gui/containers/TopMenu.hpp>
+#include <touchgfx/widgets/Image.hpp>
 
 class StartViewBase : public touchgfx::View<StartPresenter>
 {
@@ -38,17 +39,21 @@ protected:
     touchgfx::TextArea textLogtime;
     touchgfx::ScalableImage line4;
     touchgfx::TextArea tex_ELS;
-    touchgfx::ScalableImage ELS_Icon;
     touchgfx::ScalableImage line3;
     touchgfx::TextArea Tetxt_Bluetooth;
-    touchgfx::ScalableImage Bluetooth_Icon;
     touchgfx::ScalableImage Line2;
     touchgfx::TextArea text_Wifi;
-    touchgfx::ScalableImage Wifi_Icon;
     touchgfx::ScalableImage line1;
     touchgfx::TextAreaWithOneWildcard User_ID_Start;
-    touchgfx::ScalableImage ID_Icon;
     TopMenu topMenu1;
+    touchgfx::TextArea textArea1;
+    touchgfx::Image Wifi_Icon;
+    touchgfx::Image Bluetooth_Icon;
+    touchgfx::Image ELS_Icon;
+    touchgfx::Image image1;
+    touchgfx::Image image2;
+    touchgfx::Image image3;
+    touchgfx::Image ID_Icon;
 
     /*
      * Wildcard Buffers

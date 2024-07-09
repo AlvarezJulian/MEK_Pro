@@ -51,10 +51,10 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/common/FrontendApplicationBase.
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/SnapshotWidget.hpp \
  gui/include/gui/common/FrontendApplication.hpp \
- gui/include/gui/wellcome_screen/WellcomeView.hpp \
- generated/gui_generated/include/gui_generated/wellcome_screen/WellcomeViewBase.hpp \
+ gui/include/gui/login_screen/LoginView.hpp \
+ generated/gui_generated/include/gui_generated/login_screen/LoginViewBase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp \
- gui/include/gui/wellcome_screen/WellcomePresenter.hpp \
+ gui/include/gui/login_screen/LoginPresenter.hpp \
  gui/include/gui/model/ModelListener.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ScalableImage.hpp \
@@ -62,30 +62,27 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/common/FrontendApplicationBase.
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp \
- gui/include/gui/start_screen/StartView.hpp \
- generated/gui_generated/include/gui_generated/start_screen/StartViewBase.hpp \
- gui/include/gui/start_screen/StartPresenter.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  gui/include/gui/containers/TopMenu.hpp \
  generated/gui_generated/include/gui_generated/containers/TopMenuBase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp \
- gui/include/gui/vehicle_screen/VehicleView.hpp \
- generated/gui_generated/include/gui_generated/vehicle_screen/VehicleViewBase.hpp \
- gui/include/gui/vehicle_screen/VehiclePresenter.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
+ gui/include/gui/wellcome_screen/WellcomeView.hpp \
+ generated/gui_generated/include/gui_generated/wellcome_screen/WellcomeViewBase.hpp \
+ gui/include/gui/wellcome_screen/WellcomePresenter.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
  gui/include/gui/vehiclecheck_screen/VehicleCheckView.hpp \
  generated/gui_generated/include/gui_generated/vehiclecheck_screen/VehicleCheckViewBase.hpp \
  gui/include/gui/vehiclecheck_screen/VehicleCheckPresenter.hpp \
- gui/include/gui/workshop_screen/WorkshopView.hpp \
- generated/gui_generated/include/gui_generated/workshop_screen/WorkshopViewBase.hpp \
- gui/include/gui/workshop_screen/WorkshopPresenter.hpp \
+ gui/include/gui/start_screen/StartView.hpp \
+ generated/gui_generated/include/gui_generated/start_screen/StartViewBase.hpp \
+ gui/include/gui/start_screen/StartPresenter.hpp \
+ gui/include/gui/statusscreen_screen/StatusScreenView.hpp \
+ generated/gui_generated/include/gui_generated/statusscreen_screen/StatusScreenViewBase.hpp \
+ gui/include/gui/statusscreen_screen/StatusScreenPresenter.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp \
- gui/include/gui/crash_screen/CrashView.hpp \
- generated/gui_generated/include/gui_generated/crash_screen/CrashViewBase.hpp \
- gui/include/gui/crash_screen/CrashPresenter.hpp \
  ../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD16DebugPrinter.hpp
 
@@ -191,13 +188,13 @@ generated/gui_generated/include/gui_generated/common/FrontendHeapBase.hpp:
 
 gui/include/gui/common/FrontendApplication.hpp:
 
-gui/include/gui/wellcome_screen/WellcomeView.hpp:
+gui/include/gui/login_screen/LoginView.hpp:
 
-generated/gui_generated/include/gui_generated/wellcome_screen/WellcomeViewBase.hpp:
+generated/gui_generated/include/gui_generated/login_screen/LoginViewBase.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:
 
-gui/include/gui/wellcome_screen/WellcomePresenter.hpp:
+gui/include/gui/login_screen/LoginPresenter.hpp:
 
 gui/include/gui/model/ModelListener.hpp:
 
@@ -213,14 +210,6 @@ gui/include/gui/model/ModelListener.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp:
 
-gui/include/gui/start_screen/StartView.hpp:
-
-generated/gui_generated/include/gui_generated/start_screen/StartViewBase.hpp:
-
-gui/include/gui/start_screen/StartPresenter.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
-
 gui/include/gui/containers/TopMenu.hpp:
 
 generated/gui_generated/include/gui_generated/containers/TopMenuBase.hpp:
@@ -229,11 +218,13 @@ generated/gui_generated/include/gui_generated/containers/TopMenuBase.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp:
 
-gui/include/gui/vehicle_screen/VehicleView.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 
-generated/gui_generated/include/gui_generated/vehicle_screen/VehicleViewBase.hpp:
+gui/include/gui/wellcome_screen/WellcomeView.hpp:
 
-gui/include/gui/vehicle_screen/VehiclePresenter.hpp:
+generated/gui_generated/include/gui_generated/wellcome_screen/WellcomeViewBase.hpp:
+
+gui/include/gui/wellcome_screen/WellcomePresenter.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
 
@@ -247,19 +238,19 @@ generated/gui_generated/include/gui_generated/vehiclecheck_screen/VehicleCheckVi
 
 gui/include/gui/vehiclecheck_screen/VehicleCheckPresenter.hpp:
 
-gui/include/gui/workshop_screen/WorkshopView.hpp:
+gui/include/gui/start_screen/StartView.hpp:
 
-generated/gui_generated/include/gui_generated/workshop_screen/WorkshopViewBase.hpp:
+generated/gui_generated/include/gui_generated/start_screen/StartViewBase.hpp:
 
-gui/include/gui/workshop_screen/WorkshopPresenter.hpp:
+gui/include/gui/start_screen/StartPresenter.hpp:
+
+gui/include/gui/statusscreen_screen/StatusScreenView.hpp:
+
+generated/gui_generated/include/gui_generated/statusscreen_screen/StatusScreenViewBase.hpp:
+
+gui/include/gui/statusscreen_screen/StatusScreenPresenter.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp:
-
-gui/include/gui/crash_screen/CrashView.hpp:
-
-generated/gui_generated/include/gui_generated/crash_screen/CrashViewBase.hpp:
-
-gui/include/gui/crash_screen/CrashPresenter.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp:
 

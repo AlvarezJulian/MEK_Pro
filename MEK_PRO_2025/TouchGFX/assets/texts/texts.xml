@@ -24,25 +24,29 @@
         <Translation Language="DE" Alignment="Center">Lenkfunktion in Ordnung?</Translation>
         <Translation Language="EN">Steering function ok?</Translation>
       </Text>
-      <Text Id="F01_Beleuchtung" Alignment="Center" TypographyId="default_2">
+      <Text Id="F01_Beleuchtung" Alignment="Center" TypographyId="MEK_2">
         <Translation Language="DE" Alignment="Center">Beleuchtung, Blinker, &#10;Hupe und Rückfahrwarner &#10;in Ordnung?</Translation>
         <Translation Language="EN">Lighting, blinkers, &#10;horn and reversing &#10;warning ok?&#10;</Translation>
       </Text>
     </TextGroup>
     <TextGroup Id="Unsorted">
-      <Text Id="__SingleUse_9FL6" Alignment="Left" TypographyId="default_2">
-        <Translation Language="DE">Bitte ELektrolyten auffüllen! </Translation>
+      <Text Id="__SingleUse_YHT1" Alignment="Center" TypographyId="MEK_2">
+        <Translation Language="DE">Fertig?&#10;Bitte mit Transponder ausloggen!</Translation>
         <Translation Language="EN">New Text</Translation>
       </Text>
-      <Text Id="__SingleUse_H3TU" Alignment="Left" TypographyId="default_2">
+      <Text Id="__SingleUse_9FL6" Alignment="Left" TypographyId="MEK_2">
+        <Translation Language="DE">Bitte Elektrolyten auffüllen! </Translation>
+        <Translation Language="EN">New Text</Translation>
+      </Text>
+      <Text Id="__SingleUse_H3TU" Alignment="Left" TypographyId="MEK_8">
         <Translation Language="DE">ELektrolystand leer</Translation>
         <Translation Language="EN">New Text</Translation>
       </Text>
-      <Text Id="__SingleUse_VCEW" Alignment="Center" TypographyId="MEK_3">
+      <Text Id="__SingleUse_VCEW" Alignment="Center" TypographyId="MEK_1">
         <Translation Language="DE">Batterie&#10;Management</Translation>
         <Translation Language="EN">New Text</Translation>
       </Text>
-      <Text Id="__SingleUse_YGB5" Alignment="Center" TypographyId="default_2">
+      <Text Id="__SingleUse_YGB5" Alignment="Center" TypographyId="MEK_2">
         <Translation Language="DE">Bitte mit berechtigem &#10;Transponder freischalten.</Translation>
         <Translation Language="EN">New Text</Translation>
       </Text>
@@ -50,43 +54,43 @@
         <Translation Language="DE">Der Betrieb ist eingeschränkt.</Translation>
         <Translation Language="EN">New Text</Translation>
       </Text>
-      <Text Id="__SingleUse_L4TK" Alignment="Left" TypographyId="MEK_3">
-        <Translation Language="DE">Werkstatt-modus!</Translation>
+      <Text Id="__SingleUse_L4TK" Alignment="Center" TypographyId="MEK_1">
+        <Translation Language="DE">Werkstatt-&#10;modus!</Translation>
         <Translation Language="EN">New Text</Translation>
       </Text>
       <Text Id="__SingleUse_KBYA" Alignment="Center" TypographyId="default_2">
         <Translation Language="DE">Bitte mit berechtigem &#10;Transponder freischlaten.</Translation>
         <Translation Language="EN">New Text</Translation>
       </Text>
-      <Text Id="__SingleUse_JK69" Alignment="Left" TypographyId="default_2">
-        <Translation Language="DE">Betrieb ist eingestellt.</Translation>
+      <Text Id="__SingleUse_JK69" Alignment="Left" TypographyId="MEK_8">
+        <Translation Language="DE">Der Betrieb ist eingestellt.</Translation>
         <Translation Language="EN">New Text</Translation>
       </Text>
-      <Text Id="__SingleUse_SW5X" Alignment="Center" TypographyId="MEK_3">
+      <Text Id="__SingleUse_SW5X" Alignment="Center" TypographyId="MEK_1">
         <Translation Language="DE">Crash!</Translation>
         <Translation Language="EN">New Text</Translation>
       </Text>
-      <Text Id="__SingleUse_L9J3" Alignment="Left" TypographyId="Large">
+      <Text Id="__SingleUse_L9J3" Alignment="Left" TypographyId="MEK_2">
         <Translation Language="DE">ID</Translation>
         <Translation Language="EN">New Text</Translation>
       </Text>
-      <Text Id="__SingleUse_D3S5" Alignment="Left" TypographyId="Medium">
+      <Text Id="__SingleUse_D3S5" Alignment="Left" TypographyId="MEK_2">
         <Translation Language="DE">WLAN</Translation>
         <Translation Language="EN">New Text</Translation>
       </Text>
-      <Text Id="__SingleUse_4O6A" Alignment="Left" TypographyId="Medium">
+      <Text Id="__SingleUse_4O6A" Alignment="Left" TypographyId="MEK_2">
         <Translation Language="DE">Bluetooth</Translation>
         <Translation Language="EN">New Text</Translation>
       </Text>
-      <Text Id="__SingleUse_XN9G" Alignment="Left" TypographyId="Default">
+      <Text Id="__SingleUse_XN9G" Alignment="Center" TypographyId="MEK_3">
         <Translation Language="DE">&lt;&gt;</Translation>
         <Translation Language="EN">&lt;&gt;</Translation>
       </Text>
-      <Text Id="__SingleUse_NBVV" Alignment="Left" TypographyId="Default">
+      <Text Id="__SingleUse_NBVV" Alignment="Left" TypographyId="MEK_3">
         <Translation Language="DE">Login Zeit</Translation>
         <Translation Language="EN">New Text</Translation>
       </Text>
-      <Text Id="__SingleUse_P975" Alignment="Left" TypographyId="Medium">
+      <Text Id="__SingleUse_P975" Alignment="Left" TypographyId="MEK_2">
         <Translation Language="DE">&lt;&gt;</Translation>
         <Translation Language="EN">&lt;&gt;</Translation>
       </Text>
@@ -118,23 +122,23 @@
         <Translation Language="DE">Login</Translation>
         <Translation Language="EN">New Text</Translation>
       </Text>
-      <Text Id="__SingleUse_8W76" Alignment="Left" TypographyId="Medium">
+      <Text Id="__SingleUse_8W76" Alignment="Left" TypographyId="MEK_2">
         <Translation Language="DE">Login Zeit</Translation>
         <Translation Language="EN">logzeit :</Translation>
       </Text>
-      <Text Id="__SingleUse_10I5" Alignment="Left" TypographyId="Medium">
+      <Text Id="__SingleUse_10I5" Alignment="Left" TypographyId="MEK_2">
         <Translation Language="DE">&lt;&gt;</Translation>
         <Translation Language="EN">&lt;&gt;</Translation>
       </Text>
-      <Text Id="__SingleUse_4DD2" Alignment="Center" TypographyId="default_2">
+      <Text Id="__SingleUse_4DD2" Alignment="Center" TypographyId="MEK_2">
         <Translation Language="DE">Please log in with transponder</Translation>
         <Translation Language="EN">Please log in</Translation>
       </Text>
-      <Text Id="__SingleUse_8VM5" Alignment="Center" TypographyId="Default">
+      <Text Id="__SingleUse_8VM5" Alignment="Center" TypographyId="MEK_5">
         <Translation Language="DE">nein</Translation>
         <Translation Language="EN">bad</Translation>
       </Text>
-      <Text Id="__SingleUse_ZVD9" Alignment="Center" TypographyId="Default">
+      <Text Id="__SingleUse_ZVD9" Alignment="Center" TypographyId="MEK_5">
         <Translation Language="DE">ja</Translation>
         <Translation Language="EN">ok</Translation>
       </Text>
@@ -150,35 +154,35 @@
         <Translation Language="DE">New Text</Translation>
         <Translation Language="EN"></Translation>
       </Text>
-      <Text Id="__SingleUse_GT5J" Alignment="Left" TypographyId="Medium">
+      <Text Id="__SingleUse_GT5J" Alignment="Left" TypographyId="MEK_2">
         <Translation Language="DE">Elektrolytstand</Translation>
         <Translation Language="EN">ELS:</Translation>
       </Text>
-      <Text Id="__SingleUse_C6CN" Alignment="Left" TypographyId="Medium">
+      <Text Id="__SingleUse_C6CN" Alignment="Left" TypographyId="MEK_2">
         <Translation Language="DE">EBZ</Translation>
         <Translation Language="EN">EBZ:</Translation>
       </Text>
-      <Text Id="__SingleUse_GYFR" Alignment="Center" TypographyId="Default">
+      <Text Id="__SingleUse_GYFR" Alignment="Center" TypographyId="MEK_5">
         <Translation Language="DE">Start</Translation>
         <Translation Language="EN">Start</Translation>
       </Text>
-      <Text Id="__SingleUse_FN4I" Alignment="Left" TypographyId="Default">
+      <Text Id="__SingleUse_FN4I" Alignment="Left" TypographyId="MEK_7">
         <Translation Language="DE">5</Translation>
         <Translation Language="EN">5</Translation>
       </Text>
-      <Text Id="__SingleUse_Z3DE" Alignment="Left" TypographyId="Default">
+      <Text Id="__SingleUse_Z3DE" Alignment="Left" TypographyId="MEK_7">
         <Translation Language="DE">1</Translation>
         <Translation Language="EN">1</Translation>
       </Text>
-      <Text Id="__SingleUse_JBEU" Alignment="Center" TypographyId="MEK_3">
+      <Text Id="__SingleUse_JBEU" Alignment="Center" TypographyId="MEK_6">
         <Translation Language="DE">Abfahrskontrolle</Translation>
         <Translation Language="EN">departure control</Translation>
       </Text>
-      <Text Id="__SingleUse_DSJX" Alignment="Center" TypographyId="default_2">
+      <Text Id="__SingleUse_DSJX" Alignment="Center" TypographyId="MEK_2">
         <Translation Language="DE">Bitte führen Sie die &#10;Abfahrtskrontrolle durch</Translation>
         <Translation Language="EN">Please run the &#10;Departure control</Translation>
       </Text>
-      <Text Id="__SingleUse_TMQ7" Alignment="Center" TypographyId="default_2">
+      <Text Id="__SingleUse_TMQ7" Alignment="Center" TypographyId="MEK_2">
         <Translation Language="DE">Bitte mit Transponder einloggen</Translation>
         <Translation Language="EN">Bitte einloggen</Translation>
       </Text>
@@ -188,11 +192,11 @@
       </Text>
     </TextGroup>
     <TextGroup Id="Wildcards">
-      <Text Id="__SingleUse_RQ8E" Alignment="Left" TypographyId="Medium">
+      <Text Id="__SingleUse_RQ8E" Alignment="Left" TypographyId="MEK_2">
         <Translation Language="DE">&lt;value&gt;</Translation>
         <Translation Language="EN">&lt;value&gt;</Translation>
       </Text>
-      <Text Id="__SingleUse_N3WC" Alignment="Center" TypographyId="Default">
+      <Text Id="__SingleUse_N3WC" Alignment="Center" TypographyId="MEK_7">
         <Translation Language="DE">&lt;value&gt; von &lt;value&gt;</Translation>
         <Translation Language="EN">&lt;value&gt; of &lt;value&gt;</Translation>
       </Text>
@@ -202,12 +206,17 @@
     <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
     <Typography Id="Default" Font="verdana.ttf" Size="15" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WidgetWildcardCharacters="0123456789 :APM" WildcardCharacterRanges="0x20-0x7e" />
     <Typography Id="default_2" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7e" />
-    <Typography Id="Medium" Font="verdana.ttf" Size="25" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WidgetWildcardCharacters="0123456789 :APM" WildcardCharacterRanges="0x20-0x7e" />
+    <Typography Id="Medium" Font="verdana.ttf" Size="25" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7e" />
     <Typography Id="VeryBig" Font="verdanab.ttf" Size="60" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9" />
     <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
     <Typography Id="Bigger" Font="verdana.ttf" Size="60" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-5" />
-    <Typography Id="MEK_1" Font="Anton-Regular.ttf" Size="45" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7e" />
-    <Typography Id="MEK_2" Font="OpenSans-Italic.ttf" Size="45" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7e" />
-    <Typography Id="MEK_3" Font="OpenSans_Condensed-Bold.ttf" Size="43" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7e" />
+    <Typography Id="MEK_1" Font="Anton-Regular.ttf" Size="50" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7e" />
+    <Typography Id="MEK_2" Font="OpenSans-Regular.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WidgetWildcardCharacters="0123456789 :APM" WildcardCharacterRanges="0x20-0x7e" />
+    <Typography Id="MEK_3" Font="OpenSans-Regular.ttf" Size="17" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WidgetWildcardCharacters="0123456789 :APM" WildcardCharacterRanges="0x20-0x7e" />
+    <Typography Id="MEK_4" Font="OpenSans-Italic.ttf" Size="50" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7e" />
+    <Typography Id="MEK_5" Font="OpenSans-Bold.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7e" />
+    <Typography Id="MEK_6" Font="OpenSans-Bold.ttf" Size="27" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7e" />
+    <Typography Id="MEK_7" Font="OpenSans-Bold.ttf" Size="16" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7e" />
+    <Typography Id="MEK_8" Font="OpenSans-Italic.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7e" />
   </Typographies>
 </TextDatabase>

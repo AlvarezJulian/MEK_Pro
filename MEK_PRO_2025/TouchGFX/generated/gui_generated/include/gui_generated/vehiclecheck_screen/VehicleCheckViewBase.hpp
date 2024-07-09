@@ -13,6 +13,7 @@
 #include <touchgfx/widgets/ButtonWithLabel.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
 #include <gui/containers/TopMenu.hpp>
+#include <touchgfx/widgets/Image.hpp>
 
 class VehicleCheckViewBase : public touchgfx::View<VehicleCheckPresenter>
 {
@@ -55,6 +56,7 @@ protected:
     touchgfx::TextArea question_Text;
     touchgfx::TextArea text_Abfahrskontrolle;
     TopMenu topMenu1;
+    touchgfx::Image image1;
 
     /*
      * Wildcard Buffers

@@ -9,6 +9,7 @@
 #include <touchgfx/widgets/ScalableImage.hpp>
 #include <touchgfx/containers/clock/DigitalClock.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
+#include <touchgfx/widgets/Image.hpp>
 
 class TopMenuBase : public touchgfx::Container
 {
@@ -33,10 +34,10 @@ protected:
     touchgfx::ScalableImage bluetooth_0;
     touchgfx::ScalableImage bluetooth_Active;
     touchgfx::DigitalClock currentClock;
-    touchgfx::ScalableImage logOut_Led;
-    touchgfx::ScalableImage logIn_Led;
     touchgfx::DigitalClock LoginClock;
     touchgfx::TextArea Tetxt_LogInTime;
+    touchgfx::Image logOut_Led;
+    touchgfx::Image logIn_Led;
 
 private:
 

@@ -10,6 +10,7 @@
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/containers/ModalWindow.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
+#include <touchgfx/widgets/Image.hpp>
 #include <gui/containers/TopMenu.hpp>
 
 class StatusScreenViewBase : public touchgfx::View<StatusScreenPresenter>
@@ -41,10 +42,12 @@ protected:
     touchgfx::TextArea textArea9;
     touchgfx::TextArea textArea8;
     touchgfx::TextArea textArea7;
+    touchgfx::Image ELS_Icon;
     touchgfx::ModalWindow Workshop;
     touchgfx::TextArea textArea6;
     touchgfx::TextArea textArea5;
     touchgfx::TextArea textArea4;
+    touchgfx::Image Workshop_Icon;
     touchgfx::ModalWindow Crash;
     touchgfx::TextArea textArea3;
     touchgfx::TextArea textArea2;

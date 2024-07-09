@@ -23,6 +23,11 @@ struct Typography
     static const touchgfx::FontId MEK_1 = 7;
     static const touchgfx::FontId MEK_2 = 8;
     static const touchgfx::FontId MEK_3 = 9;
+    static const touchgfx::FontId MEK_4 = 10;
+    static const touchgfx::FontId MEK_5 = 11;
+    static const touchgfx::FontId MEK_6 = 12;
+    static const touchgfx::FontId MEK_7 = 13;
+    static const touchgfx::FontId MEK_8 = 14;
 };
 
 struct TypographyFontIndex
@@ -34,10 +39,15 @@ struct TypographyFontIndex
     static const touchgfx::FontId VERYBIG = 4;   // verdanab_60_4bpp
     static const touchgfx::FontId SMALL = 5;     // verdana_10_4bpp
     static const touchgfx::FontId BIGGER = 6;    // verdana_60_4bpp
-    static const touchgfx::FontId MEK_1 = 7;     // Anton_Regular_45_4bpp
-    static const touchgfx::FontId MEK_2 = 8;     // OpenSans_Italic_45_4bpp
-    static const touchgfx::FontId MEK_3 = 9;     // OpenSans_Condensed_Bold_43_4bpp
-    static const uint16_t NUMBER_OF_FONTS = 10;
+    static const touchgfx::FontId MEK_1 = 7;     // Anton_Regular_50_4bpp
+    static const touchgfx::FontId MEK_2 = 8;     // OpenSans_Regular_20_4bpp
+    static const touchgfx::FontId MEK_3 = 9;     // OpenSans_Regular_17_4bpp
+    static const touchgfx::FontId MEK_4 = 10;     // OpenSans_Italic_50_4bpp
+    static const touchgfx::FontId MEK_5 = 11;     // OpenSans_Bold_20_4bpp
+    static const touchgfx::FontId MEK_6 = 12;     // OpenSans_Bold_27_4bpp
+    static const touchgfx::FontId MEK_7 = 13;     // OpenSans_Bold_16_4bpp
+    static const touchgfx::FontId MEK_8 = 14;     // OpenSans_Italic_20_4bpp
+    static const uint16_t NUMBER_OF_FONTS = 15;
 };
 
 class ApplicationFontProvider : public touchgfx::FontProvider

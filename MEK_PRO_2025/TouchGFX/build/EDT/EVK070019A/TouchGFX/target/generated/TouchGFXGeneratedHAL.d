@@ -126,10 +126,10 @@ TouchGFX/build/EDT/EVK070019A/TouchGFX/target/generated/TouchGFXGeneratedHAL.o: 
  Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h \
  Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
  Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h \
- TouchGFX/gui/include/gui/wellcome_screen/WellcomeView.hpp \
- TouchGFX/generated/gui_generated/include/gui_generated/wellcome_screen/WellcomeViewBase.hpp \
+ TouchGFX/gui/include/gui/login_screen/LoginView.hpp \
+ TouchGFX/generated/gui_generated/include/gui_generated/login_screen/LoginViewBase.hpp \
  Middlewares/ST/touchgfx/framework/include/mvp/View.hpp \
- TouchGFX/gui/include/gui/wellcome_screen/WellcomePresenter.hpp \
+ TouchGFX/gui/include/gui/login_screen/LoginPresenter.hpp \
  TouchGFX/gui/include/gui/model/ModelListener.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ScalableImage.hpp \
@@ -142,25 +142,22 @@ TouchGFX/build/EDT/EVK070019A/TouchGFX/target/generated/TouchGFXGeneratedHAL.o: 
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
- TouchGFX/gui/include/gui/vehicle_screen/VehicleView.hpp \
- TouchGFX/generated/gui_generated/include/gui_generated/vehicle_screen/VehicleViewBase.hpp \
- TouchGFX/gui/include/gui/vehicle_screen/VehiclePresenter.hpp \
+ TouchGFX/gui/include/gui/wellcome_screen/WellcomeView.hpp \
+ TouchGFX/generated/gui_generated/include/gui_generated/wellcome_screen/WellcomeViewBase.hpp \
+ TouchGFX/gui/include/gui/wellcome_screen/WellcomePresenter.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
- TouchGFX/gui/include/gui/start_screen/StartView.hpp \
- TouchGFX/generated/gui_generated/include/gui_generated/start_screen/StartViewBase.hpp \
- TouchGFX/gui/include/gui/start_screen/StartPresenter.hpp \
  TouchGFX/gui/include/gui/vehiclecheck_screen/VehicleCheckView.hpp \
  TouchGFX/generated/gui_generated/include/gui_generated/vehiclecheck_screen/VehicleCheckViewBase.hpp \
  TouchGFX/gui/include/gui/vehiclecheck_screen/VehicleCheckPresenter.hpp \
- TouchGFX/gui/include/gui/crash_screen/CrashView.hpp \
- TouchGFX/generated/gui_generated/include/gui_generated/crash_screen/CrashViewBase.hpp \
- TouchGFX/gui/include/gui/crash_screen/CrashPresenter.hpp \
+ TouchGFX/gui/include/gui/start_screen/StartView.hpp \
+ TouchGFX/generated/gui_generated/include/gui_generated/start_screen/StartViewBase.hpp \
+ TouchGFX/gui/include/gui/start_screen/StartPresenter.hpp \
+ TouchGFX/gui/include/gui/statusscreen_screen/StatusScreenView.hpp \
+ TouchGFX/generated/gui_generated/include/gui_generated/statusscreen_screen/StatusScreenViewBase.hpp \
+ TouchGFX/gui/include/gui/statusscreen_screen/StatusScreenPresenter.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp \
- TouchGFX/gui/include/gui/workshop_screen/WorkshopView.hpp \
- TouchGFX/generated/gui_generated/include/gui_generated/workshop_screen/WorkshopViewBase.hpp \
- TouchGFX/gui/include/gui/workshop_screen/WorkshopPresenter.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/hal/GPIO.hpp
 
 TouchGFX/target/generated/TouchGFXGeneratedHAL.hpp:
@@ -431,13 +428,13 @@ Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:
 
 Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:
 
-TouchGFX/gui/include/gui/wellcome_screen/WellcomeView.hpp:
+TouchGFX/gui/include/gui/login_screen/LoginView.hpp:
 
-TouchGFX/generated/gui_generated/include/gui_generated/wellcome_screen/WellcomeViewBase.hpp:
+TouchGFX/generated/gui_generated/include/gui_generated/login_screen/LoginViewBase.hpp:
 
 Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:
 
-TouchGFX/gui/include/gui/wellcome_screen/WellcomePresenter.hpp:
+TouchGFX/gui/include/gui/login_screen/LoginPresenter.hpp:
 
 TouchGFX/gui/include/gui/model/ModelListener.hpp:
 
@@ -463,11 +460,11 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractCloc
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 
-TouchGFX/gui/include/gui/vehicle_screen/VehicleView.hpp:
+TouchGFX/gui/include/gui/wellcome_screen/WellcomeView.hpp:
 
-TouchGFX/generated/gui_generated/include/gui_generated/vehicle_screen/VehicleViewBase.hpp:
+TouchGFX/generated/gui_generated/include/gui_generated/wellcome_screen/WellcomeViewBase.hpp:
 
-TouchGFX/gui/include/gui/vehicle_screen/VehiclePresenter.hpp:
+TouchGFX/gui/include/gui/wellcome_screen/WellcomePresenter.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
 
@@ -475,30 +472,24 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
 
-TouchGFX/gui/include/gui/start_screen/StartView.hpp:
-
-TouchGFX/generated/gui_generated/include/gui_generated/start_screen/StartViewBase.hpp:
-
-TouchGFX/gui/include/gui/start_screen/StartPresenter.hpp:
-
 TouchGFX/gui/include/gui/vehiclecheck_screen/VehicleCheckView.hpp:
 
 TouchGFX/generated/gui_generated/include/gui_generated/vehiclecheck_screen/VehicleCheckViewBase.hpp:
 
 TouchGFX/gui/include/gui/vehiclecheck_screen/VehicleCheckPresenter.hpp:
 
-TouchGFX/gui/include/gui/crash_screen/CrashView.hpp:
+TouchGFX/gui/include/gui/start_screen/StartView.hpp:
 
-TouchGFX/generated/gui_generated/include/gui_generated/crash_screen/CrashViewBase.hpp:
+TouchGFX/generated/gui_generated/include/gui_generated/start_screen/StartViewBase.hpp:
 
-TouchGFX/gui/include/gui/crash_screen/CrashPresenter.hpp:
+TouchGFX/gui/include/gui/start_screen/StartPresenter.hpp:
+
+TouchGFX/gui/include/gui/statusscreen_screen/StatusScreenView.hpp:
+
+TouchGFX/generated/gui_generated/include/gui_generated/statusscreen_screen/StatusScreenViewBase.hpp:
+
+TouchGFX/gui/include/gui/statusscreen_screen/StatusScreenPresenter.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp:
-
-TouchGFX/gui/include/gui/workshop_screen/WorkshopView.hpp:
-
-TouchGFX/generated/gui_generated/include/gui_generated/workshop_screen/WorkshopViewBase.hpp:
-
-TouchGFX/gui/include/gui/workshop_screen/WorkshopPresenter.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/hal/GPIO.hpp:

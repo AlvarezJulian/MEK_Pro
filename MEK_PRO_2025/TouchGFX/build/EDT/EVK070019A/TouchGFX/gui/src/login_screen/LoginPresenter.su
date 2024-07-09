@@ -1,0 +1,11 @@
+ModelListener.hpp:23:15:virtual void ModelListener::Wellcome_User_ID_Received(char*)	0	static
+ModelListener.hpp:29:15:virtual void ModelListener::Start_User_ID_Received(char*)	0	static
+ModelListener.hpp:33:15:virtual void ModelListener::Start_Status_LOGIN_OUT_Received(bool)	0	static
+ModelListener.hpp:35:15:virtual void ModelListener::Start_wifi_Signal_Changed(uint8_t)	0	static
+ModelListener.hpp:37:15:virtual void ModelListener::Start_Bluetooth_Status_Changed(bool)	0	static
+LoginPresenter.hpp:28:13:LoginPresenter::~LoginPresenter()	0	static
+LoginPresenter.cpp:8:6:virtual void LoginPresenter::activate()	0	static
+LoginPresenter.cpp:16:6:virtual void LoginPresenter::Login_User_ID_Received(char*)	0	static
+LoginPresenter.hpp:28:13:virtual LoginPresenter::~LoginPresenter()	8	static
+LoginPresenter.hpp:28:13:virtual void* LoginPresenter::_ZThn4_N14LoginPresenterD1Ev()	0	static
+LoginPresenter.cpp:4:1:LoginPresenter::LoginPresenter(LoginView&)	8	static

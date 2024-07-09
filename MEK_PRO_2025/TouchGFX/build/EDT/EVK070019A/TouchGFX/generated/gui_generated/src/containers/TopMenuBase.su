@@ -14,9 +14,12 @@ Drawable.hpp:703:18:virtual void touchgfx::Drawable::setupDrawChain(const touchg
 Widget.hpp:45:18:virtual void touchgfx::Widget::getLastChild(int16_t, int16_t, touchgfx::Drawable**)	0	static
 Container.hpp:165:23:virtual touchgfx::Drawable* touchgfx::Container::getFirstChild()	0	static
 TypedText.hpp:65:13:touchgfx::TypedText::~TypedText()	0	static
-TopMenuBase.cpp:89:1:TopMenuBase::~TopMenuBase()	0	static
-TopMenuBase.cpp:94:6:virtual void TopMenuBase::initialize()	0	static
+TopMenuBase.cpp:87:1:TopMenuBase::~TopMenuBase()	0	static
+TopMenuBase.cpp:92:6:virtual void TopMenuBase::initialize()	0	static
 TypedText.hpp:65:13:virtual touchgfx::TypedText::~TypedText()	8	static
-TopMenuBase.cpp:89:1:virtual TopMenuBase::~TopMenuBase()	8	static
-Drawable.hpp:233:10:void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	24	static
+TopMenuBase.cpp:87:1:virtual TopMenuBase::~TopMenuBase()	8	static
+Drawable.hpp:48:5:touchgfx::Drawable::Drawable()	0	static
+Drawable.hpp:343:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
+Drawable.hpp:233:10:void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	16	static
+Image.hpp:50:5:touchgfx::Image::Image(const touchgfx::Bitmap&)	16	static
 TopMenuBase.cpp:9:1:TopMenuBase::TopMenuBase()	104	static
