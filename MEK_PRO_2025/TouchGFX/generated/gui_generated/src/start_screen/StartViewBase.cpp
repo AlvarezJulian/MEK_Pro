@@ -17,7 +17,7 @@ StartViewBase::StartViewBase()
     background_BlueLogo.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
     add(background_BlueLogo);
 
-    EbzTimeClock.setPosition(253, 621, 134, 30);
+    EbzTimeClock.setPosition(277, 598, 123, 25);
     EbzTimeClock.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     EbzTimeClock.setTypedText(touchgfx::TypedText(T___SINGLEUSE_P975));
     EbzTimeClock.displayLeadingZeroForHourIndicator(true);
@@ -27,18 +27,18 @@ StartViewBase::StartViewBase()
     add(EbzTimeClock);
 
     line5.setBitmap(touchgfx::Bitmap(BITMAP_IMAGE_07_ID));
-    line5.setPosition(45, 602, 395, 1);
+    line5.setPosition(45, 575, 395, 1);
     line5.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
     add(line5);
 
-    text_EZB.setXY(178, 621);
+    text_EZB.setPosition(178, 598, 35, 25);
     text_EZB.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     text_EZB.setLinespacing(0);
     text_EZB.setTypedText(touchgfx::TypedText(T___SINGLEUSE_C6CN));
-    text_EZB.setAlpha(190);
+    text_EZB.setAlpha(153);
     add(text_EZB);
 
-    LogTimeClock.setPosition(320, 559, 142, 30);
+    LogTimeClock.setPosition(277, 529, 123, 25);
     LogTimeClock.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     LogTimeClock.setTypedText(touchgfx::TypedText(T___SINGLEUSE_10I5));
     LogTimeClock.displayLeadingZeroForHourIndicator(true);
@@ -47,86 +47,99 @@ StartViewBase::StartViewBase()
     LogTimeClock.setAlpha(190);
     add(LogTimeClock);
 
-    textLogtime.setXY(178, 559);
+    textLogtime.setPosition(178, 529, 89, 25);
     textLogtime.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textLogtime.setLinespacing(0);
     textLogtime.setTypedText(touchgfx::TypedText(T___SINGLEUSE_8W76));
-    textLogtime.setAlpha(190);
+    textLogtime.setAlpha(153);
     add(textLogtime);
 
     line4.setBitmap(touchgfx::Bitmap(BITMAP_IMAGE_07_ID));
-    line4.setPosition(45, 540, 395, 1);
+    line4.setPosition(45, 505, 395, 1);
     line4.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
     add(line4);
 
-    tex_ELS.setXY(178, 496);
+    tex_ELS.setXY(178, 458);
     tex_ELS.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     tex_ELS.setLinespacing(0);
     tex_ELS.setTypedText(touchgfx::TypedText(T___SINGLEUSE_GT5J));
-    tex_ELS.setAlpha(190);
+    tex_ELS.setAlpha(153);
     add(tex_ELS);
 
-    ELS_Icon.setBitmap(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_IMAGEPROGRESS_STYLED_BATTERIES_BATTERY_SMALL_ID));
-    ELS_Icon.setPosition(107, 500, 54, 22);
-    ELS_Icon.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
-    add(ELS_Icon);
-
     line3.setBitmap(touchgfx::Bitmap(BITMAP_IMAGE_07_ID));
-    line3.setPosition(45, 479, 395, 1);
+    line3.setPosition(45, 434, 395, 1);
     line3.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
     add(line3);
 
-    Tetxt_Bluetooth.setXY(178, 432);
+    Tetxt_Bluetooth.setXY(178, 389);
     Tetxt_Bluetooth.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     Tetxt_Bluetooth.setLinespacing(0);
     Tetxt_Bluetooth.setTypedText(touchgfx::TypedText(T___SINGLEUSE_4O6A));
-    Tetxt_Bluetooth.setAlpha(190);
+    Tetxt_Bluetooth.setAlpha(153);
     add(Tetxt_Bluetooth);
 
-    Bluetooth_Icon.setBitmap(touchgfx::Bitmap(BITMAP_ICON_02_1_ID));
-    Bluetooth_Icon.setPosition(117, 430, 35, 35);
-    Bluetooth_Icon.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
-    add(Bluetooth_Icon);
-
     Line2.setBitmap(touchgfx::Bitmap(BITMAP_IMAGE_07_ID));
-    Line2.setPosition(45, 411, 395, 1);
+    Line2.setPosition(45, 370, 395, 1);
     Line2.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
     add(Line2);
 
-    text_Wifi.setXY(178, 371);
+    text_Wifi.setXY(178, 327);
     text_Wifi.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     text_Wifi.setLinespacing(0);
     text_Wifi.setTypedText(touchgfx::TypedText(T___SINGLEUSE_D3S5));
-    text_Wifi.setAlpha(190);
+    text_Wifi.setAlpha(153);
     add(text_Wifi);
 
-    Wifi_Icon.setBitmap(touchgfx::Bitmap(BITMAP_ICON_05_4_ID));
-    Wifi_Icon.setPosition(117, 369, 35, 35);
-    Wifi_Icon.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
-    add(Wifi_Icon);
-
     line1.setBitmap(touchgfx::Bitmap(BITMAP_IMAGE_07_ID));
-    line1.setPosition(45, 350, 395, 1);
+    line1.setPosition(45, 305, 395, 1);
     line1.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
     add(line1);
 
-    User_ID_Start.setPosition(178, 300, 227, 30);
+    User_ID_Start.setPosition(178, 262, 227, 30);
     User_ID_Start.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     User_ID_Start.setLinespacing(0);
     Unicode::snprintf(User_ID_StartBuffer, USER_ID_START_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_L9J3).getText());
     User_ID_Start.setWildcard(User_ID_StartBuffer);
     User_ID_Start.setTypedText(touchgfx::TypedText(T___SINGLEUSE_RQ8E));
-    User_ID_Start.setAlpha(190);
+    User_ID_Start.setAlpha(153);
     add(User_ID_Start);
-
-    ID_Icon.setBitmap(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_PERM_IDENTITY_50_50_000000_SVG_ID));
-    ID_Icon.setPosition(117, 298, 35, 35);
-    ID_Icon.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
-    ID_Icon.setAlpha(190);
-    add(ID_Icon);
 
     topMenu1.setXY(-2, 0);
     add(topMenu1);
+
+    textArea1.setXY(86, 633);
+    textArea1.setColor(touchgfx::Color::getColorFromRGB(0, 92, 169));
+    textArea1.setLinespacing(0);
+    textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_YHT1));
+    add(textArea1);
+
+    Wifi_Icon.setXY(105, 320);
+    Wifi_Icon.setBitmap(touchgfx::Bitmap(BITMAP_ICON_WLAN_5_ID));
+    add(Wifi_Icon);
+
+    Bluetooth_Icon.setXY(117, 380);
+    Bluetooth_Icon.setBitmap(touchgfx::Bitmap(BITMAP_ICON_BLUETOOTH_2_ID));
+    add(Bluetooth_Icon);
+
+    ELS_Icon.setXY(113, 447);
+    ELS_Icon.setBitmap(touchgfx::Bitmap(BITMAP_ICON_ELS_1_ID));
+    add(ELS_Icon);
+
+    image1.setXY(107, 518);
+    image1.setBitmap(touchgfx::Bitmap(BITMAP_ICON_LOGIN_ZEIT_ID));
+    add(image1);
+
+    image2.setXY(204, 142);
+    image2.setBitmap(touchgfx::Bitmap(BITMAP_ICON_ABFAHRTSKONTROLLE_72X100PX_ID));
+    add(image2);
+
+    image3.setXY(90, 588);
+    image3.setBitmap(touchgfx::Bitmap(BITMAP_ICON_EBZ_ID));
+    add(image3);
+
+    ID_Icon.setXY(106, 257);
+    ID_Icon.setBitmap(touchgfx::Bitmap(BITMAP_ICON_ID_ID));
+    add(ID_Icon);
 }
 
 StartViewBase::~StartViewBase()

@@ -27,21 +27,23 @@ void StartView::setupScreen() {
 	/*
 	 * update the new Values on Screen
 	 */
-//	digitalHours = digitalClock.getCurrentHour();
-//	digitalMinutes = digitalClock.getCurrentMinute();
-//	digitalSeconds = digitalClock.getCurrentSecond();
+	_logHours = LogTimeClock.getCurrentHour();
+	_logMinutes = LogTimeClock.getCurrentMinute();
+	_logSeconds = LogTimeClock.getCurrentSecond();
+#ifndef SIMULATOR
 	_logHours = presenter->getLogHour();
 	_logMinutes = presenter->getLogMinute();
 	_logSeconds = presenter->getLogSecond();
-
+#endif // SIMULATOR
 }
 
 void StartView::tearDownScreen() {
 	StartViewBase::tearDownScreen();
-
+#ifndef SIMULATOR
 	presenter->saveLogHour(_logHours);
 	presenter->saveLogMinute(_logMinutes);
 	presenter->saveLogSecond(_logSeconds);
+#endif // SIMULATOR
 }
 
 #ifndef SIMULATOR
@@ -105,11 +107,5 @@ void StartView::handleTickEvent() {
 			// Update the clock
 			LogTimeClock.setTime24Hour(_logHours, _logMinutes, _logSeconds);
 		}
-	} else {
-		setLogHour(0);
-		setLogMinute(0);
-		setLogSecond(0);
-		// Update the clock
-		LogTimeClock.setTime24Hour(getLogHour(), getLogMinute(), getLogSecond());
 	}
 }

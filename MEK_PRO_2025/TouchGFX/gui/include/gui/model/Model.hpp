@@ -92,13 +92,13 @@ public:
 		current_Crash_Status = state;
 	}
 	void SetEZBHour(uint16_t hour) {
-		current_EZB_hour = hour;
+		current_EBZ_hour = hour;
 	}
 	void SetEZBMinute(uint16_t minute) {
-		current_EZB_minute = minute;
+		current_EBZ_minute = minute;
 	}
 	void SetEZBSecond(uint16_t second) {
-		current_EZB_second = second;
+		current_EBZ_second = second;
 	}
 	void SetELSStatus(bool state) {
 		current_ELS_status = state;
@@ -145,13 +145,13 @@ public:
 		return current_Crash_Status;
 	}
 	uint16_t getEZBHour() {
-		return current_EZB_hour;
+		return current_EBZ_hour;
 	}
 	uint16_t getEZBMinute() {
-		return current_EZB_minute;
+		return current_EBZ_minute;
 	}
 	uint16_t getEZBSecond() {
-		return current_EZB_second;
+		return current_EBZ_second;
 	}
 	bool getELSStatus() {
 		return current_ELS_status;
@@ -184,9 +184,9 @@ protected:
 	bool current_log_Status;
 	bool current_Workshop_Status;
 	bool current_Crash_Status;
-	uint16_t current_EZB_hour;
-	uint16_t current_EZB_minute;
-	uint16_t current_EZB_second;
+	uint16_t current_EBZ_hour;
+	uint16_t current_EBZ_minute;
+	uint16_t current_EBZ_second;
 	bool current_ELS_status;
 	// Botom Menu Save Data:
 	uint16_t current_log_hour;

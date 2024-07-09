@@ -17,13 +17,13 @@ LoginViewBase::LoginViewBase()
     Background_BluePicLogo.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
     add(Background_BluePicLogo);
 
-    text_hinweis.setXY(78, 217);
+    text_hinweis.setXY(91, 217);
     text_hinweis.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     text_hinweis.setLinespacing(0);
     text_hinweis.setTypedText(touchgfx::TypedText(T___SINGLEUSE_TMQ7));
     add(text_hinweis);
 
-    text_hinweis_1.setXY(87, 255);
+    text_hinweis_1.setXY(100, 252);
     text_hinweis_1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     text_hinweis_1.setLinespacing(0);
     text_hinweis_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_4DD2));

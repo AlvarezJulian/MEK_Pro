@@ -9,14 +9,14 @@
 TopMenuBase::TopMenuBase()
 {
     setWidth(480);
-    setHeight(47);
-    TopImage.setBitmap(touchgfx::Bitmap(BITMAP_IMAGE_06_ID));
-    TopImage.setPosition(0, 0, 480, 47);
+    setHeight(60);
+    TopImage.setBitmap(touchgfx::Bitmap(BITMAP_HEADER_BALKEN_480X60PX_ID));
+    TopImage.setPosition(0, 0, 480, 60);
     TopImage.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
     add(TopImage);
 
     wifi_sig_0.setBitmap(touchgfx::Bitmap(BITMAP_ICON_05_ID));
-    wifi_sig_0.setPosition(419, 11, 25, 25);
+    wifi_sig_0.setPosition(419, 18, 25, 25);
     wifi_sig_0.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
     add(wifi_sig_0);
 
@@ -39,7 +39,7 @@ TopMenuBase::TopMenuBase()
     add(wifi_sig_3);
 
     bluetooth_0.setBitmap(touchgfx::Bitmap(BITMAP_ICON_02_ID));
-    bluetooth_0.setPosition(444, 11, 25, 25);
+    bluetooth_0.setPosition(444, 18, 25, 25);
     bluetooth_0.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
     add(bluetooth_0);
 
@@ -49,7 +49,7 @@ TopMenuBase::TopMenuBase()
     bluetooth_Active.setVisible(false);
     add(bluetooth_Active);
 
-    currentClock.setPosition(353, 13, 66, 20);
+    currentClock.setPosition(353, 20, 66, 20);
     currentClock.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     currentClock.setTypedText(touchgfx::TypedText(T___SINGLEUSE_AB6P));
     currentClock.displayLeadingZeroForHourIndicator(true);
@@ -58,18 +58,7 @@ TopMenuBase::TopMenuBase()
     currentClock.setAlpha(190);
     add(currentClock);
 
-    logOut_Led.setBitmap(touchgfx::Bitmap(BITMAP_ICON_15_ID));
-    logOut_Led.setPosition(228, 11, 25, 25);
-    logOut_Led.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
-    add(logOut_Led);
-
-    logIn_Led.setBitmap(touchgfx::Bitmap(BITMAP_ICON_13_ID));
-    logIn_Led.setPosition(228, 11, 25, 25);
-    logIn_Led.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
-    logIn_Led.setVisible(false);
-    add(logIn_Led);
-
-    LoginClock.setPosition(89, 13, 58, 20);
+    LoginClock.setPosition(89, 20, 57, 20);
     LoginClock.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     LoginClock.setTypedText(touchgfx::TypedText(T___SINGLEUSE_XN9G));
     LoginClock.displayLeadingZeroForHourIndicator(true);
@@ -78,12 +67,21 @@ TopMenuBase::TopMenuBase()
     LoginClock.setAlpha(190);
     add(LoginClock);
 
-    Tetxt_LogInTime.setPosition(9, 13, 80, 20);
+    Tetxt_LogInTime.setXY(13, 20);
     Tetxt_LogInTime.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     Tetxt_LogInTime.setLinespacing(0);
     Tetxt_LogInTime.setTypedText(touchgfx::TypedText(T___SINGLEUSE_NBVV));
     Tetxt_LogInTime.setAlpha(190);
     add(Tetxt_LogInTime);
+
+    logOut_Led.setXY(215, 8);
+    logOut_Led.setBitmap(touchgfx::Bitmap(BITMAP_LOG_IN_GRAU_50X50PX_ID));
+    add(logOut_Led);
+
+    logIn_Led.setXY(215, 8);
+    logIn_Led.setBitmap(touchgfx::Bitmap(BITMAP_LOG_IN_GRUEN_50X50PX_ID));
+    logIn_Led.setVisible(false);
+    add(logIn_Led);
 }
 
 TopMenuBase::~TopMenuBase()

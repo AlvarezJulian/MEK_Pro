@@ -17,9 +17,9 @@ Model::Model() :
 		current_log_Status(false),
 		current_Workshop_Status(false),
 		current_Crash_Status(false),
-		current_EZB_hour(0),
-		current_EZB_minute(0),
-		current_EZB_second(0),
+		current_EBZ_hour(0),
+		current_EBZ_minute(0),
+		current_EBZ_second(0),
 		current_ELS_status(false),
 		current_log_hour(0),
 		current_log_minute(0) {

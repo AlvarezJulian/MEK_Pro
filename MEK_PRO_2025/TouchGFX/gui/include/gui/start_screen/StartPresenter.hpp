@@ -32,6 +32,7 @@ public:
 	virtual void Start_Status_LOGIN_OUT_Received(bool state);
 	virtual void Start_wifi_Signal_Changed(uint8_t val);
 	virtual void Start_Bluetooth_Status_Changed(bool state);
+
 	/*
 	 * SET
 	 */
@@ -95,11 +96,10 @@ public:
 	int16_t getLogSecond() {
 		return model->getLogSecond();
 	}
-#endif // SIMULATOR
 
 	virtual ~StartPresenter() {
 	}
-
+#endif // SIMULATOR
 private:
 	StartPresenter();
 

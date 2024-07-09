@@ -31,14 +31,29 @@ touchgfx::Font* ApplicationFontProvider::getFont(touchgfx::FontId typography)
         // verdana_60_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[6]);
     case Typography::MEK_1:
-        // Anton_Regular_45_4bpp
+        // Anton_Regular_50_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[7]);
     case Typography::MEK_2:
-        // OpenSans_Italic_45_4bpp
+        // OpenSans_Regular_20_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[8]);
     case Typography::MEK_3:
-        // OpenSans_Condensed_Bold_43_4bpp
+        // OpenSans_Regular_17_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[9]);
+    case Typography::MEK_4:
+        // OpenSans_Italic_50_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[10]);
+    case Typography::MEK_5:
+        // OpenSans_Bold_20_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[11]);
+    case Typography::MEK_6:
+        // OpenSans_Bold_27_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[12]);
+    case Typography::MEK_7:
+        // OpenSans_Bold_16_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[13]);
+    case Typography::MEK_8:
+        // OpenSans_Italic_20_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[14]);
     default:
         return 0;
     }

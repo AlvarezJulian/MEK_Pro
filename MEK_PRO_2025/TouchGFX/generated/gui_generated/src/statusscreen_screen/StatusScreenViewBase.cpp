@@ -12,71 +12,80 @@ StatusScreenViewBase::StatusScreenViewBase()
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     add(__background);
 
-    ELS_Status.setBackground(touchgfx::BitmapId(BITMAP_IMAGE_08_ID), 40, 311);
-    ELS_Status.setShadeColor(touchgfx::Color::getColorFromRGB(87, 75, 75));
+    ELS_Status.setBackground(touchgfx::BitmapId(BITMAP_HINTERGRUND_TEXT_ID), 40, 171);
+    ELS_Status.setShadeColor(touchgfx::Color::getColorFromRGB(252, 197, 93));
     ELS_Status.setShadeAlpha(150);
-    textArea9.setXY(55, 135);
+    ELS_Status.hide();
+    textArea9.setXY(70, 356);
     textArea9.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textArea9.setLinespacing(0);
     textArea9.setTypedText(touchgfx::TypedText(T___SINGLEUSE_9FL6));
     ELS_Status.add(textArea9);
 
-    textArea8.setXY(103, 111);
-    textArea8.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea8.setXY(116, 294);
+    textArea8.setColor(touchgfx::Color::getColorFromRGB(0, 48, 99));
     textArea8.setLinespacing(0);
     textArea8.setTypedText(touchgfx::TypedText(T___SINGLEUSE_H3TU));
     ELS_Status.add(textArea8);
 
-    textArea7.setXY(89, 5);
-    textArea7.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea7.setXY(70, 153);
+    textArea7.setColor(touchgfx::Color::getColorFromRGB(0, 48, 99));
     textArea7.setLinespacing(0);
     textArea7.setTypedText(touchgfx::TypedText(T___SINGLEUSE_VCEW));
     ELS_Status.add(textArea7);
 
+    ELS_Icon.setXY(178, 57);
+    ELS_Icon.setBitmap(touchgfx::Bitmap(BITMAP_ICON_ELS_2_ID));
+    ELS_Status.add(ELS_Icon);
+
     add(ELS_Status);
 
-    Workshop.setBackground(touchgfx::BitmapId(BITMAP_IMAGE_08_ID), 40, 311);
-    Workshop.setShadeColor(touchgfx::Color::getColorFromRGB(199, 181, 107));
+    Workshop.setBackground(touchgfx::BitmapId(BITMAP_HINTERGRUND_TEXT_ID), 40, 171);
+    Workshop.setShadeColor(touchgfx::Color::getColorFromRGB(252, 197, 93));
     Workshop.setShadeAlpha(150);
     Workshop.hide();
-    textArea6.setXY(73, 109);
+    textArea6.setXY(81, 366);
     textArea6.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textArea6.setLinespacing(0);
     textArea6.setTypedText(touchgfx::TypedText(T___SINGLEUSE_YGB5));
+    textArea6.setAlpha(190);
     Workshop.add(textArea6);
 
-    textArea5.setXY(50, 77);
-    textArea5.setColor(touchgfx::Color::getColorFromRGB(199, 181, 107));
+    textArea5.setXY(50, 319);
+    textArea5.setColor(touchgfx::Color::getColorFromRGB(252, 197, 93));
     textArea5.setLinespacing(0);
     textArea5.setTypedText(touchgfx::TypedText(T___SINGLEUSE_BQYK));
     Workshop.add(textArea5);
 
-    textArea4.setXY(49, 12);
-    textArea4.setColor(touchgfx::Color::getColorFromRGB(199, 181, 107));
+    textArea4.setXY(89, 173);
+    textArea4.setColor(touchgfx::Color::getColorFromRGB(252, 197, 93));
     textArea4.setLinespacing(0);
     textArea4.setTypedText(touchgfx::TypedText(T___SINGLEUSE_L4TK));
     Workshop.add(textArea4);
 
+    Workshop_Icon.setXY(178, 68);
+    Workshop_Icon.setBitmap(touchgfx::Bitmap(BITMAP_ICON_WERKSTATTMODUS_ID));
+    Workshop.add(Workshop_Icon);
+
     add(Workshop);
 
-    Crash.setBackground(touchgfx::BitmapId(BITMAP_IMAGE_08_ID), 40, 311);
-    Crash.setShadeColor(touchgfx::Color::getColorFromRGB(176, 58, 58));
+    Crash.setBackground(touchgfx::BitmapId(BITMAP_HINTERGRUND_TEXT_ID), 40, 171);
+    Crash.setShadeColor(touchgfx::Color::getColorFromRGB(235, 92, 71));
     Crash.setShadeAlpha(150);
-    Crash.hide();
-    textArea3.setXY(73, 105);
+    textArea3.setXY(73, 351);
     textArea3.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textArea3.setLinespacing(0);
     textArea3.setTypedText(touchgfx::TypedText(T___SINGLEUSE_KBYA));
     Crash.add(textArea3);
 
-    textArea2.setXY(91, 71);
-    textArea2.setColor(touchgfx::Color::getColorFromRGB(201, 34, 34));
+    textArea2.setXY(87, 294);
+    textArea2.setColor(touchgfx::Color::getColorFromRGB(235, 92, 71));
     textArea2.setLinespacing(0);
     textArea2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_JK69));
     Crash.add(textArea2);
 
-    textArea1.setXY(148, 9);
-    textArea1.setColor(touchgfx::Color::getColorFromRGB(204, 33, 35));
+    textArea1.setXY(138, 201);
+    textArea1.setColor(touchgfx::Color::getColorFromRGB(235, 92, 71));
     textArea1.setLinespacing(0);
     textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_SW5X));
     Crash.add(textArea1);

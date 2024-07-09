@@ -18,12 +18,8 @@ WellcomeViewBase::WellcomeViewBase() :
     background_WhiteBlue.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
     add(background_WhiteBlue);
 
-    MEK_Logo.setXY(0, 0);
-    MEK_Logo.setBitmap(touchgfx::Bitmap(BITMAP_LOGO_00_ID));
-    add(MEK_Logo);
-
-    btn_StartControl.setXY(90, 516);
-    btn_StartControl.setBitmaps(touchgfx::Bitmap(BITMAP_BUTTON_10_ID), touchgfx::Bitmap(BITMAP_BUTTON_10_PRESSED_ID));
+    btn_StartControl.setXY(75, 500);
+    btn_StartControl.setBitmaps(touchgfx::Bitmap(BITMAP_BUTTON300X72_ID), touchgfx::Bitmap(BITMAP_BUTTON300X72_PRESSED_ID));
     btn_StartControl.setLabelText(touchgfx::TypedText(T___SINGLEUSE_GYFR));
     btn_StartControl.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     btn_StartControl.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
@@ -37,14 +33,23 @@ WellcomeViewBase::WellcomeViewBase() :
     text_Hinweis.setAlpha(190);
     add(text_Hinweis);
 
-    textArea1.setXY(125, 209);
-    textArea1.setColor(touchgfx::Color::getColorFromRGB(0, 159, 227));
+    textArea1.setXY(111, 208);
+    textArea1.setColor(touchgfx::Color::getColorFromRGB(0, 92, 169));
     textArea1.setLinespacing(0);
     textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_5WPA));
     add(textArea1);
 
     topMenu1.setXY(0, 0);
     add(topMenu1);
+
+    Logo.setXY(204, 400);
+    Logo.setBitmap(touchgfx::Bitmap(BITMAP_ICON_ABFAHRTSKONTROLLE_72X100PX_ID));
+    add(Logo);
+
+    scalableImage1.setBitmap(touchgfx::Bitmap(BITMAP_MEK_LOGO_ID));
+    scalableImage1.setPosition(155, 669, 170, 72);
+    scalableImage1.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
+    add(scalableImage1);
 }
 
 WellcomeViewBase::~WellcomeViewBase()
