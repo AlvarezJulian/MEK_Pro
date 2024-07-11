@@ -1,11 +1,20 @@
-ModelListener.hpp:23:15:virtual void ModelListener::Wellcome_User_ID_Received(char*)	0	static
-ModelListener.hpp:29:15:virtual void ModelListener::Start_User_ID_Received(char*)	0	static
-ModelListener.hpp:33:15:virtual void ModelListener::Start_Status_LOGIN_OUT_Received(bool)	0	static
-ModelListener.hpp:35:15:virtual void ModelListener::Start_wifi_Signal_Changed(uint8_t)	0	static
-ModelListener.hpp:37:15:virtual void ModelListener::Start_Bluetooth_Status_Changed(bool)	0	static
-LoginPresenter.hpp:28:13:LoginPresenter::~LoginPresenter()	0	static
+ModelListener.hpp:20:15:virtual void ModelListener::Login_User_ID_Changed(char*)	0	static
+ModelListener.hpp:29:15:virtual void ModelListener::Wellcome_LogIn_Time_Changed(int, int, int)	0	static
+ModelListener.hpp:31:15:virtual void ModelListener::Wellcome_Status_LOGIN_OUT_Changed(bool)	0	static
+ModelListener.hpp:37:15:virtual void ModelListener::Vehicle_LogIn_Time_Changed(int, int, int)	0	static
+ModelListener.hpp:39:15:virtual void ModelListener::Vehicle_Status_LOGIN_OUT_Changed(bool)	0	static
+ModelListener.hpp:45:15:virtual void ModelListener::Start_User_ID_Changed(char*)	0	static
+ModelListener.hpp:47:15:virtual void ModelListener::Start_Status_LOGIN_OUT_Changed(bool)	0	static
+ModelListener.hpp:49:15:virtual void ModelListener::Start_wifi_Signal_Changed(uint8_t)	0	static
+ModelListener.hpp:51:15:virtual void ModelListener::Start_Bluetooth_Status_Changed(bool)	0	static
+ModelListener.hpp:53:15:virtual void ModelListener::Start_LogIn_Time_Changed(int, int, int)	0	static
+ModelListener.hpp:59:15:virtual void ModelListener::Status_Status_LOGIN_OUT_Changed(bool)	0	static
+LoginPresenter.hpp:27:10:LoginPresenter::~LoginPresenter()	0	static
 LoginPresenter.cpp:8:6:virtual void LoginPresenter::activate()	0	static
-LoginPresenter.cpp:16:6:virtual void LoginPresenter::Login_User_ID_Received(char*)	0	static
-LoginPresenter.hpp:28:13:virtual LoginPresenter::~LoginPresenter()	8	static
-LoginPresenter.hpp:28:13:virtual void* LoginPresenter::_ZThn4_N14LoginPresenterD1Ev()	0	static
+LoginPresenter.cpp:14:6:virtual void LoginPresenter::deactivate()	0	static
+LoginPresenter.cpp:18:6:virtual void LoginPresenter::Login_User_ID_Received(char*)	0	static
+LoginPresenter.cpp:25:6:virtual void LoginPresenter::Login_LogIn_Time_Changed(int, int, int)	4	static
+LoginPresenter.cpp:28:6:virtual void LoginPresenter::Login_Status_LOGIN_OUT_changed(bool)	0	static
+LoginPresenter.hpp:27:10:virtual LoginPresenter::~LoginPresenter()	8	static
+LoginPresenter.hpp:27:10:virtual void* LoginPresenter::_ZThn4_N14LoginPresenterD1Ev()	0	static
 LoginPresenter.cpp:4:1:LoginPresenter::LoginPresenter(LoginView&)	8	static

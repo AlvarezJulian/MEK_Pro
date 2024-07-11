@@ -12,8 +12,9 @@ Drawable.hpp:588:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	4	
 Container.hpp:165:23:virtual touchgfx::Drawable* touchgfx::Container::getFirstChild()	0	static
 TopMenu.cpp:13:6:virtual void TopMenu::Slot_Wifi_Signal_Changed(uint8_t)	0	static
 TopMenu.cpp:36:6:virtual void TopMenu::Slot_Bluetooth_Status_Changed(bool)	0	static
-TopMenu.cpp:46:6:virtual void TopMenu::Slot_logInOut_Changed(bool)	0	static
+TopMenu.cpp:46:6:virtual void TopMenu::Slot_logInOut_Status_Changed(bool)	0	static
 TopMenu.hpp:15:10:TopMenu::~TopMenu()	8	static
 TopMenu.hpp:15:10:virtual TopMenu::~TopMenu()	8	static
 TopMenu.cpp:3:1:TopMenu::TopMenu()	8	static
 TopMenu.cpp:7:6:virtual void TopMenu::initialize()	0	static
+TopMenu.cpp:55:6:virtual void TopMenu::Slot_logIn_Time_Changed(int, int, int)	0	static

@@ -3,8 +3,9 @@ Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	0	static
 Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
 LoginView.cpp:11:6:virtual void LoginView::tearDownScreen()	0	static
 LoginView.cpp:17:6:virtual void LoginView::Slot_User_ID_Received(char*)	0	static
-LoginView.cpp:24:6:virtual void LoginView::Slot_status_LogginOut_Changed(bool)	0	static
 LoginView.hpp:11:13:LoginView::~LoginView()	8	static
 LoginView.hpp:11:13:virtual LoginView::~LoginView()	8	static
 LoginView.cpp:3:1:LoginView::LoginView()	8	static
 LoginView.cpp:7:6:virtual void LoginView::setupScreen()	0	static
+LoginView.cpp:24:6:virtual void LoginView::Slot_status_LogginOut_Changed(bool)	0	static
+LoginView.cpp:33:6:virtual void LoginView::Slot_LogIn_Time_Changed(int, int, int)	0	static

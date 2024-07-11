@@ -9,7 +9,7 @@
             "Name": "Background_BluePicLogo",
             "Width": 480,
             "Height": 800,
-            "Filename": "image_02.png",
+            "Filename": "Hintergrund mit Icon und Logo.png",
             "ScalingAlgorithm": "Nearest-neighbor"
           },
           {
@@ -78,14 +78,14 @@
             "Name": "background_WhiteBlue",
             "Width": 480,
             "Height": 800,
-            "Filename": "image_03.png",
+            "Filename": "Hintergrund 2.png",
             "ScalingAlgorithm": "Nearest-neighbor"
           },
           {
             "Type": "ButtonWithLabel",
             "Name": "btn_StartControl",
             "X": 75,
-            "Y": 500,
+            "Y": 580,
             "Width": 331,
             "Height": 94,
             "Pressed": "Button300x72_pressed.png",
@@ -130,6 +130,15 @@
             "AutoSize": true
           },
           {
+            "Type": "Image",
+            "Name": "Logo",
+            "X": 204,
+            "Y": 385,
+            "Width": 73,
+            "Height": 100,
+            "RelativeFilename": "Icon Abfahrtskontrolle 72x100px.png"
+          },
+          {
             "Type": "CustomContainerInstance",
             "Name": "topMenu1",
             "Width": 480,
@@ -138,22 +147,12 @@
           },
           {
             "Type": "Image",
-            "Name": "Logo",
-            "X": 204,
-            "Y": 400,
-            "Width": 73,
-            "Height": 100,
-            "RelativeFilename": "Icon Abfahrtskontrolle 72x100px.png"
-          },
-          {
-            "Type": "ScalableImage",
-            "Name": "scalableImage1",
-            "X": 155,
-            "Y": 669,
-            "Width": 170,
-            "Height": 72,
-            "Filename": "mek_logo.png",
-            "ScalingAlgorithm": "Nearest-neighbor"
+            "Name": "MEK_Logo",
+            "X": 170,
+            "Y": 700,
+            "Width": 140,
+            "Height": 61,
+            "RelativeFilename": "mek_logo_140x61.png"
           }
         ],
         "Interactions": [
@@ -178,14 +177,14 @@
             "Name": "background_blueWhite",
             "Width": 480,
             "Height": 800,
-            "Filename": "image_03.png",
+            "Filename": "Hintergrund 2.png",
             "ScalingAlgorithm": "Nearest-neighbor"
           },
           {
             "Type": "TextArea",
             "Name": "Check_Coun",
             "X": 212,
-            "Y": 682,
+            "Y": 674,
             "Width": 56,
             "Height": 16,
             "TextId": "__SingleUse_N3WC",
@@ -209,8 +208,8 @@
           {
             "Type": "ButtonWithLabel",
             "Name": "btn_bad",
-            "X": 79,
-            "Y": 588,
+            "X": 75,
+            "Y": 580,
             "Width": 331,
             "Height": 94,
             "Pressed": "Button300x72_pressed.png",
@@ -231,8 +230,8 @@
           {
             "Type": "ButtonWithLabel",
             "Name": "btn_ok",
-            "X": 79,
-            "Y": 494,
+            "X": 75,
+            "Y": 486,
             "Width": 331,
             "Height": 94,
             "Pressed": "Button300x72_pressed.png",
@@ -286,10 +285,10 @@
           {
             "Type": "TextArea",
             "Name": "question_Text",
-            "X": 105,
-            "Y": 351,
+            "X": 101,
+            "Y": 347,
             "Width": 278,
-            "Height": 98,
+            "Height": 107,
             "TextId": "F01_Beleuchtung",
             "TextRotation": "0",
             "Alpha": 190,
@@ -299,7 +298,7 @@
             "Type": "TextArea",
             "Name": "text_Abfahrskontrolle",
             "X": 116,
-            "Y": 256,
+            "Y": 255,
             "Width": 230,
             "Height": 33,
             "TextId": "__SingleUse_JBEU",
@@ -311,6 +310,15 @@
             "AutoSize": true
           },
           {
+            "Type": "Image",
+            "Name": "image1",
+            "X": 195,
+            "Y": 140,
+            "Width": 73,
+            "Height": 100,
+            "RelativeFilename": "Icon Abfahrtskontrolle 72x100px.png"
+          },
+          {
             "Type": "CustomContainerInstance",
             "Name": "topMenu1",
             "Width": 480,
@@ -319,12 +327,12 @@
           },
           {
             "Type": "Image",
-            "Name": "image1",
-            "X": 195,
-            "Y": 142,
-            "Width": 73,
-            "Height": 100,
-            "RelativeFilename": "Icon Abfahrtskontrolle 72x100px.png"
+            "Name": "MEK_Logo",
+            "X": 170,
+            "Y": 700,
+            "Width": 140,
+            "Height": 61,
+            "RelativeFilename": "mek_logo_140x61.png"
           }
         ],
         "Interactions": [
@@ -371,168 +379,12 @@
             "Name": "background_BlueLogo",
             "Width": 480,
             "Height": 800,
-            "Filename": "image_03.png",
-            "ScalingAlgorithm": "Nearest-neighbor"
-          },
-          {
-            "Type": "DigitalClock",
-            "Name": "EbzTimeClock",
-            "X": 277,
-            "Y": 598,
-            "Width": 123,
-            "Height": 25,
-            "TextId": "__SingleUse_P975",
-            "DisplaySeconds": true,
-            "DisplayLeadingZeroForHourIndicator": true,
-            "Alpha": 190
-          },
-          {
-            "Type": "ScalableImage",
-            "Name": "line5",
-            "X": 45,
-            "Y": 575,
-            "Width": 395,
-            "Height": 1,
-            "Filename": "image_07.png",
+            "Filename": "Hintergrund 2.png",
             "ScalingAlgorithm": "Nearest-neighbor"
           },
           {
             "Type": "TextArea",
-            "Name": "text_EZB",
-            "X": 178,
-            "Y": 598,
-            "Width": 35,
-            "Height": 25,
-            "TextId": "__SingleUse_C6CN",
-            "TextRotation": "0",
-            "Alpha": 153
-          },
-          {
-            "Type": "DigitalClock",
-            "Name": "LogTimeClock",
-            "X": 277,
-            "Y": 529,
-            "Width": 123,
-            "Height": 25,
-            "TextId": "__SingleUse_10I5",
-            "DisplaySeconds": true,
-            "DisplayLeadingZeroForHourIndicator": true,
-            "Alpha": 190
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textLogtime",
-            "X": 178,
-            "Y": 529,
-            "Width": 89,
-            "Height": 25,
-            "TextId": "__SingleUse_8W76",
-            "TextRotation": "0",
-            "Alpha": 153
-          },
-          {
-            "Type": "ScalableImage",
-            "Name": "line4",
-            "X": 45,
-            "Y": 505,
-            "Width": 395,
-            "Height": 1,
-            "Filename": "image_07.png",
-            "ScalingAlgorithm": "Nearest-neighbor"
-          },
-          {
-            "Type": "TextArea",
-            "Name": "tex_ELS",
-            "X": 178,
-            "Y": 458,
-            "Width": 139,
-            "Height": 25,
-            "TextId": "__SingleUse_GT5J",
-            "TextRotation": "0",
-            "Alpha": 153,
-            "AutoSize": true
-          },
-          {
-            "Type": "ScalableImage",
-            "Name": "line3",
-            "X": 45,
-            "Y": 434,
-            "Width": 395,
-            "Height": 1,
-            "Filename": "image_07.png",
-            "ScalingAlgorithm": "Nearest-neighbor"
-          },
-          {
-            "Type": "TextArea",
-            "Name": "Tetxt_Bluetooth",
-            "X": 178,
-            "Y": 389,
-            "Width": 91,
-            "Height": 25,
-            "TextId": "__SingleUse_4O6A",
-            "TextRotation": "0",
-            "Alpha": 153,
-            "AutoSize": true
-          },
-          {
-            "Type": "ScalableImage",
-            "Name": "Line2",
-            "X": 45,
-            "Y": 370,
-            "Width": 395,
-            "Height": 1,
-            "Filename": "image_07.png",
-            "ScalingAlgorithm": "Nearest-neighbor"
-          },
-          {
-            "Type": "TextArea",
-            "Name": "text_Wifi",
-            "X": 178,
-            "Y": 327,
-            "Width": 56,
-            "Height": 25,
-            "TextId": "__SingleUse_D3S5",
-            "TextRotation": "0",
-            "Alpha": 153,
-            "AutoSize": true
-          },
-          {
-            "Type": "ScalableImage",
-            "Name": "line1",
-            "X": 45,
-            "Y": 305,
-            "Width": 395,
-            "Height": 1,
-            "Filename": "image_07.png",
-            "ScalingAlgorithm": "Nearest-neighbor"
-          },
-          {
-            "Type": "TextArea",
-            "Name": "User_ID_Start",
-            "X": 178,
-            "Y": 262,
-            "Width": 227,
-            "Height": 30,
-            "TextId": "__SingleUse_RQ8E",
-            "TextRotation": "0",
-            "Alpha": 153,
-            "Wildcard1": {
-              "TextId": "__SingleUse_L9J3",
-              "UseBuffer": true,
-              "BufferSize": 32
-            }
-          },
-          {
-            "Type": "CustomContainerInstance",
-            "Name": "topMenu1",
-            "X": -2,
-            "Width": 480,
-            "Height": 60,
-            "CustomContainerDefinitionName": "TopMenu"
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea1",
+            "Name": "text_hinweis",
             "X": 86,
             "Y": 633,
             "Width": 308,
@@ -546,22 +398,100 @@
             "AutoSize": true
           },
           {
-            "Type": "Image",
-            "Name": "Wifi_Icon",
-            "X": 105,
-            "Y": 320,
-            "Width": 50,
-            "Height": 38,
-            "RelativeFilename": "Icon WLAN 5.png"
+            "Type": "DigitalClock",
+            "Name": "EbzTimeClock",
+            "X": 308,
+            "Y": 598,
+            "Width": 123,
+            "Height": 25,
+            "TextId": "__SingleUse_P975",
+            "DisplaySeconds": true,
+            "DisplayLeadingZeroForHourIndicator": true,
+            "Alpha": 190
+          },
+          {
+            "Type": "TextArea",
+            "Name": "text_EZB",
+            "X": 195,
+            "Y": 598,
+            "Width": 35,
+            "Height": 25,
+            "TextId": "__SingleUse_C6CN",
+            "TextRotation": "0",
+            "Alpha": 153
           },
           {
             "Type": "Image",
-            "Name": "Bluetooth_Icon",
-            "X": 117,
-            "Y": 380,
-            "Width": 26,
-            "Height": 42,
-            "RelativeFilename": "Icon Bluetooth 2.png"
+            "Name": "EBZ_Icon",
+            "X": 90,
+            "Y": 588,
+            "Width": 81,
+            "Height": 45,
+            "RelativeFilename": "Icon EBZ.png"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "line5",
+            "X": 70,
+            "Y": 575,
+            "Width": 330,
+            "Height": 1,
+            "Filename": "Trennlinie.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "DigitalClock",
+            "Name": "LogTimeClock",
+            "X": 308,
+            "Y": 529,
+            "Width": 123,
+            "Height": 25,
+            "TextId": "__SingleUse_10I5",
+            "DisplaySeconds": true,
+            "DisplayLeadingZeroForHourIndicator": true,
+            "Alpha": 190
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textLogtime",
+            "X": 195,
+            "Y": 529,
+            "Width": 89,
+            "Height": 25,
+            "TextId": "__SingleUse_8W76",
+            "TextRotation": "0",
+            "Alpha": 153
+          },
+          {
+            "Type": "Image",
+            "Name": "AnotherTime_Logo",
+            "X": 107,
+            "Y": 518,
+            "Width": 46,
+            "Height": 47,
+            "RelativeFilename": "Icon Login Zeit.png"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "line4",
+            "X": 70,
+            "Y": 505,
+            "Width": 330,
+            "Height": 1,
+            "Filename": "Trennlinie.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "tex_ELS",
+            "X": 195,
+            "Y": 458,
+            "Width": 139,
+            "Height": 25,
+            "TextId": "__SingleUse_GT5J",
+            "TextRotation": "0",
+            "Alpha": 153,
+            "AutoSize": true
           },
           {
             "Type": "Image",
@@ -573,17 +503,105 @@
             "RelativeFilename": "Icon ELS 1.png"
           },
           {
-            "Type": "Image",
-            "Name": "image1",
-            "X": 107,
-            "Y": 518,
-            "Width": 46,
-            "Height": 47,
-            "RelativeFilename": "Icon Login Zeit.png"
+            "Type": "ScalableImage",
+            "Name": "line3",
+            "X": 70,
+            "Y": 434,
+            "Width": 330,
+            "Height": 1,
+            "Filename": "Trennlinie.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Tetxt_Bluetooth",
+            "X": 195,
+            "Y": 389,
+            "Width": 91,
+            "Height": 25,
+            "TextId": "__SingleUse_4O6A",
+            "TextRotation": "0",
+            "Alpha": 153,
+            "AutoSize": true
           },
           {
             "Type": "Image",
-            "Name": "image2",
+            "Name": "Bluetooth_Icon",
+            "X": 117,
+            "Y": 380,
+            "Width": 26,
+            "Height": 42,
+            "RelativeFilename": "Icon Bluetooth 2.png"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "Line2",
+            "X": 70,
+            "Y": 370,
+            "Width": 330,
+            "Height": 1,
+            "Filename": "Trennlinie.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "text_Wifi",
+            "X": 195,
+            "Y": 327,
+            "Width": 56,
+            "Height": 25,
+            "TextId": "__SingleUse_D3S5",
+            "TextRotation": "0",
+            "Alpha": 153,
+            "AutoSize": true
+          },
+          {
+            "Type": "Image",
+            "Name": "Wifi_Icon",
+            "X": 105,
+            "Y": 320,
+            "Width": 50,
+            "Height": 38,
+            "RelativeFilename": "Icon WLAN 5.png"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "line1",
+            "X": 70,
+            "Y": 310,
+            "Width": 330,
+            "Height": 1,
+            "Filename": "Trennlinie.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "User_ID_Start",
+            "X": 195,
+            "Y": 258,
+            "Width": 227,
+            "Height": 30,
+            "TextId": "__SingleUse_RQ8E",
+            "TextRotation": "0",
+            "Alpha": 153,
+            "Wildcard1": {
+              "TextId": "__SingleUse_L9J3",
+              "UseBuffer": true,
+              "BufferSize": 32
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "ID_Icon",
+            "X": 106,
+            "Y": 258,
+            "Width": 48,
+            "Height": 40,
+            "RelativeFilename": "Icon ID.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "Logo",
             "X": 204,
             "Y": 142,
             "Width": 73,
@@ -591,22 +609,20 @@
             "RelativeFilename": "Icon Abfahrtskontrolle 72x100px.png"
           },
           {
-            "Type": "Image",
-            "Name": "image3",
-            "X": 90,
-            "Y": 588,
-            "Width": 81,
-            "Height": 45,
-            "RelativeFilename": "Icon EBZ.png"
+            "Type": "CustomContainerInstance",
+            "Name": "topMenu1",
+            "Width": 480,
+            "Height": 60,
+            "CustomContainerDefinitionName": "TopMenu"
           },
           {
             "Type": "Image",
-            "Name": "ID_Icon",
-            "X": 106,
-            "Y": 257,
-            "Width": 48,
-            "Height": 40,
-            "RelativeFilename": "Icon ID.png"
+            "Name": "MEK_Logo",
+            "X": 170,
+            "Y": 700,
+            "Width": 140,
+            "Height": 61,
+            "RelativeFilename": "mek_logo_140x61.png"
           }
         ],
         "Interactions": []
@@ -689,7 +705,6 @@
             "Name": "Workshop",
             "Width": 480,
             "Height": 800,
-            "Visible": false,
             "FileName": "Hintergrund_Text.png",
             "Color": {
               "Red": 252,
@@ -735,7 +750,7 @@
                 "Name": "textArea4",
                 "X": 89,
                 "Y": 173,
-                "Width": 223,
+                "Width": 211,
                 "Height": 112,
                 "TextId": "__SingleUse_L4TK",
                 "TextRotation": "0",
@@ -762,6 +777,7 @@
             "Name": "Crash",
             "Width": 480,
             "Height": 800,
+            "Visible": false,
             "FileName": "Hintergrund_Text.png",
             "Color": {
               "Red": 235,
@@ -933,12 +949,12 @@
             "Name": "LoginClock",
             "X": 89,
             "Y": 20,
-            "Width": 57,
+            "Width": 87,
             "Height": 20,
             "TextId": "__SingleUse_XN9G",
+            "DisplaySeconds": true,
             "DisplayLeadingZeroForHourIndicator": true,
-            "Alpha": 190,
-            "InitialMinute": 15
+            "Alpha": 190
           },
           {
             "Type": "TextArea",

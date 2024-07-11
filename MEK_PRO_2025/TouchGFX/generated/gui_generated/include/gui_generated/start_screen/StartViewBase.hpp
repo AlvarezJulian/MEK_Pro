@@ -9,11 +9,11 @@
 #include <gui/start_screen/StartPresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/ScalableImage.hpp>
-#include <touchgfx/containers/clock/DigitalClock.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
+#include <touchgfx/containers/clock/DigitalClock.hpp>
+#include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <gui/containers/TopMenu.hpp>
-#include <touchgfx/widgets/Image.hpp>
 
 class StartViewBase : public touchgfx::View<StartPresenter>
 {
@@ -32,28 +32,29 @@ protected:
      */
     touchgfx::Box __background;
     touchgfx::ScalableImage background_BlueLogo;
+    touchgfx::TextArea text_hinweis;
     touchgfx::DigitalClock EbzTimeClock;
-    touchgfx::ScalableImage line5;
     touchgfx::TextArea text_EZB;
+    touchgfx::Image EBZ_Icon;
+    touchgfx::ScalableImage line5;
     touchgfx::DigitalClock LogTimeClock;
     touchgfx::TextArea textLogtime;
+    touchgfx::Image AnotherTime_Logo;
     touchgfx::ScalableImage line4;
     touchgfx::TextArea tex_ELS;
+    touchgfx::Image ELS_Icon;
     touchgfx::ScalableImage line3;
     touchgfx::TextArea Tetxt_Bluetooth;
+    touchgfx::Image Bluetooth_Icon;
     touchgfx::ScalableImage Line2;
     touchgfx::TextArea text_Wifi;
+    touchgfx::Image Wifi_Icon;
     touchgfx::ScalableImage line1;
     touchgfx::TextAreaWithOneWildcard User_ID_Start;
-    TopMenu topMenu1;
-    touchgfx::TextArea textArea1;
-    touchgfx::Image Wifi_Icon;
-    touchgfx::Image Bluetooth_Icon;
-    touchgfx::Image ELS_Icon;
-    touchgfx::Image image1;
-    touchgfx::Image image2;
-    touchgfx::Image image3;
     touchgfx::Image ID_Icon;
+    touchgfx::Image Logo;
+    TopMenu topMenu1;
+    touchgfx::Image MEK_Logo;
 
     /*
      * Wildcard Buffers

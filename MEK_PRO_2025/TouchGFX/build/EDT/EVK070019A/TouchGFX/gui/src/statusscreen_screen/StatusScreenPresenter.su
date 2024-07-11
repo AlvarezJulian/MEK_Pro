@@ -1,8 +1,16 @@
-ModelListener.hpp:23:15:virtual void ModelListener::Wellcome_User_ID_Received(char*)	0	static
-ModelListener.hpp:29:15:virtual void ModelListener::Start_User_ID_Received(char*)	0	static
-ModelListener.hpp:33:15:virtual void ModelListener::Start_Status_LOGIN_OUT_Received(bool)	0	static
-ModelListener.hpp:35:15:virtual void ModelListener::Start_wifi_Signal_Changed(uint8_t)	0	static
-ModelListener.hpp:37:15:virtual void ModelListener::Start_Bluetooth_Status_Changed(bool)	0	static
+ModelListener.hpp:20:15:virtual void ModelListener::Login_User_ID_Changed(char*)	0	static
+ModelListener.hpp:22:15:virtual void ModelListener::Login_LogIn_Time_Changed(int, int, int)	0	static
+ModelListener.hpp:24:15:virtual void ModelListener::Login_Status_LOGIN_OUT_Changed(bool)	0	static
+ModelListener.hpp:29:15:virtual void ModelListener::Wellcome_LogIn_Time_Changed(int, int, int)	0	static
+ModelListener.hpp:31:15:virtual void ModelListener::Wellcome_Status_LOGIN_OUT_Changed(bool)	0	static
+ModelListener.hpp:37:15:virtual void ModelListener::Vehicle_LogIn_Time_Changed(int, int, int)	0	static
+ModelListener.hpp:39:15:virtual void ModelListener::Vehicle_Status_LOGIN_OUT_Changed(bool)	0	static
+ModelListener.hpp:45:15:virtual void ModelListener::Start_User_ID_Changed(char*)	0	static
+ModelListener.hpp:47:15:virtual void ModelListener::Start_Status_LOGIN_OUT_Changed(bool)	0	static
+ModelListener.hpp:49:15:virtual void ModelListener::Start_wifi_Signal_Changed(uint8_t)	0	static
+ModelListener.hpp:51:15:virtual void ModelListener::Start_Bluetooth_Status_Changed(bool)	0	static
+ModelListener.hpp:53:15:virtual void ModelListener::Start_LogIn_Time_Changed(int, int, int)	0	static
+ModelListener.hpp:59:15:virtual void ModelListener::Status_Status_LOGIN_OUT_Changed(bool)	0	static
 StatusScreenPresenter.hpp:28:13:StatusScreenPresenter::~StatusScreenPresenter()	0	static
 StatusScreenPresenter.cpp:10:6:virtual void StatusScreenPresenter::activate()	0	static
 StatusScreenPresenter.hpp:28:13:virtual StatusScreenPresenter::~StatusScreenPresenter()	8	static

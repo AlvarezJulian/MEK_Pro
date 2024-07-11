@@ -1,11 +1,13 @@
 Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	0	static
 Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	0	static
 Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
-VehicleCheckView.cpp:13:6:virtual void VehicleCheckView::tearDownScreen()	0	static
-VehicleCheckView.cpp:22:6:virtual void VehicleCheckView::btn_Good_Clicked()	0	static
-VehicleCheckView.cpp:27:6:virtual void VehicleCheckView::btn_Ok_Clicked()	0	static
-VehicleCheckView.cpp:31:6:virtual void VehicleCheckView::btn_Bad_Clicked()	0	static
+VehicleCheckView.cpp:14:6:virtual void VehicleCheckView::tearDownScreen()	0	static
+VehicleCheckView.cpp:24:6:virtual void VehicleCheckView::btn_Good_Clicked()	0	static
+VehicleCheckView.cpp:33:6:virtual void VehicleCheckView::btn_Ok_Clicked()	0	static
+VehicleCheckView.cpp:40:6:virtual void VehicleCheckView::btn_Bad_Clicked()	0	static
 VehicleCheckView.hpp:10:10:VehicleCheckView::~VehicleCheckView()	8	static
 VehicleCheckView.hpp:10:10:virtual VehicleCheckView::~VehicleCheckView()	8	static
 VehicleCheckView.cpp:4:1:VehicleCheckView::VehicleCheckView()	8	static
-VehicleCheckView.cpp:8:6:virtual void VehicleCheckView::setupScreen()	0	static
+VehicleCheckView.cpp:9:6:virtual void VehicleCheckView::setupScreen()	0	static
+VehicleCheckView.cpp:59:6:virtual void VehicleCheckView::Slot_status_LogginOut_Changed(bool)	0	static
+VehicleCheckView.cpp:78:6:virtual void VehicleCheckView::Slot_LogIn_Time_Changed(int, int, int)	0	static

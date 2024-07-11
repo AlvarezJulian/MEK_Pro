@@ -39,14 +39,15 @@ View.hpp:36:7:virtual touchgfx::View<VehicleCheckPresenter>::~View()	8	static
 TextAreaWithWildcard.hpp:125:7:virtual touchgfx::TextAreaWithTwoWildcards::~TextAreaWithTwoWildcards()	8	static
 Callback.hpp:357:8:virtual touchgfx::Callback<VehicleCheckViewBase, const touchgfx::AbstractButton&>::~Callback()	8	static
 TextArea.hpp:111:18:virtual void touchgfx::TextArea::setBaselineY(int16_t)	16	static
-VehicleCheckViewBase.cpp:88:6:virtual void VehicleCheckViewBase::setupScreen()	0	static
-VehicleCheckViewBase.cpp:93:6:void VehicleCheckViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	16	static
+VehicleCheckViewBase.cpp:92:6:virtual void VehicleCheckViewBase::setupScreen()	0	static
+VehicleCheckViewBase.cpp:97:6:void VehicleCheckViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	16	static
 TextAreaWithWildcard.hpp:49:36:virtual touchgfx::TextArea::BoundingArea touchgfx::TextAreaWithWildcardBase::calculateBoundingArea() const	0	static
-VehicleCheckViewBase.cpp:83:1:VehicleCheckViewBase::~VehicleCheckViewBase()	8	static
-VehicleCheckViewBase.cpp:83:1:virtual VehicleCheckViewBase::~VehicleCheckViewBase()	8	static
+VehicleCheckViewBase.cpp:87:1:VehicleCheckViewBase::~VehicleCheckViewBase()	8	static
+VehicleCheckViewBase.cpp:87:1:virtual VehicleCheckViewBase::~VehicleCheckViewBase()	8	static
 Drawable.hpp:48:5:touchgfx::Drawable::Drawable()	0	static
 Drawable.hpp:343:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
 Drawable.hpp:233:10:void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	16	static
+Image.hpp:50:5:touchgfx::Image::Image(const touchgfx::Bitmap&)	16	static
 TextArea.hpp:43:5:touchgfx::TextArea::TextArea()	8	static
 ButtonWithLabel.hpp:132:10:void touchgfx::ButtonWithLabel::updateTextPosition()	24	static
-VehicleCheckViewBase.cpp:9:1:VehicleCheckViewBase::VehicleCheckViewBase()	112	static
+VehicleCheckViewBase.cpp:9:1:VehicleCheckViewBase::VehicleCheckViewBase()	120	static

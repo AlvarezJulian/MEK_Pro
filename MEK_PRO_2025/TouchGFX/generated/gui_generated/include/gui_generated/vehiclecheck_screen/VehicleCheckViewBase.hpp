@@ -12,8 +12,8 @@
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/widgets/ButtonWithLabel.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
-#include <gui/containers/TopMenu.hpp>
 #include <touchgfx/widgets/Image.hpp>
+#include <gui/containers/TopMenu.hpp>
 
 class VehicleCheckViewBase : public touchgfx::View<VehicleCheckPresenter>
 {
@@ -55,8 +55,9 @@ protected:
     touchgfx::ScalableImage Background_question;
     touchgfx::TextArea question_Text;
     touchgfx::TextArea text_Abfahrskontrolle;
-    TopMenu topMenu1;
     touchgfx::Image image1;
+    TopMenu topMenu1;
+    touchgfx::Image MEK_Logo;
 
     /*
      * Wildcard Buffers

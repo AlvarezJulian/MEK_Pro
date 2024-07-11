@@ -1,11 +1,20 @@
-ModelListener.hpp:23:15:virtual void ModelListener::Wellcome_User_ID_Received(char*)	0	static
-ModelListener.hpp:29:15:virtual void ModelListener::Start_User_ID_Received(char*)	0	static
-ModelListener.hpp:33:15:virtual void ModelListener::Start_Status_LOGIN_OUT_Received(bool)	0	static
-ModelListener.hpp:35:15:virtual void ModelListener::Start_wifi_Signal_Changed(uint8_t)	0	static
-ModelListener.hpp:37:15:virtual void ModelListener::Start_Bluetooth_Status_Changed(bool)	0	static
-WellcomePresenter.hpp:31:10:WellcomePresenter::~WellcomePresenter()	0	static
+ModelListener.hpp:20:15:virtual void ModelListener::Login_User_ID_Changed(char*)	0	static
+ModelListener.hpp:22:15:virtual void ModelListener::Login_LogIn_Time_Changed(int, int, int)	0	static
+ModelListener.hpp:24:15:virtual void ModelListener::Login_Status_LOGIN_OUT_Changed(bool)	0	static
+ModelListener.hpp:37:15:virtual void ModelListener::Vehicle_LogIn_Time_Changed(int, int, int)	0	static
+ModelListener.hpp:39:15:virtual void ModelListener::Vehicle_Status_LOGIN_OUT_Changed(bool)	0	static
+ModelListener.hpp:45:15:virtual void ModelListener::Start_User_ID_Changed(char*)	0	static
+ModelListener.hpp:47:15:virtual void ModelListener::Start_Status_LOGIN_OUT_Changed(bool)	0	static
+ModelListener.hpp:49:15:virtual void ModelListener::Start_wifi_Signal_Changed(uint8_t)	0	static
+ModelListener.hpp:51:15:virtual void ModelListener::Start_Bluetooth_Status_Changed(bool)	0	static
+ModelListener.hpp:53:15:virtual void ModelListener::Start_LogIn_Time_Changed(int, int, int)	0	static
+ModelListener.hpp:59:15:virtual void ModelListener::Status_Status_LOGIN_OUT_Changed(bool)	0	static
+WellcomePresenter.hpp:39:10:WellcomePresenter::~WellcomePresenter()	0	static
 WellcomePresenter.cpp:8:6:virtual void WellcomePresenter::activate()	0	static
-WellcomePresenter.hpp:31:10:virtual WellcomePresenter::~WellcomePresenter()	8	static
-WellcomePresenter.cpp:23:6:virtual void WellcomePresenter::btn_StartControl_clicked(CANBUS_TX_ID)	0	static
-WellcomePresenter.hpp:31:10:virtual void* WellcomePresenter::_ZThn4_N17WellcomePresenterD1Ev()	0	static
+WellcomePresenter.cpp:14:6:virtual void WellcomePresenter::deactivate()	0	static
+WellcomePresenter.cpp:29:6:virtual void WellcomePresenter::Wellcome_LogIn_Time_Changed(int, int, int)	4	static
+WellcomePresenter.cpp:33:6:virtual void WellcomePresenter::Wellcome_Status_LOGIN_OUT_Changed(bool)	0	static
+WellcomePresenter.hpp:39:10:virtual WellcomePresenter::~WellcomePresenter()	8	static
+WellcomePresenter.cpp:25:6:virtual void WellcomePresenter::btn_StartControl_clicked(CANBUS_TX_ID)	0	static
+WellcomePresenter.hpp:39:10:virtual void* WellcomePresenter::_ZThn4_N17WellcomePresenterD1Ev()	0	static
 WellcomePresenter.cpp:4:1:WellcomePresenter::WellcomePresenter(WellcomeView&)	8	static
