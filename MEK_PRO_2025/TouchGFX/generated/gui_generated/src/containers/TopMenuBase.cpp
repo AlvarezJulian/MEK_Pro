@@ -58,12 +58,12 @@ TopMenuBase::TopMenuBase()
     currentClock.setAlpha(190);
     add(currentClock);
 
-    LoginClock.setPosition(89, 20, 57, 20);
+    LoginClock.setPosition(89, 20, 87, 20);
     LoginClock.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     LoginClock.setTypedText(touchgfx::TypedText(T___SINGLEUSE_XN9G));
     LoginClock.displayLeadingZeroForHourIndicator(true);
-    LoginClock.setDisplayMode(touchgfx::DigitalClock::DISPLAY_24_HOUR_NO_SECONDS);
-    LoginClock.setTime24Hour(0, 15, 0);
+    LoginClock.setDisplayMode(touchgfx::DigitalClock::DISPLAY_24_HOUR);
+    LoginClock.setTime24Hour(0, 0, 0);
     LoginClock.setAlpha(190);
     add(LoginClock);
 

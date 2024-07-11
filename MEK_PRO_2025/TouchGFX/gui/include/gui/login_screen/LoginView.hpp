@@ -15,6 +15,8 @@ public:
 #ifndef SIMULATOR
     virtual void Slot_User_ID_Received(char* data);
     virtual void Slot_status_LogginOut_Changed(bool state);
+	virtual void Slot_LogIn_Time_Changed(int hour, int min, int sec);
+
 #endif
 protected:
 	char* _UserID;

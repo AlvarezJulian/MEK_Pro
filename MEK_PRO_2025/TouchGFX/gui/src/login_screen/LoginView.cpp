@@ -27,6 +27,11 @@ void LoginView::Slot_status_LogginOut_Changed(bool state) {
 		_log_Status = state;
 		presenter->saveLogStatus(_log_Status);
 	}
+	topMenu1.Slot_logInOut_Status_Changed(_log_Status);
+}
+
+void LoginView::Slot_LogIn_Time_Changed(int hour, int min, int sec) {
+	topMenu1.Slot_logIn_Time_Changed(hour, min, sec);
 }
 
 #endif

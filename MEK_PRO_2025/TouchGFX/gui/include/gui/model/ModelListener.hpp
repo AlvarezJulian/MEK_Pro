@@ -6,52 +6,67 @@
 
 class ModelListener {
 public:
-	ModelListener() : model(0) {
+	ModelListener() :
+			model(0) {
 	}
 
 	virtual ~ModelListener() {
 	}
 
 	/*
-	 * SIGNALS TOP Menu
+	 * SIGNALS LOGIN
 	 *
 	 */
-//	virtual void TopMenu_Wifi_Signal_Chaneged(uint8_t val);
-	/*
-	 * SIGNALS Wellcome
-	 */
-	virtual void Wellcome_User_ID_Received(char *data) {
+	virtual void Login_User_ID_Changed(char *data) {
+	}
+	virtual void Login_LogIn_Time_Changed(int hour, int min, int sec) {
+	}
+	virtual void Login_Status_LOGIN_OUT_Changed(bool state) {
 	}
 	/*
-	 * SIGNALS Start
+	 * SIGNALS WELLCOME
 	 */
-
-	virtual void Start_User_ID_Received(char *data) {
+	virtual void Wellcome_LogIn_Time_Changed(int hour, int min, int sec) {
 	}
-//	virtual void Start_Status_LOGIN_Received() {}
-//	virtual void Start_Status_LOGOUT_Received() {}
-	virtual void Start_Status_LOGIN_OUT_Received(bool state) {
-	}
-	virtual void Start_wifi_Signal_Changed(uint8_t val){
-	}
-	virtual void Start_Bluetooth_Status_Changed(bool state){
-
+	virtual void Wellcome_Status_LOGIN_OUT_Changed(bool state) {
 	}
 	/*
-	 * SIGNALS Vehicle
+	 * SIGNALS VEHICLECHECK
 	 */
 
+	virtual void Vehicle_LogIn_Time_Changed(int hour, int min, int sec) {
+	}
+	virtual void Vehicle_Status_LOGIN_OUT_Changed(bool state) {
+	}
 	/*
-	 * SIGNALS VehicleCheck
+	 * SIGNALS START
 	 */
 
-	/*
-	 * SIGNALS Crash
-	 */
+	virtual void Start_User_ID_Changed(char *data) {
+	}
+	virtual void Start_Status_LOGIN_OUT_Changed(bool state) {
+	}
+	virtual void Start_wifi_Signal_Changed(uint8_t val) {
+	}
+	virtual void Start_Bluetooth_Status_Changed(bool state) {
+	}
+	virtual void Start_LogIn_Time_Changed(int hour, int min, int sec) {
+	}
 
 	/*
-	 * SIGNALS Workshop-Modus
+	 * SIGNALS STATUS SCREEN
 	 */
+	virtual void Status_Status_LOGIN_OUT_Changed(bool state) {
+	}
+
+	//***********************CRASH********************
+
+
+	//#####################WORKSHOP###################
+
+
+	//++++++++++++++++++++++++ELS+++++++++++++++++++++
+
 
 	void bind(Model *m) {
 		model = m;

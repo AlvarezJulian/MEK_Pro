@@ -7,22 +7,23 @@
 //#include <gui/containers/TopMenu.hpp>
 
 Model::Model() :
-		modelListener(0),
-		current_Wifi_Signal(0),
-		current_bluetooth_Status(false),
-		current_hour(0),
-		current_minute(0),
-		current_second(0),
-		current_UserID(0),
-		current_log_Status(false),
-		current_Workshop_Status(false),
-		current_Crash_Status(false),
-		current_EBZ_hour(0),
-		current_EBZ_minute(0),
-		current_EBZ_second(0),
-		current_ELS_status(false),
-		current_log_hour(0),
-		current_log_minute(0) {
+				modelListener(0),
+				current_Wifi_Signal(0),
+				current_bluetooth_Status(false),
+				current_hour(0),
+				current_minute(0),
+				current_second(0),
+				current_UserID(0),
+				current_log_Status(false),
+				current_Workshop_Status(false),
+				current_Crash_Status(false),
+				current_EBZ_hour(0),
+				current_EBZ_minute(0),
+				current_EBZ_second(0),
+				current_ELS_status(false),
+				current_log_hour(0),
+				current_log_minute(0),
+				current_log_second(0) {
 }
 
 /*
@@ -36,33 +37,42 @@ void Model::tick() {
 	// Nachricht empfangen
 #ifndef SIMULATOR
 
+	HandleLogInTime();
 	FrontendApplication *const ui =
 			static_cast<FrontendApplication*>(Application::getInstance());
 
 	if (CanHandleMsg.CAN_HandleDataEn == true) {
 
-
 		switch (msgType) {
 		case CANBUS_RX_USER_ID:
 			strncpy(ID_Data, (char*) RxData, CAN_SIZE);
-			modelListener->Start_User_ID_Received(ID_Data);
-			modelListener->Wellcome_User_ID_Received(ID_Data);
+			modelListener->Login_User_ID_Changed(ID_Data);
+			modelListener->Start_User_ID_Changed(ID_Data);
 			break;
 
 		case CANBUS_RX_LOG_IN:
-			modelListener->Start_Status_LOGIN_OUT_Received(true);
+			modelListener->Login_Status_LOGIN_OUT_Changed(true);
+			modelListener->Wellcome_Status_LOGIN_OUT_Changed(true);
+			modelListener->Vehicle_Status_LOGIN_OUT_Changed(true);
+			modelListener->Start_Status_LOGIN_OUT_Changed(true);
+			modelListener->Status_Status_LOGIN_OUT_Changed(true);
+
 			break;
 
 		case CANBUS_RX_LOG_OUT:
-			modelListener->Start_Status_LOGIN_OUT_Received(false);
+			modelListener->Login_Status_LOGIN_OUT_Changed(false);
+			modelListener->Wellcome_Status_LOGIN_OUT_Changed(false);
+			modelListener->Vehicle_Status_LOGIN_OUT_Changed(false);
+			modelListener->Start_Status_LOGIN_OUT_Changed(false);
+			modelListener->Status_Status_LOGIN_OUT_Changed(false);
 			break;
 
 		case CANBUS_RX_IDNR4:
 
-/*
- * Test Funktion  um das Top menu zu aktualiersen
- * ohne MPV
- */
+			/*
+			 * Test Funktion  um das Top menu zu aktualiersen
+			 * ohne MPV
+			 */
 
 			break;
 		case CANBUS_RX_IDNR5:
@@ -178,4 +188,49 @@ void Model::Interface_Can_send(CANBUS_TX_ID MsgTypeRX) {
 		break;
 	}
 }
+
+void Model::HandleLogInTime() {
+
+	if (current_log_Status == true) {
+
+		tickCounter++;
+
+		if (tickCounter % 60 == 0) {
+			if (++current_log_second >= 60) {
+				current_log_second = 0;
+				if (++current_log_minute >= 60) {
+					current_log_minute = 0;
+					if (++current_log_hour >= 24) {
+						current_log_hour = 0;
+					}
+				}
+			}
+
+			// Update the clock
+//LogTimeClock.setTime24Hour(current_log_hour, current_log_minute,current_log_second);
+//			SetLogHour(current_log_hour);
+//			SetLogMinute(current_log_minute);
+//			SetLogSecond(current_log_second);
+		}
+//		modelListener->Start_LogIn_Time_Changed(current_log_hour, current_log_minute,
+//				current_log_second);
+//		modelListener->Vehicle_LogIn_Time_Changed(current_log_hour,
+//				current_log_minute, current_log_second);
+
+	} else {
+		current_log_hour = 0;
+		current_log_minute = 0;
+		current_log_second = 0;
+	}
+
+	modelListener->Login_LogIn_Time_Changed(current_log_hour, current_log_minute,
+			current_log_second);
+	modelListener->Wellcome_LogIn_Time_Changed(current_log_hour, current_log_minute,
+			current_log_second);
+	modelListener->Vehicle_LogIn_Time_Changed(current_log_hour, current_log_minute,
+			current_log_second);
+	modelListener->Start_LogIn_Time_Changed(current_log_hour, current_log_minute,
+			current_log_second);
+}
+
 #endif // SIMULATOR

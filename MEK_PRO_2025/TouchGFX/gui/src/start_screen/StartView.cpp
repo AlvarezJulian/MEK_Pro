@@ -1,15 +1,15 @@
 #include <gui/start_screen/StartView.hpp>
 
 StartView::StartView() :
-		_logHours(0),
-		_logMinutes(0),
-		_logSeconds(0),
-		_UserID(0),
-		_log_Status(false),
-		_Workshop_Status(false),
-		_EZB_hour(0),
-		_EZB_minute(0),
-		_ELS_status(0) {
+//				_logHours(0),
+//				_logMinutes(0),
+//				_logSeconds(0),
+				_UserID(0),
+				_log_Status(false),
+				_vehicle_Status(false),
+				_EZB_hour(0),
+				_EZB_minute(0),
+				_ELS_status(0) {
 
 }
 
@@ -27,22 +27,24 @@ void StartView::setupScreen() {
 	/*
 	 * update the new Values on Screen
 	 */
-	_logHours = LogTimeClock.getCurrentHour();
-	_logMinutes = LogTimeClock.getCurrentMinute();
-	_logSeconds = LogTimeClock.getCurrentSecond();
+//	_logHours = LogTimeClock.getCurrentHour();
+//	_logMinutes = LogTimeClock.getCurrentMinute();
+//	_logSeconds = LogTimeClock.getCurrentSecond();
 #ifndef SIMULATOR
-	_logHours = presenter->getLogHour();
-	_logMinutes = presenter->getLogMinute();
-	_logSeconds = presenter->getLogSecond();
+//	_logHours = presenter->getLogHour();
+//	_logMinutes = presenter->getLogMinute();
+//	_logSeconds = presenter->getLogSecond();
+//
+//	Slot_LogIn_Time_Changed(_logHours, _logMinutes, _logSeconds);
 #endif // SIMULATOR
 }
 
 void StartView::tearDownScreen() {
 	StartViewBase::tearDownScreen();
 #ifndef SIMULATOR
-	presenter->saveLogHour(_logHours);
-	presenter->saveLogMinute(_logMinutes);
-	presenter->saveLogSecond(_logSeconds);
+//	presenter->saveLogHour(_logHours);
+//	presenter->saveLogMinute(_logMinutes);
+//	presenter->saveLogSecond(_logSeconds);
 #endif // SIMULATOR
 }
 
@@ -81,31 +83,13 @@ void StartView::Slot_status_LogginOut_Changed(bool state) {
 	}
 //	logInOut_Status.invalidate();
 
-	topMenu1.Slot_logInOut_Changed(_log_Status);
+	topMenu1.Slot_logInOut_Status_Changed(_log_Status);
 
+}
+
+void StartView::Slot_LogIn_Time_Changed(int hour, int min, int sec) {
+	topMenu1.Slot_logIn_Time_Changed(hour, min, sec);
 }
 
 #endif // SIMULATOR
 
-void StartView::handleTickEvent() {
-
-	if (_log_Status == true) {
-
-		tickCounter++;
-
-		if (tickCounter % 60 == 0) {
-			if (++_logSeconds >= 60) {
-				_logSeconds = 0;
-				if (++_logMinutes >= 60) {
-					_logMinutes = 0;
-					if (++_logHours >= 24) {
-						_logHours = 0;
-					}
-				}
-			}
-
-			// Update the clock
-			LogTimeClock.setTime24Hour(_logHours, _logMinutes, _logSeconds);
-		}
-	}
-}

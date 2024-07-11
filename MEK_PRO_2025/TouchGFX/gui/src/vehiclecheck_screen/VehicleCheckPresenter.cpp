@@ -7,7 +7,9 @@ VehicleCheckPresenter::VehicleCheckPresenter(VehicleCheckView &v) :
 }
 
 void VehicleCheckPresenter::activate() {
-
+#ifndef SIMULATOR
+	view.Slot_status_LogginOut_Changed(model->getLogStatus());
+#endif // Simu
 }
 
 void VehicleCheckPresenter::deactivate() {
@@ -34,5 +36,12 @@ void VehicleCheckPresenter::SW_LED_orange_ON_Clicked() {
 void VehicleCheckPresenter::SW_LED_red_ON_Clicked() {
 	model->HW_LED_red_ON();
 }
+
+void VehicleCheckPresenter::Vehicle_Status_LOGIN_OUT_Received(bool state){
+	view.Slot_status_LogginOut_Changed(state);
+}
+ void VehicleCheckPresenter::Vehicle_LogIn_Time_Changed(int hour, int min, int sec){
+	 view.Slot_LogIn_Time_Changed(hour, min, sec);
+ }
 
 #endif

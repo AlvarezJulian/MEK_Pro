@@ -12,12 +12,18 @@ StartViewBase::StartViewBase()
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     add(__background);
 
-    background_BlueLogo.setBitmap(touchgfx::Bitmap(BITMAP_IMAGE_03_ID));
+    background_BlueLogo.setBitmap(touchgfx::Bitmap(BITMAP_HINTERGRUND_2_ID));
     background_BlueLogo.setPosition(0, 0, 480, 800);
     background_BlueLogo.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
     add(background_BlueLogo);
 
-    EbzTimeClock.setPosition(277, 598, 123, 25);
+    text_hinweis.setXY(86, 633);
+    text_hinweis.setColor(touchgfx::Color::getColorFromRGB(0, 92, 169));
+    text_hinweis.setLinespacing(0);
+    text_hinweis.setTypedText(touchgfx::TypedText(T___SINGLEUSE_YHT1));
+    add(text_hinweis);
+
+    EbzTimeClock.setPosition(308, 598, 123, 25);
     EbzTimeClock.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     EbzTimeClock.setTypedText(touchgfx::TypedText(T___SINGLEUSE_P975));
     EbzTimeClock.displayLeadingZeroForHourIndicator(true);
@@ -26,19 +32,23 @@ StartViewBase::StartViewBase()
     EbzTimeClock.setAlpha(190);
     add(EbzTimeClock);
 
-    line5.setBitmap(touchgfx::Bitmap(BITMAP_IMAGE_07_ID));
-    line5.setPosition(45, 575, 395, 1);
-    line5.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
-    add(line5);
-
-    text_EZB.setPosition(178, 598, 35, 25);
+    text_EZB.setPosition(195, 598, 35, 25);
     text_EZB.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     text_EZB.setLinespacing(0);
     text_EZB.setTypedText(touchgfx::TypedText(T___SINGLEUSE_C6CN));
     text_EZB.setAlpha(153);
     add(text_EZB);
 
-    LogTimeClock.setPosition(277, 529, 123, 25);
+    EBZ_Icon.setXY(90, 588);
+    EBZ_Icon.setBitmap(touchgfx::Bitmap(BITMAP_ICON_EBZ_ID));
+    add(EBZ_Icon);
+
+    line5.setBitmap(touchgfx::Bitmap(BITMAP_TRENNLINIE_ID));
+    line5.setPosition(70, 575, 330, 1);
+    line5.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
+    add(line5);
+
+    LogTimeClock.setPosition(308, 529, 123, 25);
     LogTimeClock.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     LogTimeClock.setTypedText(touchgfx::TypedText(T___SINGLEUSE_10I5));
     LogTimeClock.displayLeadingZeroForHourIndicator(true);
@@ -47,55 +57,71 @@ StartViewBase::StartViewBase()
     LogTimeClock.setAlpha(190);
     add(LogTimeClock);
 
-    textLogtime.setPosition(178, 529, 89, 25);
+    textLogtime.setPosition(195, 529, 89, 25);
     textLogtime.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textLogtime.setLinespacing(0);
     textLogtime.setTypedText(touchgfx::TypedText(T___SINGLEUSE_8W76));
     textLogtime.setAlpha(153);
     add(textLogtime);
 
-    line4.setBitmap(touchgfx::Bitmap(BITMAP_IMAGE_07_ID));
-    line4.setPosition(45, 505, 395, 1);
+    AnotherTime_Logo.setXY(107, 518);
+    AnotherTime_Logo.setBitmap(touchgfx::Bitmap(BITMAP_ICON_LOGIN_ZEIT_ID));
+    add(AnotherTime_Logo);
+
+    line4.setBitmap(touchgfx::Bitmap(BITMAP_TRENNLINIE_ID));
+    line4.setPosition(70, 505, 330, 1);
     line4.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
     add(line4);
 
-    tex_ELS.setXY(178, 458);
+    tex_ELS.setXY(195, 458);
     tex_ELS.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     tex_ELS.setLinespacing(0);
     tex_ELS.setTypedText(touchgfx::TypedText(T___SINGLEUSE_GT5J));
     tex_ELS.setAlpha(153);
     add(tex_ELS);
 
-    line3.setBitmap(touchgfx::Bitmap(BITMAP_IMAGE_07_ID));
-    line3.setPosition(45, 434, 395, 1);
+    ELS_Icon.setXY(113, 447);
+    ELS_Icon.setBitmap(touchgfx::Bitmap(BITMAP_ICON_ELS_1_ID));
+    add(ELS_Icon);
+
+    line3.setBitmap(touchgfx::Bitmap(BITMAP_TRENNLINIE_ID));
+    line3.setPosition(70, 434, 330, 1);
     line3.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
     add(line3);
 
-    Tetxt_Bluetooth.setXY(178, 389);
+    Tetxt_Bluetooth.setXY(195, 389);
     Tetxt_Bluetooth.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     Tetxt_Bluetooth.setLinespacing(0);
     Tetxt_Bluetooth.setTypedText(touchgfx::TypedText(T___SINGLEUSE_4O6A));
     Tetxt_Bluetooth.setAlpha(153);
     add(Tetxt_Bluetooth);
 
-    Line2.setBitmap(touchgfx::Bitmap(BITMAP_IMAGE_07_ID));
-    Line2.setPosition(45, 370, 395, 1);
+    Bluetooth_Icon.setXY(117, 380);
+    Bluetooth_Icon.setBitmap(touchgfx::Bitmap(BITMAP_ICON_BLUETOOTH_2_ID));
+    add(Bluetooth_Icon);
+
+    Line2.setBitmap(touchgfx::Bitmap(BITMAP_TRENNLINIE_ID));
+    Line2.setPosition(70, 370, 330, 1);
     Line2.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
     add(Line2);
 
-    text_Wifi.setXY(178, 327);
+    text_Wifi.setXY(195, 327);
     text_Wifi.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     text_Wifi.setLinespacing(0);
     text_Wifi.setTypedText(touchgfx::TypedText(T___SINGLEUSE_D3S5));
     text_Wifi.setAlpha(153);
     add(text_Wifi);
 
-    line1.setBitmap(touchgfx::Bitmap(BITMAP_IMAGE_07_ID));
-    line1.setPosition(45, 305, 395, 1);
+    Wifi_Icon.setXY(105, 320);
+    Wifi_Icon.setBitmap(touchgfx::Bitmap(BITMAP_ICON_WLAN_5_ID));
+    add(Wifi_Icon);
+
+    line1.setBitmap(touchgfx::Bitmap(BITMAP_TRENNLINIE_ID));
+    line1.setPosition(70, 310, 330, 1);
     line1.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
     add(line1);
 
-    User_ID_Start.setPosition(178, 262, 227, 30);
+    User_ID_Start.setPosition(195, 258, 227, 30);
     User_ID_Start.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     User_ID_Start.setLinespacing(0);
     Unicode::snprintf(User_ID_StartBuffer, USER_ID_START_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_L9J3).getText());
@@ -104,42 +130,20 @@ StartViewBase::StartViewBase()
     User_ID_Start.setAlpha(153);
     add(User_ID_Start);
 
-    topMenu1.setXY(-2, 0);
-    add(topMenu1);
-
-    textArea1.setXY(86, 633);
-    textArea1.setColor(touchgfx::Color::getColorFromRGB(0, 92, 169));
-    textArea1.setLinespacing(0);
-    textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_YHT1));
-    add(textArea1);
-
-    Wifi_Icon.setXY(105, 320);
-    Wifi_Icon.setBitmap(touchgfx::Bitmap(BITMAP_ICON_WLAN_5_ID));
-    add(Wifi_Icon);
-
-    Bluetooth_Icon.setXY(117, 380);
-    Bluetooth_Icon.setBitmap(touchgfx::Bitmap(BITMAP_ICON_BLUETOOTH_2_ID));
-    add(Bluetooth_Icon);
-
-    ELS_Icon.setXY(113, 447);
-    ELS_Icon.setBitmap(touchgfx::Bitmap(BITMAP_ICON_ELS_1_ID));
-    add(ELS_Icon);
-
-    image1.setXY(107, 518);
-    image1.setBitmap(touchgfx::Bitmap(BITMAP_ICON_LOGIN_ZEIT_ID));
-    add(image1);
-
-    image2.setXY(204, 142);
-    image2.setBitmap(touchgfx::Bitmap(BITMAP_ICON_ABFAHRTSKONTROLLE_72X100PX_ID));
-    add(image2);
-
-    image3.setXY(90, 588);
-    image3.setBitmap(touchgfx::Bitmap(BITMAP_ICON_EBZ_ID));
-    add(image3);
-
-    ID_Icon.setXY(106, 257);
+    ID_Icon.setXY(106, 258);
     ID_Icon.setBitmap(touchgfx::Bitmap(BITMAP_ICON_ID_ID));
     add(ID_Icon);
+
+    Logo.setXY(204, 142);
+    Logo.setBitmap(touchgfx::Bitmap(BITMAP_ICON_ABFAHRTSKONTROLLE_72X100PX_ID));
+    add(Logo);
+
+    topMenu1.setXY(0, 0);
+    add(topMenu1);
+
+    MEK_Logo.setXY(170, 700);
+    MEK_Logo.setBitmap(touchgfx::Bitmap(BITMAP_MEK_LOGO_140X61_ID));
+    add(MEK_Logo);
 }
 
 StartViewBase::~StartViewBase()

@@ -43,7 +43,6 @@ StatusScreenViewBase::StatusScreenViewBase()
     Workshop.setBackground(touchgfx::BitmapId(BITMAP_HINTERGRUND_TEXT_ID), 40, 171);
     Workshop.setShadeColor(touchgfx::Color::getColorFromRGB(252, 197, 93));
     Workshop.setShadeAlpha(150);
-    Workshop.hide();
     textArea6.setXY(81, 366);
     textArea6.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textArea6.setLinespacing(0);
@@ -72,6 +71,7 @@ StatusScreenViewBase::StatusScreenViewBase()
     Crash.setBackground(touchgfx::BitmapId(BITMAP_HINTERGRUND_TEXT_ID), 40, 171);
     Crash.setShadeColor(touchgfx::Color::getColorFromRGB(235, 92, 71));
     Crash.setShadeAlpha(150);
+    Crash.hide();
     textArea3.setXY(73, 351);
     textArea3.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textArea3.setLinespacing(0);

@@ -59,6 +59,7 @@ public:
 	void HW_LED_red_ON();
 //	void Interface_CanSlider_send(int value);
 	void Interface_Can_send(CANBUS_TX_ID CAN_ID);
+	void HandleLogInTime();
 
 	/*
 	 *  set
@@ -189,6 +190,7 @@ protected:
 	uint16_t current_EBZ_second;
 	bool current_ELS_status;
 	// Botom Menu Save Data:
+	int tickCounter;
 	uint16_t current_log_hour;
 	uint16_t current_log_minute;
 	uint16_t current_log_second;

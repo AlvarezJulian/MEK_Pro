@@ -11,7 +11,6 @@ public:
 	}
 	virtual void setupScreen();
 	virtual void tearDownScreen();
-	virtual void handleTickEvent();
 
 #ifndef SIMULATOR
 
@@ -19,47 +18,15 @@ public:
 	virtual void Slot_status_LogginOut_Changed(bool state);
 	virtual void Slot_wifi_Signal_Changed(uint8_t val);
 	virtual void Slot_Bluetooth_Status_Changed(bool state);
-	/*
-	 * SET
-	 */
-	void setTickCounter(int val) {
-		tickCounter = val;
-	}
-	void setLogHour(int hour) {
-		_logHours = hour;
-	}
-	void setLogMinute(int minute) {
-		_logMinutes = minute;
-	}
-	void setLogSecond(int second) {
-		_logSeconds = second;
-	}
-	/*
-	 * GET
-	 */
-	int getTickcounter() {
-		return tickCounter;
-	}
-	int getLogHour() {
-		return _logHours;
-	}
-	int getLogMinute() {
-		return _logMinutes;
-	}
-	int getLogSecond() {
-		return _logSeconds;
-	}
+	virtual void Slot_LogIn_Time_Changed(int hour, int min, int sec);
+
 
 #endif
 protected:
-	int tickCounter;
-	int _logHours;
-	int _logMinutes;
-	int _logSeconds;
 	//Start Screen save Data:
 	char *_UserID;
 	bool _log_Status;
-	bool _Workshop_Status;
+	uint8_t _vehicle_Status;
 	uint16_t _EZB_hour;
 	uint16_t _EZB_minute;
 	uint16_t _ELS_status;

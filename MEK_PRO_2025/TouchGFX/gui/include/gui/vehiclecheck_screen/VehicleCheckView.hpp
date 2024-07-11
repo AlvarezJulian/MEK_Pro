@@ -20,10 +20,19 @@ public:
 	virtual void btn_Good_Clicked();
 	virtual void btn_Ok_Clicked();
 	virtual void btn_Bad_Clicked();
+	virtual void btn_YES_Clicked();
+	virtual void btn_NO_Clicked();
 
+
+	/*
+	 * SLOTS
+	 */
+	virtual void Slot_status_LogginOut_Changed(bool state);
+	virtual void Slot_LogIn_Time_Changed(int hour, int min, int sec);
 
 #endif // Simu
 protected:
+	bool _log_Status;
 
 };
 

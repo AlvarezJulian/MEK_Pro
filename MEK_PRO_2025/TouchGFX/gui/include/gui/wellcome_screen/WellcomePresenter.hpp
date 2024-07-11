@@ -26,6 +26,14 @@ public:
 
 #ifndef SIMULATOR
 	virtual void btn_StartControl_clicked(CANBUS_TX_ID CAN_ID);
+	virtual void Wellcome_LogIn_Time_Changed(int hour, int min, int sec);
+	virtual void Wellcome_Status_LOGIN_OUT_Changed(bool state);
+
+
+
+	void saveLogStatus(bool state) {
+		model->SetLogStatus(state);
+	}
 #endif
 
 	virtual ~WellcomePresenter() {

@@ -27,11 +27,10 @@ public:
 #ifndef SIMULATOR
 
 	virtual void Start_User_ID_Received(char *data);
-//	virtual void Start_Status_LOGIN_Received();
-//	virtual void Start_Status_LOGOUT_Received();
-	virtual void Start_Status_LOGIN_OUT_Received(bool state);
+	virtual void Start_Status_LOGIN_OUT_Changed(bool state);
 	virtual void Start_wifi_Signal_Changed(uint8_t val);
 	virtual void Start_Bluetooth_Status_Changed(bool state);
+	virtual void Start_LogIn_Time_Changed(int hour, int min, int sec);
 
 	/*
 	 * SET

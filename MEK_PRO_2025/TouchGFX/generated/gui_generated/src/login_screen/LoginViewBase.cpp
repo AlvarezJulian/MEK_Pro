@@ -12,7 +12,7 @@ LoginViewBase::LoginViewBase()
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     add(__background);
 
-    Background_BluePicLogo.setBitmap(touchgfx::Bitmap(BITMAP_IMAGE_02_ID));
+    Background_BluePicLogo.setBitmap(touchgfx::Bitmap(BITMAP_HINTERGRUND_MIT_ICON_UND_LOGO_ID));
     Background_BluePicLogo.setPosition(0, 0, 480, 800);
     Background_BluePicLogo.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
     add(Background_BluePicLogo);

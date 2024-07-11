@@ -19,7 +19,9 @@ public:
 #ifndef SIMULATOR
 	virtual void Slot_Wifi_Signal_Changed(uint8_t val);
 	virtual void Slot_Bluetooth_Status_Changed(bool status);
-	virtual void Slot_logInOut_Changed(bool status);
+	virtual void Slot_logInOut_Status_Changed(bool status);
+	virtual void Slot_logIn_Time_Changed(int hour, int min, int sec);
+
 
 #endif // SIMULATOR
 

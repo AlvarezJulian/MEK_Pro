@@ -43,13 +43,17 @@ void TopMenu::Slot_Bluetooth_Status_Changed(bool status) {
 
 }
 
-void TopMenu::Slot_logInOut_Changed(bool status) {
+void TopMenu::Slot_logInOut_Status_Changed(bool status) {
 
 	logIn_Led.setVisible(false);
 	if (status) {
 		logIn_Led.setVisible(true);
 	}
 //	TopMenu::invalidate();
+}
+
+void TopMenu::Slot_logIn_Time_Changed(int hour, int min, int sec){
+	LoginClock.setTime24Hour(hour, min, sec);
 }
 
 #endif // SIMULATOR
