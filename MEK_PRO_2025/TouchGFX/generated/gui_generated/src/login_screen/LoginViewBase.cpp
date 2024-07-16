@@ -29,11 +29,11 @@ LoginViewBase::LoginViewBase()
     text_hinweis_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_4DD2));
     add(text_hinweis_1);
 
-    textProductName.setXY(124, 108);
-    textProductName.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    textProductName.setLinespacing(0);
-    textProductName.setTypedText(touchgfx::TypedText(T___SINGLEUSE_A2NM));
-    add(textProductName);
+    text_Hinweis.setXY(124, 108);
+    text_Hinweis.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    text_Hinweis.setLinespacing(0);
+    text_Hinweis.setTypedText(touchgfx::TypedText(T___SINGLEUSE_A2NM));
+    add(text_Hinweis);
 
     topMenu1.setXY(0, 0);
     add(topMenu1);

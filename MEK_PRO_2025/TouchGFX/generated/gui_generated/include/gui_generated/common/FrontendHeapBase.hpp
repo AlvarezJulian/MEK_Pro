@@ -22,8 +22,6 @@
 #include <gui/vehiclecheck_screen/VehicleCheckPresenter.hpp>
 #include <gui/start_screen/StartView.hpp>
 #include <gui/start_screen/StartPresenter.hpp>
-#include <gui/statusscreen_screen/StatusScreenView.hpp>
-#include <gui/statusscreen_screen/StatusScreenPresenter.hpp>
 
 
 /**
@@ -50,8 +48,7 @@ public:
             touchgfx::meta::TypeList< WellcomeView,
             touchgfx::meta::TypeList< VehicleCheckView,
             touchgfx::meta::TypeList< StartView,
-            touchgfx::meta::TypeList< StatusScreenView,
-            touchgfx::meta::Nil > > > >
+            touchgfx::meta::Nil > > >
             > GeneratedViewTypes;
 
     /**
@@ -67,8 +64,7 @@ public:
             touchgfx::meta::TypeList< WellcomePresenter,
             touchgfx::meta::TypeList< VehicleCheckPresenter,
             touchgfx::meta::TypeList< StartPresenter,
-            touchgfx::meta::TypeList< StatusScreenPresenter,
-            touchgfx::meta::Nil > > > >
+            touchgfx::meta::Nil > > >
             > GeneratedPresenterTypes;
 
     /**
@@ -83,8 +79,7 @@ public:
     typedef touchgfx::meta::TypeList< touchgfx::NoTransition,
             touchgfx::meta::TypeList< SlideTransition<WEST>,
             touchgfx::meta::TypeList< SlideTransition<EAST>,
-            touchgfx::meta::TypeList< SlideTransition<NORTH>,
-            touchgfx::meta::Nil > > >
+            touchgfx::meta::Nil > >
             > GeneratedTransitionTypes;
 
     /**

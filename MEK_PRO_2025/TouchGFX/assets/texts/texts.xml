@@ -30,44 +30,52 @@
       </Text>
     </TextGroup>
     <TextGroup Id="Unsorted">
-      <Text Id="__SingleUse_YHT1" Alignment="Center" TypographyId="MEK_2">
-        <Translation Language="DE">Fertig?&#10;Bitte mit Transponder ausloggen!</Translation>
+      <Text Id="__SingleUse_RQFP" Alignment="Center" TypographyId="default_2">
+        <Translation Language="DE">Bitte Batteriewasser auffüllen!</Translation>
         <Translation Language="EN">New Text</Translation>
       </Text>
-      <Text Id="__SingleUse_9FL6" Alignment="Left" TypographyId="MEK_2">
-        <Translation Language="DE">Bitte Elektrolyten auffüllen! </Translation>
+      <Text Id="__SingleUse_YQQE" Alignment="Center" TypographyId="MEK_8">
+        <Translation Language="DE">Batteriestand niedrig</Translation>
         <Translation Language="EN">New Text</Translation>
       </Text>
-      <Text Id="__SingleUse_H3TU" Alignment="Left" TypographyId="MEK_8">
-        <Translation Language="DE">ELektrolystand leer</Translation>
+      <Text Id="__SingleUse_5AB0" Alignment="Center" TypographyId="MEK_1">
+        <Translation Language="DE">Batterie &#10;Management</Translation>
         <Translation Language="EN">New Text</Translation>
       </Text>
-      <Text Id="__SingleUse_VCEW" Alignment="Center" TypographyId="MEK_1">
-        <Translation Language="DE">Batterie&#10;Management</Translation>
-        <Translation Language="EN">New Text</Translation>
-      </Text>
-      <Text Id="__SingleUse_YGB5" Alignment="Center" TypographyId="MEK_2">
+      <Text Id="__SingleUse_5E2I" Alignment="Center" TypographyId="default_2">
         <Translation Language="DE">Bitte mit berechtigem &#10;Transponder freischalten.</Translation>
         <Translation Language="EN">New Text</Translation>
       </Text>
-      <Text Id="__SingleUse_BQYK" Alignment="Left" TypographyId="default_2">
+      <Text Id="__SingleUse_0229" Alignment="Center" TypographyId="MEK_8">
         <Translation Language="DE">Der Betrieb ist eingeschränkt.</Translation>
         <Translation Language="EN">New Text</Translation>
       </Text>
-      <Text Id="__SingleUse_L4TK" Alignment="Center" TypographyId="MEK_1">
-        <Translation Language="DE">Werkstatt-&#10;modus!</Translation>
+      <Text Id="__SingleUse_HLSI" Alignment="Center" TypographyId="MEK_1">
+        <Translation Language="DE">Werkstatt-&#10;Modus</Translation>
         <Translation Language="EN">New Text</Translation>
       </Text>
-      <Text Id="__SingleUse_KBYA" Alignment="Center" TypographyId="default_2">
-        <Translation Language="DE">Bitte mit berechtigem &#10;Transponder freischlaten.</Translation>
+      <Text Id="__SingleUse_NDF6" Alignment="Left" TypographyId="MEK_1">
+        <Translation Language="DE">Crash!</Translation>
         <Translation Language="EN">New Text</Translation>
       </Text>
-      <Text Id="__SingleUse_JK69" Alignment="Left" TypographyId="MEK_8">
+      <Text Id="__SingleUse_1YQC" Alignment="Center" TypographyId="MEK_8">
         <Translation Language="DE">Der Betrieb ist eingestellt.</Translation>
         <Translation Language="EN">New Text</Translation>
       </Text>
-      <Text Id="__SingleUse_SW5X" Alignment="Center" TypographyId="MEK_1">
-        <Translation Language="DE">Crash!</Translation>
+      <Text Id="__SingleUse_02HX" Alignment="Center" TypographyId="MEK_2">
+        <Translation Language="DE">Bitte mit berechtigem &#10;Transponder freischalten.</Translation>
+        <Translation Language="EN">New Text</Translation>
+      </Text>
+      <Text Id="__SingleUse_CO7Z" Alignment="Left" TypographyId="MEK_2">
+        <Translation Language="DE">Anwesenheit</Translation>
+        <Translation Language="EN">New Text</Translation>
+      </Text>
+      <Text Id="__SingleUse_2EQX" Alignment="Left" TypographyId="MEK_2">
+        <Translation Language="DE">Beladungssensor</Translation>
+        <Translation Language="EN">New Text</Translation>
+      </Text>
+      <Text Id="__SingleUse_YHT1" Alignment="Center" TypographyId="MEK_2">
+        <Translation Language="DE">Fertig?&#10;Bitte mit Transponder ausloggen!</Translation>
         <Translation Language="EN">New Text</Translation>
       </Text>
       <Text Id="__SingleUse_L9J3" Alignment="Left" TypographyId="MEK_2">
@@ -123,7 +131,7 @@
         <Translation Language="EN">New Text</Translation>
       </Text>
       <Text Id="__SingleUse_8W76" Alignment="Left" TypographyId="MEK_2">
-        <Translation Language="DE">Login Zeit</Translation>
+        <Translation Language="DE">Bestromt</Translation>
         <Translation Language="EN">logzeit :</Translation>
       </Text>
       <Text Id="__SingleUse_10I5" Alignment="Left" TypographyId="MEK_2">
@@ -136,11 +144,11 @@
       </Text>
       <Text Id="__SingleUse_8VM5" Alignment="Center" TypographyId="MEK_5">
         <Translation Language="DE">nein</Translation>
-        <Translation Language="EN">bad</Translation>
+        <Translation Language="EN">no</Translation>
       </Text>
       <Text Id="__SingleUse_ZVD9" Alignment="Center" TypographyId="MEK_5">
         <Translation Language="DE">ja</Translation>
-        <Translation Language="EN">ok</Translation>
+        <Translation Language="EN">yes</Translation>
       </Text>
       <Text Id="__SingleUse_8G32" Alignment="Center" TypographyId="Default">
         <Translation Language="DE">gut</Translation>
@@ -159,7 +167,7 @@
         <Translation Language="EN">ELS:</Translation>
       </Text>
       <Text Id="__SingleUse_C6CN" Alignment="Left" TypographyId="MEK_2">
-        <Translation Language="DE">EBZ</Translation>
+        <Translation Language="DE">Nutzung</Translation>
         <Translation Language="EN">EBZ:</Translation>
       </Text>
       <Text Id="__SingleUse_GYFR" Alignment="Center" TypographyId="MEK_5">
@@ -188,7 +196,7 @@
       </Text>
       <Text Id="__SingleUse_A2NM" Alignment="Left" TypographyId="MEK_1">
         <Translation Language="DE">Hi, los gehts!</Translation>
-        <Translation Language="EN">MEK</Translation>
+        <Translation Language="EN">hi, lets go!</Translation>
       </Text>
     </TextGroup>
     <TextGroup Id="Wildcards">

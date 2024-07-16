@@ -14,12 +14,16 @@ public:
 
 #ifndef SIMULATOR
 
+	enum ListOfModalWindow {
+		ELS_STATUS = 1, WORKSHOP_STATUS, CRASH_STATUS
+	};
+
 	virtual void Slot_User_ID_Received(char *data);
 	virtual void Slot_status_LogginOut_Changed(bool state);
 	virtual void Slot_wifi_Signal_Changed(uint8_t val);
 	virtual void Slot_Bluetooth_Status_Changed(bool state);
 	virtual void Slot_LogIn_Time_Changed(int hour, int min, int sec);
-
+//	virtual void Slot_Status_ModalWindow_Changed(uint8_t status);
 
 #endif
 protected:

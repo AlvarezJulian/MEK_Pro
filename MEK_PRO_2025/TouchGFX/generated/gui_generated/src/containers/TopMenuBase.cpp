@@ -16,7 +16,7 @@ TopMenuBase::TopMenuBase()
     add(TopImage);
 
     wifi_sig_0.setBitmap(touchgfx::Bitmap(BITMAP_ICON_05_ID));
-    wifi_sig_0.setPosition(419, 18, 25, 25);
+    wifi_sig_0.setPosition(421, 18, 25, 25);
     wifi_sig_0.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
     add(wifi_sig_0);
 
@@ -39,7 +39,7 @@ TopMenuBase::TopMenuBase()
     add(wifi_sig_3);
 
     bluetooth_0.setBitmap(touchgfx::Bitmap(BITMAP_ICON_02_ID));
-    bluetooth_0.setPosition(444, 18, 25, 25);
+    bluetooth_0.setPosition(446, 18, 25, 25);
     bluetooth_0.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
     add(bluetooth_0);
 
@@ -65,6 +65,7 @@ TopMenuBase::TopMenuBase()
     LoginClock.setDisplayMode(touchgfx::DigitalClock::DISPLAY_24_HOUR);
     LoginClock.setTime24Hour(0, 0, 0);
     LoginClock.setAlpha(190);
+    LoginClock.setVisible(false);
     add(LoginClock);
 
     Tetxt_LogInTime.setXY(13, 20);
@@ -72,16 +73,22 @@ TopMenuBase::TopMenuBase()
     Tetxt_LogInTime.setLinespacing(0);
     Tetxt_LogInTime.setTypedText(touchgfx::TypedText(T___SINGLEUSE_NBVV));
     Tetxt_LogInTime.setAlpha(190);
+    Tetxt_LogInTime.setVisible(false);
     add(Tetxt_LogInTime);
 
-    logOut_Led.setXY(215, 8);
+    logOut_Led.setXY(215, 6);
     logOut_Led.setBitmap(touchgfx::Bitmap(BITMAP_LOG_IN_GRAU_50X50PX_ID));
     add(logOut_Led);
 
-    logIn_Led.setXY(215, 8);
+    logIn_Led.setXY(215, 6);
     logIn_Led.setBitmap(touchgfx::Bitmap(BITMAP_LOG_IN_GRUEN_50X50PX_ID));
-    logIn_Led.setVisible(false);
     add(logIn_Led);
+
+    scalableImage1.setBitmap(touchgfx::Bitmap(BITMAP_MOBILFUNK_ID));
+    scalableImage1.setPosition(8, 18, 25, 25);
+    scalableImage1.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
+    scalableImage1.setAlpha(190);
+    add(scalableImage1);
 }
 
 TopMenuBase::~TopMenuBase()

@@ -91,5 +91,20 @@ void StartView::Slot_LogIn_Time_Changed(int hour, int min, int sec) {
 	topMenu1.Slot_logIn_Time_Changed(hour, min, sec);
 }
 
+//void StartView::Slot_Status_ModalWindow_Changed(uint8_t status){
+//
+//	switch (status) {
+//		case ELS_STATUS:
+//			ELS_Status.show();
+//			break;
+//		case WORKSHOP_STATUS:
+//			Workshop_Status.show();
+//		case CRASH_STATUS:
+//			Crash_Status.show();
+//		default:
+//			break;
+//	}
+//}
+
 #endif // SIMULATOR
 

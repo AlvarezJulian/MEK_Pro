@@ -99,7 +99,7 @@ KEEP extern const touchgfx::GlyphNode glyphs_verdana_20_4bpp[] FONT_TABLE_LOCATI
     {  6711, 0x007C,   3,  19,  15,   3,   9,   0,   0, 0x00 },
     {  6749, 0x007D,  10,  19,  15,   1,  13, 104,   1, 0x00 },
     {  6844, 0x007E,  14,   5,   9,   1,  16,   0,   0, 0x00 },
-    {  6879, 0x00E4,  10,  14,  14,   1,  12,   0,   0, 0x00 }
+    {  6879, 0x00FC,  10,  14,  14,   1,  13,   0,   0, 0x00 }
 };
 
 // verdana_20_4bpp

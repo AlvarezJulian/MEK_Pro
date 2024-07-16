@@ -34,9 +34,6 @@ public:
     // Start
     void gotoStartScreenSlideTransitionEast();
 
-    // StatusScreen
-    void gotoStatusScreenScreenSlideTransitionNorth();
-
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
     FrontendHeap& frontendHeap;
@@ -55,9 +52,6 @@ protected:
 
     // Start
     void gotoStartScreenSlideTransitionEastImpl();
-
-    // StatusScreen
-    void gotoStatusScreenScreenSlideTransitionNorthImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

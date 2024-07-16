@@ -9,10 +9,11 @@
 #include <gui/start_screen/StartPresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/ScalableImage.hpp>
+#include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
 #include <touchgfx/containers/clock/DigitalClock.hpp>
-#include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
+#include <touchgfx/containers/ModalWindow.hpp>
 #include <gui/containers/TopMenu.hpp>
 
 class StartViewBase : public touchgfx::View<StartPresenter>
@@ -32,18 +33,19 @@ protected:
      */
     touchgfx::Box __background;
     touchgfx::ScalableImage background_BlueLogo;
+    touchgfx::Image MEK_Logo;
     touchgfx::TextArea text_hinweis;
-    touchgfx::DigitalClock EbzTimeClock;
-    touchgfx::TextArea text_EZB;
-    touchgfx::Image EBZ_Icon;
     touchgfx::ScalableImage line5;
-    touchgfx::DigitalClock LogTimeClock;
-    touchgfx::TextArea textLogtime;
-    touchgfx::Image AnotherTime_Logo;
+    touchgfx::DigitalClock EbzTimeClock;
+    touchgfx::TextArea text_Nutzung;
+    touchgfx::Image Nutzung_Icon;
     touchgfx::ScalableImage line4;
+    touchgfx::DigitalClock LogTimeClock;
+    touchgfx::TextArea text_Bestromt;
+    touchgfx::Image Bestromt_Icon;
+    touchgfx::ScalableImage line3;
     touchgfx::TextArea tex_ELS;
     touchgfx::Image ELS_Icon;
-    touchgfx::ScalableImage line3;
     touchgfx::TextArea Tetxt_Bluetooth;
     touchgfx::Image Bluetooth_Icon;
     touchgfx::ScalableImage Line2;
@@ -52,9 +54,27 @@ protected:
     touchgfx::ScalableImage line1;
     touchgfx::TextAreaWithOneWildcard User_ID_Start;
     touchgfx::Image ID_Icon;
-    touchgfx::Image Logo;
+    touchgfx::TextArea text_Beladungssensor;
+    touchgfx::Image Beladungssensor_Icon;
+    touchgfx::TextArea text_Anwesenheit;
+    touchgfx::Image Anwesenheit_Icon;
+    touchgfx::Image Icon;
+    touchgfx::ModalWindow Crash_Status;
+    touchgfx::TextArea text_crash3;
+    touchgfx::TextArea text_crash2;
+    touchgfx::TextArea text_crash1;
+    touchgfx::Image crash_icon;
+    touchgfx::ModalWindow Workshop_Status;
+    touchgfx::TextArea textArea3;
+    touchgfx::TextArea textArea2;
+    touchgfx::TextArea textArea1;
+    touchgfx::Image Workshop_Icon;
+    touchgfx::ModalWindow ELS_Status;
+    touchgfx::TextArea text_els3;
+    touchgfx::TextArea text_els2;
+    touchgfx::TextArea text_els1;
+    touchgfx::Image ELS_empty_Icon;
     TopMenu topMenu1;
-    touchgfx::Image MEK_Logo;
 
     /*
      * Wildcard Buffers

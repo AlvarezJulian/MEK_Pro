@@ -38,6 +38,7 @@ protected:
     touchgfx::TextArea Tetxt_LogInTime;
     touchgfx::Image logOut_Led;
     touchgfx::Image logIn_Led;
+    touchgfx::ScalableImage scalableImage1;
 
 private:
 

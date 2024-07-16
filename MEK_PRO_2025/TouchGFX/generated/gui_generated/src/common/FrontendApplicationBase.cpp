@@ -17,8 +17,6 @@
 #include <gui/vehiclecheck_screen/VehicleCheckPresenter.hpp>
 #include <gui/start_screen/StartView.hpp>
 #include <gui/start_screen/StartPresenter.hpp>
-#include <gui/statusscreen_screen/StatusScreenView.hpp>
-#include <gui/statusscreen_screen/StatusScreenPresenter.hpp>
 
 using namespace touchgfx;
 
@@ -99,17 +97,4 @@ void FrontendApplicationBase::gotoStartScreenSlideTransitionEast()
 void FrontendApplicationBase::gotoStartScreenSlideTransitionEastImpl()
 {
     touchgfx::makeTransition<StartView, StartPresenter, touchgfx::SlideTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
-}
-
-// StatusScreen
-
-void FrontendApplicationBase::gotoStatusScreenScreenSlideTransitionNorth()
-{
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoStatusScreenScreenSlideTransitionNorthImpl);
-    pendingScreenTransitionCallback = &transitionCallback;
-}
-
-void FrontendApplicationBase::gotoStatusScreenScreenSlideTransitionNorthImpl()
-{
-    touchgfx::makeTransition<StatusScreenView, StatusScreenPresenter, touchgfx::SlideTransition<NORTH>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }

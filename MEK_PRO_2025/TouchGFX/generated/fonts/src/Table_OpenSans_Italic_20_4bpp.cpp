@@ -98,7 +98,8 @@ KEEP extern const touchgfx::GlyphNode glyphs_OpenSans_Italic_20_4bpp[] FONT_TABL
     {  6548, 0x007B,   8,  18,  14,   0,   7,   0,   0, 0x00 }, // braceleft
     {  6620, 0x007C,   2,  20,  15,   5,  11,   0,   0, 0x00 }, // bar
     {  6640, 0x007D,   8,  18,  14,  -1,   7,   0,   0, 0x00 }, // braceright
-    {  6712, 0x007E,  10,   4,   9,   1,  11,   0,   0, 0x00 }  // asciitilde
+    {  6712, 0x007E,  10,   4,   9,   1,  11,   0,   0, 0x00 }, // asciitilde
+    {  6732, 0x00E4,  10,  14,  14,   1,  11,   0,   0, 0x00 }  // adieresis
 };
 
 // OpenSans_Italic_20_4bpp
@@ -116,6 +117,6 @@ touchgfx::GeneratedFont& getFont_OpenSans_Italic_20_4bpp();
 
 touchgfx::GeneratedFont& getFont_OpenSans_Italic_20_4bpp()
 {
-    static touchgfx::GeneratedFont OpenSans_Italic_20_4bpp(glyphs_OpenSans_Italic_20_4bpp, 95, 25, 20, 0, 0, 4, 1, 4, 3, unicodes_OpenSans_Italic_20_4bpp, kerning_OpenSans_Italic_20_4bpp, 63, 0, 0, 0);
+    static touchgfx::GeneratedFont OpenSans_Italic_20_4bpp(glyphs_OpenSans_Italic_20_4bpp, 96, 25, 20, 0, 0, 4, 1, 4, 3, unicodes_OpenSans_Italic_20_4bpp, kerning_OpenSans_Italic_20_4bpp, 63, 0, 0, 0);
     return OpenSans_Italic_20_4bpp;
 }

@@ -16,7 +16,6 @@ ButtonsToChangeScreenBase::ButtonsToChangeScreenBase() :
     buttonStatus.setLabelText(touchgfx::TypedText(T___SINGLEUSE_MEO3));
     buttonStatus.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     buttonStatus.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    buttonStatus.setAction(buttonCallback);
     add(buttonStatus);
 
     buttonStart.setXY(0, 225);
@@ -91,12 +90,5 @@ void ButtonsToChangeScreenBase::buttonCallbackHandler(const touchgfx::AbstractBu
         //When buttonStart clicked change screen to Start
         //Go to Start with screen transition towards East
         application().gotoStartScreenSlideTransitionEast();
-    }
-    if (&src == &buttonStatus)
-    {
-        //ChangeToStatus
-        //When buttonStatus clicked change screen to StatusScreen
-        //Go to StatusScreen with screen transition towards North
-        application().gotoStatusScreenScreenSlideTransitionNorth();
     }
 }

@@ -7,23 +7,23 @@
 //#include <gui/containers/TopMenu.hpp>
 
 Model::Model() :
-				modelListener(0),
-				current_Wifi_Signal(0),
-				current_bluetooth_Status(false),
-				current_hour(0),
-				current_minute(0),
-				current_second(0),
-				current_UserID(0),
-				current_log_Status(false),
-				current_Workshop_Status(false),
-				current_Crash_Status(false),
-				current_EBZ_hour(0),
-				current_EBZ_minute(0),
-				current_EBZ_second(0),
-				current_ELS_status(false),
-				current_log_hour(0),
-				current_log_minute(0),
-				current_log_second(0) {
+		modelListener(0),
+		current_Wifi_Signal(0),
+		current_bluetooth_Status(false),
+		current_hour(0),
+		current_minute(0),
+		current_second(0),
+		current_UserID(0),
+		current_log_Status(false),
+		current_Workshop_Status(false),
+		current_Crash_Status(false),
+		current_EBZ_hour(0),
+		current_EBZ_minute(0),
+		current_EBZ_second(0),
+		current_ELS_status(false),
+		current_log_hour(0),
+		current_log_minute(0),
+		current_log_second(0) {
 }
 
 /*
@@ -126,7 +126,7 @@ void Model::tick() {
 				ui->gotoStartScreenSlideTransitionEast();
 				break;
 			case STATUSWINDOW:
-				ui->gotoStatusScreenScreenSlideTransitionNorth();
+//				ui->gotoStatusScreenScreenSlideTransitionNorth();
 				break;
 			default:
 				break;
@@ -207,15 +207,7 @@ void Model::HandleLogInTime() {
 			}
 
 			// Update the clock
-//LogTimeClock.setTime24Hour(current_log_hour, current_log_minute,current_log_second);
-//			SetLogHour(current_log_hour);
-//			SetLogMinute(current_log_minute);
-//			SetLogSecond(current_log_second);
 		}
-//		modelListener->Start_LogIn_Time_Changed(current_log_hour, current_log_minute,
-//				current_log_second);
-//		modelListener->Vehicle_LogIn_Time_Changed(current_log_hour,
-//				current_log_minute, current_log_second);
 
 	} else {
 		current_log_hour = 0;

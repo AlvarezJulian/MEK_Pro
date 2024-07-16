@@ -18,16 +18,20 @@ VehicleCheckViewBase::VehicleCheckViewBase() :
     background_blueWhite.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
     add(background_blueWhite);
 
-    Check_Coun.setXY(212, 674);
-    Check_Coun.setColor(touchgfx::Color::getColorFromRGB(0, 92, 169));
-    Check_Coun.setLinespacing(0);
-    touchgfx::Unicode::snprintf(Check_CounBuffer1, CHECK_COUNBUFFER1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_Z3DE).getText());
-    Check_Coun.setWildcard1(Check_CounBuffer1);
-    touchgfx::Unicode::snprintf(Check_CounBuffer2, CHECK_COUNBUFFER2_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_FN4I).getText());
-    Check_Coun.setWildcard2(Check_CounBuffer2);
-    Check_Coun.resizeToCurrentText();
-    Check_Coun.setTypedText(touchgfx::TypedText(T___SINGLEUSE_N3WC));
-    add(Check_Coun);
+    MEK_Logo.setXY(170, 700);
+    MEK_Logo.setBitmap(touchgfx::Bitmap(BITMAP_MEK_LOGO_140X61_ID));
+    add(MEK_Logo);
+
+    Check_Count.setXY(212, 674);
+    Check_Count.setColor(touchgfx::Color::getColorFromRGB(0, 92, 169));
+    Check_Count.setLinespacing(0);
+    touchgfx::Unicode::snprintf(Check_CountBuffer1, CHECK_COUNTBUFFER1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_Z3DE).getText());
+    Check_Count.setWildcard1(Check_CountBuffer1);
+    touchgfx::Unicode::snprintf(Check_CountBuffer2, CHECK_COUNTBUFFER2_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_FN4I).getText());
+    Check_Count.setWildcard2(Check_CountBuffer2);
+    Check_Count.resizeToCurrentText();
+    Check_Count.setTypedText(touchgfx::TypedText(T___SINGLEUSE_N3WC));
+    add(Check_Count);
 
     btn_bad.setXY(75, 580);
     btn_bad.setBitmaps(touchgfx::Bitmap(BITMAP_BUTTON300X72_ID), touchgfx::Bitmap(BITMAP_BUTTON300X72_PRESSED_ID));
@@ -72,16 +76,12 @@ VehicleCheckViewBase::VehicleCheckViewBase() :
     text_Abfahrskontrolle.setTypedText(touchgfx::TypedText(T___SINGLEUSE_JBEU));
     add(text_Abfahrskontrolle);
 
-    image1.setXY(195, 140);
-    image1.setBitmap(touchgfx::Bitmap(BITMAP_ICON_ABFAHRTSKONTROLLE_72X100PX_ID));
-    add(image1);
+    Icon.setXY(204, 140);
+    Icon.setBitmap(touchgfx::Bitmap(BITMAP_ICON_ABFAHRTSKONTROLLE_72X100PX_ID));
+    add(Icon);
 
     topMenu1.setXY(0, 0);
     add(topMenu1);
-
-    MEK_Logo.setXY(170, 700);
-    MEK_Logo.setBitmap(touchgfx::Bitmap(BITMAP_MEK_LOGO_140X61_ID));
-    add(MEK_Logo);
 }
 
 VehicleCheckViewBase::~VehicleCheckViewBase()

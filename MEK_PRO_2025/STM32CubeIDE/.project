@@ -528,16 +528,6 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/start_screen/StartView.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/StatusScreenPresenter.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/statusscreen_screen/StatusScreenPresenter.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/gui/StatusScreenView.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/statusscreen_screen/StatusScreenView.cpp</locationURI>
-		</link>
-		<link>
 			<name>Application/User/gui/VehicleCheckPresenter.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/vehiclecheck_screen/VehicleCheckPresenter.cpp</locationURI>
@@ -838,11 +828,6 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/start_screen/StartViewBase.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/StatusScreenViewBase.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/statusscreen_screen/StatusScreenViewBase.cpp</locationURI>
-		</link>
-		<link>
 			<name>Application/User/generated/VehicleCheckViewBase.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/vehiclecheck_screen/VehicleCheckViewBase.cpp</locationURI>
@@ -861,6 +846,11 @@
 			<name>Application/User/generated/SVGDatabase.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/SVGDatabase.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_Beladung_Icon.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_Beladung_Icon.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/image_Button300x72.cpp</name>
@@ -1166,6 +1156,11 @@
 			<name>Application/User/generated/image_mek_logo_negativ.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_mek_logo_negativ.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_mobilfunk.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_mobilfunk.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/LanguageDe.cpp</name>
