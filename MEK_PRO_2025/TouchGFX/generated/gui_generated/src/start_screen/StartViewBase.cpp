@@ -13,7 +13,7 @@ StartViewBase::StartViewBase()
     add(__background);
 
     background_BlueLogo.setBitmap(touchgfx::Bitmap(BITMAP_HINTERGRUND_2_ID));
-    background_BlueLogo.setPosition(0, 0, 480, 800);
+    background_BlueLogo.setPosition(-1, 0, 480, 800);
     background_BlueLogo.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
     add(background_BlueLogo);
 
@@ -172,91 +172,132 @@ StartViewBase::StartViewBase()
     Icon.setBitmap(touchgfx::Bitmap(BITMAP_ICON_ABFAHRTSKONTROLLE_72X100PX_ID));
     add(Icon);
 
-    Crash_Status.setBackground(touchgfx::BitmapId(BITMAP_HINTERGRUND_TEXT_ID), 40, 171);
-    Crash_Status.setShadeColor(touchgfx::Color::getColorFromRGB(235, 92, 71));
-    Crash_Status.setShadeAlpha(150);
-    Crash_Status.hide();
+    Crash_Window.setBackground(touchgfx::BitmapId(BITMAP_HINTERGRUND_TEXT_ID), 40, 171);
+    Crash_Window.setShadeColor(touchgfx::Color::getColorFromRGB(235, 92, 71));
+    Crash_Window.setShadeAlpha(150);
+    Crash_Window.hide();
     text_crash3.setXY(76, 341);
     text_crash3.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     text_crash3.setLinespacing(0);
     text_crash3.setTypedText(touchgfx::TypedText(T___SINGLEUSE_02HX));
     text_crash3.setAlpha(190);
-    Crash_Status.add(text_crash3);
+    Crash_Window.add(text_crash3);
 
     text_crash2.setXY(87, 266);
     text_crash2.setColor(touchgfx::Color::getColorFromRGB(235, 92, 71));
     text_crash2.setLinespacing(0);
     text_crash2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_1YQC));
-    Crash_Status.add(text_crash2);
+    Crash_Window.add(text_crash2);
 
     text_crash1.setXY(138, 169);
     text_crash1.setColor(touchgfx::Color::getColorFromRGB(235, 92, 71));
     text_crash1.setLinespacing(0);
     text_crash1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_NDF6));
-    Crash_Status.add(text_crash1);
+    Crash_Window.add(text_crash1);
 
     crash_icon.setXY(176, 77);
     crash_icon.setBitmap(touchgfx::Bitmap(BITMAP_ICON_CRASH_ID));
-    Crash_Status.add(crash_icon);
+    Crash_Window.add(crash_icon);
 
-    add(Crash_Status);
+    add(Crash_Window);
 
-    Workshop_Status.setBackground(touchgfx::BitmapId(BITMAP_HINTERGRUND_TEXT_ID), 40, 171);
-    Workshop_Status.setShadeColor(touchgfx::Color::getColorFromRGB(252, 197, 93));
-    Workshop_Status.setShadeAlpha(150);
-    Workshop_Status.hide();
+    Workshop_Window.setBackground(touchgfx::BitmapId(BITMAP_HINTERGRUND_TEXT_ID), 40, 171);
+    Workshop_Window.setShadeColor(touchgfx::Color::getColorFromRGB(252, 197, 93));
+    Workshop_Window.setShadeAlpha(150);
+    Workshop_Window.hide();
     textArea3.setXY(73, 354);
     textArea3.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textArea3.setLinespacing(0);
     textArea3.setTypedText(touchgfx::TypedText(T___SINGLEUSE_5E2I));
     textArea3.setAlpha(190);
-    Workshop_Status.add(textArea3);
+    Workshop_Window.add(textArea3);
 
     textArea2.setXY(70, 289);
     textArea2.setColor(touchgfx::Color::getColorFromRGB(252, 197, 93));
     textArea2.setLinespacing(0);
     textArea2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_0229));
-    Workshop_Status.add(textArea2);
+    Workshop_Window.add(textArea2);
 
     textArea1.setXY(89, 143);
     textArea1.setColor(touchgfx::Color::getColorFromRGB(252, 197, 93));
     textArea1.setLinespacing(0);
     textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_HLSI));
-    Workshop_Status.add(textArea1);
+    Workshop_Window.add(textArea1);
 
     Workshop_Icon.setXY(178, 68);
     Workshop_Icon.setBitmap(touchgfx::Bitmap(BITMAP_ICON_WERKSTATTMODUS_ID));
-    Workshop_Status.add(Workshop_Icon);
+    Workshop_Window.add(Workshop_Icon);
 
-    add(Workshop_Status);
+    add(Workshop_Window);
 
-    ELS_Status.setBackground(touchgfx::BitmapId(BITMAP_HINTERGRUND_TEXT_ID), 40, 171);
-    ELS_Status.setShadeColor(touchgfx::Color::getColorFromRGB(0, 48, 99));
-    ELS_Status.setShadeAlpha(150);
+    ELS_Window.setBackground(touchgfx::BitmapId(BITMAP_HINTERGRUND_TEXT_ID), 40, 171);
+    ELS_Window.setShadeColor(touchgfx::Color::getColorFromRGB(0, 48, 99));
+    ELS_Window.setShadeAlpha(150);
+    ELS_Window.hide();
     text_els3.setXY(48, 354);
     text_els3.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     text_els3.setLinespacing(0);
     text_els3.setTypedText(touchgfx::TypedText(T___SINGLEUSE_RQFP));
     text_els3.setAlpha(190);
-    ELS_Status.add(text_els3);
+    ELS_Window.add(text_els3);
 
     text_els2.setXY(106, 278);
     text_els2.setColor(touchgfx::Color::getColorFromRGB(0, 48, 99));
     text_els2.setLinespacing(0);
     text_els2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_YQQE));
-    ELS_Status.add(text_els2);
+    ELS_Window.add(text_els2);
 
     text_els1.setXY(70, 126);
     text_els1.setColor(touchgfx::Color::getColorFromRGB(0, 48, 99));
     text_els1.setLinespacing(0);
     text_els1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_5AB0));
-    ELS_Status.add(text_els1);
+    ELS_Window.add(text_els1);
 
     ELS_empty_Icon.setXY(178, 57);
     ELS_empty_Icon.setBitmap(touchgfx::Bitmap(BITMAP_ICON_ELS_2_ID));
-    ELS_Status.add(ELS_empty_Icon);
+    ELS_Window.add(ELS_empty_Icon);
 
-    add(ELS_Status);
+    add(ELS_Window);
+
+    Setting_Window.setBackground(touchgfx::BitmapId(BITMAP_HINTERGRUND_TEXT_ID), 40, 171);
+    Setting_Window.setShadeColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    Setting_Window.setShadeAlpha(150);
+    Setting_Window.hide();
+    Line1.setBitmap(touchgfx::Bitmap(BITMAP_TRENNLINIE_ID));
+    Line1.setPosition(30, 200, 330, 2);
+    Line1.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
+    Setting_Window.add(Line1);
+
+    setting1_toggle.setXY(292, 152);
+    setting1_toggle.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_TOGGLEBUTTON_SMALL_ROUNDED_SMALL_OFF_LIGHT_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_TOGGLEBUTTON_SMALL_ROUNDED_SMALL_ON_ACTIVE_ID));
+    Setting_Window.add(setting1_toggle);
+
+    text_setting1.setXY(30, 157);
+    text_setting1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    text_setting1.setLinespacing(0);
+    text_setting1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_U1UC));
+    Setting_Window.add(text_setting1);
+
+    btn_Settings_Ok.setXY(30, 354);
+    btn_Settings_Ok.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_TINY_ROUNDED_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_TINY_ROUNDED_PRESSED_ID));
+    btn_Settings_Ok.setLabelText(touchgfx::TypedText(T___SINGLEUSE_81T7));
+    btn_Settings_Ok.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    btn_Settings_Ok.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    Setting_Window.add(btn_Settings_Ok);
+
+    btn_Settings_Escape.setXY(250, 354);
+    btn_Settings_Escape.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_TINY_ROUNDED_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_TINY_ROUNDED_PRESSED_ID));
+    btn_Settings_Escape.setLabelText(touchgfx::TypedText(T___SINGLEUSE_A1P0));
+    btn_Settings_Escape.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    btn_Settings_Escape.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    Setting_Window.add(btn_Settings_Escape);
+
+    Linie2.setBitmap(touchgfx::Bitmap(BITMAP_TRENNLINIE_ID));
+    Linie2.setPosition(30, 140, 330, 2);
+    Linie2.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
+    Setting_Window.add(Linie2);
+
+    add(Setting_Window);
 
     topMenu1.setXY(0, 1);
     add(topMenu1);

@@ -31,7 +31,7 @@ protected:
     touchgfx::ScalableImage Background_BluePicLogo;
     touchgfx::TextArea text_hinweis;
     touchgfx::TextArea text_hinweis_1;
-    touchgfx::TextArea textProductName;
+    touchgfx::TextArea text_Hinweis;
     TopMenu topMenu1;
 
 private:

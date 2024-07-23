@@ -238,18 +238,6 @@
     <Filter Include="Header Files\generated\gui_generated\login_screen">
       <UniqueIdentifier>10BE8C8C-E654-8A10-8DF7-3823218180C0</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\gui\statusscreen_screen">
-      <UniqueIdentifier>0693307C-83B3-8F9F-E76F-F6C82FA6B2EB</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\gui\statusscreen_screen">
-      <UniqueIdentifier>8BAFB591-4632-B076-9985-51958E93685E</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\statusscreen_screen">
-      <UniqueIdentifier>CB4EC6C9-1F46-6B9E-2F88-1C3F12657464</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\statusscreen_screen">
-      <UniqueIdentifier>89F6B498-CEAA-21CC-8109-026258AA5F27</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -329,15 +317,6 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\login_screen\LoginViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\login_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\statusscreen_screen\StatusScreenPresenter.cpp">
-      <Filter>Source Files\gui\statusscreen_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\statusscreen_screen\StatusScreenView.cpp">
-      <Filter>Source Files\gui\statusscreen_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\statusscreen_screen\StatusScreenViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\statusscreen_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -834,15 +813,6 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\login_screen\LoginViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\login_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\statusscreen_screen\StatusScreenPresenter.hpp">
-      <Filter>Header Files\gui\statusscreen_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\statusscreen_screen\StatusScreenView.hpp">
-      <Filter>Header Files\gui\statusscreen_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\statusscreen_screen\StatusScreenViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\statusscreen_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

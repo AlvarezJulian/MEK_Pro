@@ -9,10 +9,10 @@
 #include <gui/vehiclecheck_screen/VehicleCheckPresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/ScalableImage.hpp>
+#include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/widgets/ButtonWithLabel.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
-#include <touchgfx/widgets/Image.hpp>
 #include <gui/containers/TopMenu.hpp>
 
 class VehicleCheckViewBase : public touchgfx::View<VehicleCheckPresenter>
@@ -48,24 +48,24 @@ protected:
      */
     touchgfx::Box __background;
     touchgfx::ScalableImage background_blueWhite;
-    touchgfx::TextAreaWithTwoWildcards Check_Coun;
+    touchgfx::Image MEK_Logo;
+    touchgfx::TextAreaWithTwoWildcards Check_Count;
     touchgfx::ButtonWithLabel btn_bad;
     touchgfx::ButtonWithLabel btn_ok;
     touchgfx::ButtonWithLabel btn_good;
     touchgfx::ScalableImage Background_question;
     touchgfx::TextArea question_Text;
     touchgfx::TextArea text_Abfahrskontrolle;
-    touchgfx::Image image1;
+    touchgfx::Image Icon;
     TopMenu topMenu1;
-    touchgfx::Image MEK_Logo;
 
     /*
      * Wildcard Buffers
      */
-    static const uint16_t CHECK_COUNBUFFER1_SIZE = 5;
-    touchgfx::Unicode::UnicodeChar Check_CounBuffer1[CHECK_COUNBUFFER1_SIZE];
-    static const uint16_t CHECK_COUNBUFFER2_SIZE = 5;
-    touchgfx::Unicode::UnicodeChar Check_CounBuffer2[CHECK_COUNBUFFER2_SIZE];
+    static const uint16_t CHECK_COUNTBUFFER1_SIZE = 5;
+    touchgfx::Unicode::UnicodeChar Check_CountBuffer1[CHECK_COUNTBUFFER1_SIZE];
+    static const uint16_t CHECK_COUNTBUFFER2_SIZE = 5;
+    touchgfx::Unicode::UnicodeChar Check_CountBuffer2[CHECK_COUNTBUFFER2_SIZE];
 
 private:
 

@@ -174,6 +174,8 @@ protected:
 
 	//TopMenu Save Data:
 	uint8_t current_Wifi_Signal;
+	uint8_t current_LTE_Signal;
+
 	bool current_bluetooth_Status;
 	uint16_t current_hour;
 	uint16_t current_minute;

@@ -101,10 +101,8 @@ build/MINGW32_NT-6.2/simulator/main.o: simulator/main.cpp \
  gui/include/gui/start_screen/StartView.hpp \
  generated/gui_generated/include/gui_generated/start_screen/StartViewBase.hpp \
  gui/include/gui/start_screen/StartPresenter.hpp \
- gui/include/gui/statusscreen_screen/StatusScreenView.hpp \
- generated/gui_generated/include/gui_generated/statusscreen_screen/StatusScreenViewBase.hpp \
- gui/include/gui/statusscreen_screen/StatusScreenPresenter.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp \
  generated/gui_generated/include/gui_generated/common/SimConstants.hpp \
  ../Middlewares/ST/touchgfx/framework/include/platform/driver/touch/SDL2TouchController.hpp \
  generated/simulator/include/simulator/mainBase.hpp
@@ -313,13 +311,9 @@ generated/gui_generated/include/gui_generated/start_screen/StartViewBase.hpp:
 
 gui/include/gui/start_screen/StartPresenter.hpp:
 
-gui/include/gui/statusscreen_screen/StatusScreenView.hpp:
-
-generated/gui_generated/include/gui_generated/statusscreen_screen/StatusScreenViewBase.hpp:
-
-gui/include/gui/statusscreen_screen/StatusScreenPresenter.hpp:
-
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ModalWindow.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp:
 
 generated/gui_generated/include/gui_generated/common/SimConstants.hpp:
 

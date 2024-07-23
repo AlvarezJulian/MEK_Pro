@@ -18,7 +18,7 @@
             "X": 91,
             "Y": 217,
             "Width": 298,
-            "Height": 25,
+            "Height": 27,
             "TextId": "__SingleUse_TMQ7",
             "TextRotation": "0",
             "Color": {
@@ -34,7 +34,7 @@
             "X": 100,
             "Y": 252,
             "Width": 280,
-            "Height": 25,
+            "Height": 27,
             "TextId": "__SingleUse_4DD2",
             "TextRotation": "0",
             "Color": {
@@ -50,7 +50,7 @@
             "X": 124,
             "Y": 108,
             "Width": 258,
-            "Height": 56,
+            "Height": 75,
             "TextId": "__SingleUse_A2NM",
             "TextRotation": "0",
             "Color": {
@@ -138,7 +138,7 @@
             "X": 111,
             "Y": 211,
             "Width": 258,
-            "Height": 56,
+            "Height": 75,
             "TextId": "__SingleUse_5WPA",
             "TextRotation": "0",
             "Color": {
@@ -195,7 +195,7 @@
             "X": 212,
             "Y": 674,
             "Width": 56,
-            "Height": 16,
+            "Height": 22,
             "TextId": "__SingleUse_N3WC",
             "TextRotation": "0",
             "Color": {
@@ -309,7 +309,7 @@
             "X": 116,
             "Y": 255,
             "Width": 230,
-            "Height": 33,
+            "Height": 37,
             "TextId": "__SingleUse_JBEU",
             "TextRotation": "0",
             "Color": {
@@ -377,6 +377,7 @@
           {
             "Type": "ScalableImage",
             "Name": "background_BlueLogo",
+            "X": -1,
             "Width": 480,
             "Height": 800,
             "Filename": "Hintergrund 2.png",
@@ -671,7 +672,7 @@
           },
           {
             "Type": "ModalWindow",
-            "Name": "Crash_Status",
+            "Name": "Crash_Window",
             "Width": 480,
             "Height": 800,
             "Visible": false,
@@ -744,7 +745,7 @@
           },
           {
             "Type": "ModalWindow",
-            "Name": "Workshop_Status",
+            "Name": "Workshop_Window",
             "Width": 480,
             "Height": 800,
             "Visible": false,
@@ -793,7 +794,7 @@
                 "Name": "textArea1",
                 "X": 89,
                 "Y": 143,
-                "Width": 223,
+                "Width": 211,
                 "Height": 112,
                 "TextId": "__SingleUse_HLSI",
                 "TextRotation": "0",
@@ -817,9 +818,10 @@
           },
           {
             "Type": "ModalWindow",
-            "Name": "ELS_Status",
+            "Name": "ELS_Window",
             "Width": 480,
             "Height": 800,
+            "Visible": false,
             "FileName": "Hintergrund_Text.png",
             "Color": {
               "Green": 48,
@@ -881,6 +883,108 @@
                 "Width": 45,
                 "Height": 46,
                 "RelativeFilename": "Icon ELS 2.png"
+              }
+            ]
+          },
+          {
+            "Type": "ModalWindow",
+            "Name": "Setting_Window",
+            "Width": 480,
+            "Height": 800,
+            "Visible": false,
+            "FileName": "Hintergrund_Text.png",
+            "ModalX": 40,
+            "ModalY": 171,
+            "ModalWidth": 400,
+            "ModalHeight": 458,
+            "Alpha": 150,
+            "Components": [
+              {
+                "Type": "ScalableImage",
+                "Name": "Line1",
+                "X": 30,
+                "Y": 200,
+                "Width": 330,
+                "Height": 2,
+                "Filename": "Trennlinie.png",
+                "ScalingAlgorithm": "Nearest-neighbor"
+              },
+              {
+                "Type": "ToggleButton",
+                "Name": "setting1_toggle",
+                "X": 292,
+                "Y": 152,
+                "Width": 62,
+                "Height": 34,
+                "Pressed": "__generated\\alternate_theme_images_widgets_togglebutton_small_rounded_small_on_active.png",
+                "Released": "__generated\\alternate_theme_images_widgets_togglebutton_small_rounded_small_off_light.png"
+              },
+              {
+                "Type": "TextArea",
+                "Name": "text_setting1",
+                "X": 30,
+                "Y": 157,
+                "Width": 185,
+                "Height": 25,
+                "TextId": "__SingleUse_U1UC",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "btn_Settings_Ok",
+                "X": 30,
+                "Y": 354,
+                "Width": 110,
+                "Height": 50,
+                "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_rounded_pressed.png",
+                "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_rounded_normal.png",
+                "TextId": "__SingleUse_81T7",
+                "ReleasedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0",
+                "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\tiny_rounded_normal.json"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "btn_Settings_Escape",
+                "X": 250,
+                "Y": 354,
+                "Width": 110,
+                "Height": 50,
+                "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_rounded_pressed.png",
+                "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_rounded_normal.png",
+                "TextId": "__SingleUse_A1P0",
+                "ReleasedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0",
+                "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\tiny_rounded_normal.json"
+              },
+              {
+                "Type": "ScalableImage",
+                "Name": "Linie2",
+                "X": 30,
+                "Y": 140,
+                "Width": 330,
+                "Height": 2,
+                "Filename": "Trennlinie.png",
+                "ScalingAlgorithm": "Nearest-neighbor"
               }
             ]
           },
@@ -1221,7 +1325,7 @@
       "Height": 480
     },
     "SelectedColorDepth": 16,
-    "StartupScreenName": "Login",
+    "StartupScreenName": "Start",
     "SelectedStartupLanguage": "DE",
     "TouchGfxPath": "../Middlewares/ST/touchgfx",
     "UIPath": ".",

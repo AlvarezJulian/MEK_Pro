@@ -30,6 +30,18 @@
       </Text>
     </TextGroup>
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_A1P0" Alignment="Center" TypographyId="MEK_2">
+        <Translation Language="DE">x</Translation>
+        <Translation Language="EN">New Text</Translation>
+      </Text>
+      <Text Id="__SingleUse_81T7" Alignment="Center" TypographyId="MEK_2">
+        <Translation Language="DE">ok</Translation>
+        <Translation Language="EN">New Text</Translation>
+      </Text>
+      <Text Id="__SingleUse_U1UC" Alignment="Left" TypographyId="MEK_2">
+        <Translation Language="DE">Stunden einblenden</Translation>
+        <Translation Language="EN">New Text</Translation>
+      </Text>
       <Text Id="__SingleUse_RQFP" Alignment="Center" TypographyId="default_2">
         <Translation Language="DE">Bitte Batteriewasser auffüllen!</Translation>
         <Translation Language="EN">New Text</Translation>

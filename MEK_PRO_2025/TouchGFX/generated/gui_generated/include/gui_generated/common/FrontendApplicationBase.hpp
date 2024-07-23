@@ -17,12 +17,10 @@ public:
 
     virtual void changeToStartScreen()
     {
-        gotoLoginScreenNoTransition();
+        gotoStartScreenNoTransition();
     }
 
     // Login
-    void gotoLoginScreenNoTransition();
-
     void gotoLoginScreenSlideTransitionWest();
 
     // Wellcome
@@ -32,6 +30,8 @@ public:
     void gotoVehicleCheckScreenSlideTransitionEast();
 
     // Start
+    void gotoStartScreenNoTransition();
+
     void gotoStartScreenSlideTransitionEast();
 
 protected:
@@ -40,8 +40,6 @@ protected:
     Model& model;
 
     // Login
-    void gotoLoginScreenNoTransitionImpl();
-
     void gotoLoginScreenSlideTransitionWestImpl();
 
     // Wellcome
@@ -51,6 +49,8 @@ protected:
     void gotoVehicleCheckScreenSlideTransitionEastImpl();
 
     // Start
+    void gotoStartScreenNoTransitionImpl();
+
     void gotoStartScreenSlideTransitionEastImpl();
 };
 

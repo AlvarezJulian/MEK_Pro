@@ -14,6 +14,8 @@
 #include <touchgfx/containers/clock/DigitalClock.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/containers/ModalWindow.hpp>
+#include <touchgfx/widgets/ToggleButton.hpp>
+#include <touchgfx/widgets/ButtonWithLabel.hpp>
 #include <gui/containers/TopMenu.hpp>
 
 class StartViewBase : public touchgfx::View<StartPresenter>
@@ -59,21 +61,28 @@ protected:
     touchgfx::TextArea text_Anwesenheit;
     touchgfx::Image Anwesenheit_Icon;
     touchgfx::Image Icon;
-    touchgfx::ModalWindow Crash_Status;
+    touchgfx::ModalWindow Crash_Window;
     touchgfx::TextArea text_crash3;
     touchgfx::TextArea text_crash2;
     touchgfx::TextArea text_crash1;
     touchgfx::Image crash_icon;
-    touchgfx::ModalWindow Workshop_Status;
+    touchgfx::ModalWindow Workshop_Window;
     touchgfx::TextArea textArea3;
     touchgfx::TextArea textArea2;
     touchgfx::TextArea textArea1;
     touchgfx::Image Workshop_Icon;
-    touchgfx::ModalWindow ELS_Status;
+    touchgfx::ModalWindow ELS_Window;
     touchgfx::TextArea text_els3;
     touchgfx::TextArea text_els2;
     touchgfx::TextArea text_els1;
     touchgfx::Image ELS_empty_Icon;
+    touchgfx::ModalWindow Setting_Window;
+    touchgfx::ScalableImage Line1;
+    touchgfx::ToggleButton setting1_toggle;
+    touchgfx::TextArea text_setting1;
+    touchgfx::ButtonWithLabel btn_Settings_Ok;
+    touchgfx::ButtonWithLabel btn_Settings_Escape;
+    touchgfx::ScalableImage Linie2;
     TopMenu topMenu1;
 
     /*

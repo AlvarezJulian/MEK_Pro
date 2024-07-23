@@ -9,9 +9,9 @@
 #include <gui/wellcome_screen/WellcomePresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/ScalableImage.hpp>
+#include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/widgets/ButtonWithLabel.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
-#include <touchgfx/widgets/Image.hpp>
 #include <gui/containers/TopMenu.hpp>
 
 class WellcomeViewBase : public touchgfx::View<WellcomePresenter>
@@ -39,12 +39,12 @@ protected:
      */
     touchgfx::Box __background;
     touchgfx::ScalableImage background_WhiteBlue;
-    touchgfx::ButtonWithLabel btn_StartControl;
-    touchgfx::TextArea text_Hinweis;
-    touchgfx::TextArea textArea1;
-    touchgfx::Image Logo;
-    TopMenu topMenu1;
     touchgfx::Image MEK_Logo;
+    touchgfx::ButtonWithLabel btn_StartControl;
+    touchgfx::Image Icon;
+    touchgfx::TextArea text_Hinweis;
+    touchgfx::TextArea text_Wellcome;
+    TopMenu topMenu1;
 
 private:
 
